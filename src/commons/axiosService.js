@@ -1,8 +1,13 @@
 import axios from 'axios';
+import Cookie from "js-cookie";
 
 class AxiosService {
   constructor() {
     const instance = axios.create();
+    const token = Cookie.get("accessToken");
+    if (token) {
+      instance.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+    }
     instance.interceptors.response.use(this.handleSuccess, this.handleError);
     this.instance = instance;
   }

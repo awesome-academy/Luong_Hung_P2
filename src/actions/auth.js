@@ -70,3 +70,36 @@ export const userLogoutSuccess = () => {
     type: authActions.LOGOUT_USER_SUCCESS,
   };
 };
+
+export const account = () => {
+  return {
+    type: authActions.ACCOUNT,
+  };
+};
+
+export const accountSuccess = (data) => {
+  return {
+    type: authActions.ACCOUNT_SUCCESS,
+    payload: {
+      data,
+    },
+  };
+};
+
+export const accountFailed = (error) => {
+  return {
+    type: authActions.ACCOUNT_FAILED,
+    payload: {
+      error,
+    },
+  };
+};
+
+export const accountInformation = (data) => {
+  return {
+    type: authActions.ACCOUNT_INFORMATION,
+    payload: {
+      data,
+    },
+  };
+};

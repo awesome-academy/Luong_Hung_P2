@@ -1,0 +1,16 @@
+@import "mixins";
+
+.globalLoading {
+  @include customPosition(fixed, 0, 0, 999, 0, 0, false);
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  .icon {
+    @include customPosition(fixed, auto, 0, 999, 0, 0, false);
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40%;
+    width: 100;
+  }
+}

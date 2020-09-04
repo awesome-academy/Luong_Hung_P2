@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./sass/layout.scss";
 import "./sass/header.scss"
 import Header from "./components/Partials/Header";
@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import routers from "./routers";
 import Footer from "./components/Partials/Footer";
+import Loading from "./commons/loading";
+
 const App = () => {
   const showContentMenus = (routers) => {
     let result = null;
@@ -31,9 +33,9 @@ const App = () => {
     <Router>
       <div className='App'>
         <Header />
-        <ToastContainer />
+        <ToastContainer position="bottom-right" />
+        <Loading />
         <Switch>{showContentMenus(routers)}</Switch>
-
         <Footer />
       </div>
     </Router>

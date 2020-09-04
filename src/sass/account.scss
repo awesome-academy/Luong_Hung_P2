@@ -1,0 +1,60 @@
+@import "./mixins.scss";
+
+.wrapper_i {
+  background: url(https://library.kissclipart.com/20190221/gje/kissclipart-december-clipart-projection-screens-cinema-film-3c9e1ff48905b199.png)
+    no-repeat;
+  background-size: cover;
+  padding: 50px;
+  .information {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: transparent;
+    &__avatar {
+      position: relative;
+      left: 50%;
+      width: 100px;
+      margin-left: -50px;
+      border-radius: 50%;
+    }
+    &__wrapper {
+      margin-top: 20px;
+      .btn {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &__title {
+        @include customFont(24px, "roboto");
+        font-weight: bold;
+        display: inline-block;
+        margin: 10px 10px;
+        color: $colorRed;
+      }
+      &__content {
+        @include customFont(24px, "roboto");
+        display: inline-block;
+      }
+      &__btn {
+        @include customFont(24px, "Roboto");
+        padding: 10px 20px;
+        border: 1px solid $colorGreen;
+        border-radius: 10px;
+        color: $colorBlack;
+        background: $colorWhite;
+        transition: 0.4s;
+        margin: 20px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      &__btn:hover {
+        color: $colorWhite;
+        background: $colorGreen;
+        transition: 0.4s;
+      }
+    }
+  }
+}
+
+.wrapper_i ~ .footer {
+  margin: 0;
+}
