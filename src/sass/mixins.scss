@@ -1,0 +1,30 @@
+@mixin customFontFace($fontFamily, $src) {
+    @font-face {
+        font-family: $fontFamily;
+        src: url($src);
+    }
+}
+
+@mixin customPosition($position, $top, $left, $z, $width, $height, $result) {
+    position: $position;
+    top: $top;
+    left: $left;
+    z-index: $z;
+    @if $result == true {
+        width: $width;
+        height: $height;
+    }
+}
+
+@mixin customBackground($url, $w, $h) {
+    background: url($url) no-repeat;
+    width: $w;
+    height: $h;
+}
+
+@mixin customFont($size, $family) {
+    font: {
+        size: $size;
+        family: $family;
+    }
+}

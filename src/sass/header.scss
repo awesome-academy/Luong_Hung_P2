@@ -1,0 +1,246 @@
+@import "variables";
+
+.header {
+    background-color: $colorBlack;
+    position: relative;
+    padding: 15px 30px;
+
+    .menu-icon,
+    #toggle-menu {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        align-items: center;
+        top: 3px;
+        margin-left: 30px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        display: flex;
+
+        &__item {
+            margin-right: 15px;
+        }
+
+        a {
+            color: $colorWhite;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__link,
+    label {
+        color: $colorWhite;
+    }
+    &__link:hover {
+        opacity: 0.8;
+    }
+
+    &__login-register {
+        position: absolute;
+        top: 26px;
+        right: 30px;
+
+        .item {
+            margin-right: 10px;
+            border: 1px solid #e1e1e1;
+            padding: 7px 15px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            width: 100px;
+            text-align: center;
+        }
+
+        .item:hover {
+            background-color: #3737a7;
+        }
+    }
+
+    .wrap-search {
+        display: flex;
+        align-items: center;
+    }
+
+    form {
+        position: absolute;
+        top: 22px;
+        right: 300px;
+        #search {
+            padding: 8px 15px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            margin-right: 8px;
+        }
+
+        label {
+            border: 1px solid #e1e1e1;
+            position: relative;
+            top: 2px;
+            padding: 4px 15px;
+            border-radius: 5px;
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        label:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .logo-cenima {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #89c441;
+
+        img {
+            height: 100%;
+            width: 70px;
+        }
+    }
+
+    .logout {
+        display: none;
+    }
+}
+
+.footer {
+    background-color: $colorBlack;
+    color: $colorWhite;
+    padding: 40px 0px 20px;
+
+    a {
+        color: $colorWhite;
+    }
+
+    a:hover {
+        color: whitesmoke;
+        opacity: 0.8;
+    }
+
+    &__main {
+        padding-bottom: 20px;
+        .para {
+            text-justify: auto;
+        }
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: #89c441;
+    }
+
+    &__item {
+        margin-bottom: 5px;
+    }
+
+    &__social {
+        display: flex;
+        &__item {
+            margin-right: 10px;
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    &__bottom {
+        border-top: 1px solid #e1e1e1;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        min-height: 120px;
+        .wrap-search {
+            display: flex;
+            margin-top: 60px;
+            position: relative;
+            .logo-cenima {
+                position: absolute;
+                top: -10px;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .header__login-register {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+
+            .item {
+                color: #000;
+            }
+        }
+
+        form {
+            display: none;
+            white-space: nowrap;
+            margin: 0;
+
+            #search {
+                width: 170px;
+            }
+        }
+
+        .menu {
+            display: block;
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+        .menu {
+            display: block;
+            max-height: 0;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .menu-icon {
+            z-index: 999;
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            left: 30px;
+            top: 4px;
+            svg {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+        }
+
+        #toggle-menu:checked ~ .menu {
+            margin-top: 24px;
+            margin-left: 65px;
+            max-height: 800px;
+            height: auto;
+            z-index: 100;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header form {
+        display: none;
+    }
+}
