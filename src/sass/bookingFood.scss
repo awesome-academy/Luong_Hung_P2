@@ -1,0 +1,155 @@
+@import "./mixins.scss";
+
+.bookingFood {
+  margin: 50px 0;
+  &__title {
+    display: flex;
+    justify-content: center;
+    .title {
+      border-bottom: 3px solid $colorGreen;
+      @include customFont(24px, "roboto");
+      padding: 10px 15px;
+      transition: 0.2s;
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+  &__infoBoard {
+    border: 1px solid $colorBorder;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 0;
+    background: $colorGreen;
+    color: $colorWhite;
+    &__header {
+      text-align: center;
+      .content {
+        @include customFont(18px, "roboto");
+        font-weight: bold;
+        margin: 10px 10px;
+        display: inline-block;
+        padding-right: 20px;;
+        border-right: 1px solid $colorRed;
+      }
+      .content:nth-child(3) {
+        border: none;
+      }
+    }
+    &__footer {
+      text-align: center;
+      margin: 10px 10px;
+      @include customFont(16px, "roboto");
+      .date {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__screen {
+    text-align: center;
+    border: 1px solid $colorBorder;
+    border-radius: 10px;
+    padding: 30px 0;
+    width: 70%;
+    margin: auto;
+  }
+  &__main {
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $colorBorder;
+    border-radius: 10px;
+    &__item {
+      width: 50%;
+      display: flex;
+      padding: 40px 20px 20px 20px;
+      .image__food {
+        width: 40%;
+        border-radius: 5px;
+      }
+      .detail {
+        padding: 0 15px;
+        @include customFont(16px, "roboto");
+        &__header {
+          @include customFont(20px, "roboto");
+          font-weight: bold;
+          color: $colorRed;
+          margin: 0 0 15px 0;
+        }
+        &__content {
+          color: $colorGray;
+          margin: 5px 0;
+        }
+        &__price {
+          margin: 10px 0;
+          b {
+            color: $colorGreen;
+          }
+        }
+        &__counts {
+          &__crease {
+            padding: 3px 10px;
+            border-radius: 5px;
+            border: 1px solid $colorBorder;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          &__crease:hover {
+            background: $colorGreen;
+            transition: 0.3s;
+          }
+          &__count {
+            padding: 3px 10px;
+            border-radius: 5px;
+            border: 1px solid $colorBorder;
+            margin: 0 5px;
+            color: $colorRed;
+          }
+        }
+      }
+    }
+  }
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $colorBorder;
+    border-radius: 10px;
+    padding: 30px 0;
+    width: 70%;
+    margin: auto;
+    background: $colorGray;
+    color: $colorWhite;
+    .total {
+      margin-left: 20px;
+      &__item {
+        margin-bottom: 10px;
+        b {
+          color: $colorGreen;
+        }
+      }
+      &__item:nth-child(3) {
+        margin-bottom: 0;
+      }
+    }
+    .prev {
+      margin-left: 20px;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .prev:hover {
+      color: $colorGreen;
+      transition: 0.3s;
+    }
+    .next {
+      margin-right: 20px;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .next:hover {
+      color: $colorGreen;
+      transition: 0.3s;
+    }
+  }
+}

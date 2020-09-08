@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import * as editAccountActions from "../../actions/account";
+import { useTranslation } from "react-i18next";
 
 const EditAccount = (props) => {
   const account = useSelector((state) => state.currentUser.account);
@@ -13,6 +14,7 @@ const EditAccount = (props) => {
   const [birth, setBirth] = useState("");
   const [gender, setGender] = useState("Male");
   const dispatch = useDispatch();
+  const { t } = useTranslation("common");
 
   useEffect(() => {
     setEditAccount(account);
@@ -71,10 +73,10 @@ const EditAccount = (props) => {
     result.push(
       <form className="register" onSubmit={handleSubmit}>
         {checkLogin}
-        <label htmlFor="name">New Name</label>
+        <label htmlFor="name">{t("auth.newName")}</label>
         <input
           name="name"
-          placeholder="Name"
+          placeholder={t("auth.newName")}
           type="text"
           id="name"
           value={name}
@@ -82,10 +84,10 @@ const EditAccount = (props) => {
         />
         <br />
 
-        <label htmlFor="password">New Password</label>
+        <label htmlFor="password">{t("auth.newPassword")}</label>
         <input
           name="password"
-          placeholder="Password"
+          placeholder={t("auth.newPassword")}
           type="password"
           id="password"
           value={password}
@@ -93,10 +95,10 @@ const EditAccount = (props) => {
         />
         <br />
 
-        <label htmlFor="phone">New Phone</label>
+        <label htmlFor="phone">{t("auth.newPhone")}</label>
         <input
           name="phone"
-          placeholder="Phone"
+          placeholder={t("auth.newPhone")}
           value={phone}
           type="text"
           id="phone"
@@ -104,10 +106,10 @@ const EditAccount = (props) => {
         />
         <br />
 
-        <label htmlFor="region">New Region</label>
+        <label htmlFor="region">{t("auth.newRegion")}</label>
         <input
           name="region"
-          placeholder="Region"
+          placeholder={t("auth.newRegion")}
           value={region}
           type="text"
           id="region"
@@ -115,10 +117,10 @@ const EditAccount = (props) => {
         />
         <br />
 
-        <label htmlFor="birth">New Date of birth</label>
+        <label htmlFor="birth">{t("auth.newDateOfBirth")}</label>
         <input
           name="birth"
-          placeholder="Date of birth"
+          placeholder={t("auth.newDateOfBirth")}
           value={birth}
           type="date"
           id="birth"
@@ -126,7 +128,7 @@ const EditAccount = (props) => {
         />
         <br />
 
-        <label htmlFor="Male">New Gender</label>
+        <label htmlFor="Male">{t("auth.newGender")}</label>
         <label htmlFor="Male" className="gender">
           <input
             name="gender"
@@ -136,7 +138,7 @@ const EditAccount = (props) => {
             checked={gender === "Male"}
             onChange={handleChange}
           />{" "}
-          Male
+          {t("auth.male")}
         </label>
         <br />
         <label htmlFor="Female" className="gender">
@@ -148,11 +150,11 @@ const EditAccount = (props) => {
             checked={gender === "Female"}
             onChange={handleChange}
           />{" "}
-          Female
+          {t("auth.female")}
         </label>
         <br />
 
-        <input type="submit" value="Edit Account" />
+        <input type="submit" value={t("auth.editAccount")} />
       </form>
     );
     return result;

@@ -1,4 +1,4 @@
-@import "variables";
+@import "mixins";
 
 .header {
     background-color: $colorBlack;
@@ -64,8 +64,8 @@
 
     &__login-register {
         position: absolute;
-        top: 26px;
-        right: 30px;
+        top: 28px;
+        right: 77px;
 
         .item {
             margin-right: 10px;
@@ -82,6 +82,33 @@
         }
     }
 
+    &__translate {
+        position: absolute;
+        top: 29px;
+        right: 12px;
+        color: $colorWhite;
+        @include customFont(14px, "roboto");
+        &__EN {
+            cursor: pointer;
+            padding: 8px;
+            border: 1px solid $colorGreen;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-right: none;
+        }
+        &__VI {
+            cursor: pointer;
+            padding: 8px;
+            border: 1px solid $colorGreen;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-left: none;
+        }
+        .active {
+            background: $colorGreen;
+        }
+    }
+
     .wrap-search {
         display: flex;
         align-items: center;
@@ -90,7 +117,7 @@
     form {
         position: absolute;
         top: 22px;
-        right: 300px;
+        right: 420px;
         #search {
             padding: 8px 15px;
             width: 300px;
@@ -124,10 +151,6 @@
             height: 100%;
             width: 70px;
         }
-    }
-
-    .logout {
-        display: none;
     }
 }
 

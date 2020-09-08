@@ -11,6 +11,7 @@ import Footer from "./components/Partials/Footer";
 import Loading from "./commons/loading";
 
 const App = () => {
+
   const showContentMenus = (routers) => {
     let result = null;
 

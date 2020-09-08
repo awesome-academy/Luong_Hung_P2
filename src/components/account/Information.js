@@ -1,8 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "../../sass/account.scss";
+import { useTranslation } from "react-i18next";
 const Information = (props) => {
   const account = useSelector((state) => state.currentUser.account);
+  const { t } = useTranslation("common");
 
   const checkLogin = () => {
     if (!account) {
@@ -23,7 +25,7 @@ const Information = (props) => {
             />
             <div className="information__wrapper">
               <div>
-                <div className="information__wrapper__title">Name: </div>
+                <div className="information__wrapper__title">{t("auth.name")} </div>
                 <div className="information__wrapper__content">{acc.name}</div>
               </div>
               <div>
@@ -31,23 +33,23 @@ const Information = (props) => {
                 <div className="information__wrapper__content">{acc.email}</div>
               </div>
               <div>
-                <div className="information__wrapper__title">Telephone: </div>
+                <div className="information__wrapper__title">{t("auth.phone")}: </div>
                 <div className="information__wrapper__content">{acc.phone}</div>
               </div>
               <div>
-                <div className="information__wrapper__title">Gender: </div>
+                <div className="information__wrapper__title">{t("auth.gender")}: </div>
                 <div className="information__wrapper__content">
                   {acc.gender}
                 </div>
               </div>
               <div>
                 <div className="information__wrapper__title">
-                  Date of Birth:{" "}
+                  {t("auth.dateOfBirth")}:{" "}
                 </div>
                 <div className="information__wrapper__content">{acc.birth}</div>
               </div>
               <div>
-                <div className="information__wrapper__title">Address: </div>
+                <div className="information__wrapper__title">{t("auth.region")}: </div>
                 <div className="information__wrapper__content">
                   {acc.region}
                 </div>
@@ -57,7 +59,7 @@ const Information = (props) => {
                   className="information__wrapper__btn"
                   onClick={() => props.history.push("/editAccount")}
                 >
-                  Edit
+                  {t("auth.editAccount")}
                 </span>
               </div>
             </div>

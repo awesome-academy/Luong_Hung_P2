@@ -1,0 +1,103 @@
+@import "./mixins.scss";
+
+.bookingSeats {
+  margin: 50px 0;
+  &__title {
+    display: flex;
+    justify-content: center;
+    .title {
+      border-bottom: 3px solid $colorGreen;
+      @include customFont(24px, "roboto");
+      padding: 10px 15px;
+      transition: 0.2s;
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+  &__infoBoard {
+    border: 1px solid $colorBorder;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 0;
+    background: $colorGreen;
+    color: $colorWhite;
+    &__header {
+      text-align: center;
+      .content {
+        @include customFont(18px, "roboto");
+        font-weight: bold;
+        margin: 10px 10px;
+        display: inline-block;
+        padding-right: 20px;;
+        border-right: 1px solid $colorRed;
+      }
+      .content:nth-child(3) {
+        border: none;
+      }
+    }
+    &__footer {
+      text-align: center;
+      margin: 10px 10px;
+      @include customFont(16px, "roboto");
+      .date {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__screen {
+    text-align: center;
+    border: 1px solid $colorBorder;
+    border-radius: 10px;
+    padding: 30px 0;
+    width: 70%;
+    margin: auto;
+  }
+  &__seats {
+    width: 700px;
+    margin: 30px auto;
+    border: 1px solid $colorBorder;
+    border-radius: 10px;
+    justify-content: space-between;
+    &__item {
+      margin: 9px;
+      border: 1px solid $colorGreen;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    &__item:hover {
+      background: $colorGreen;
+      transition: 0.3s;
+    }
+    .booked {
+      background: $colorRed;
+      border: 1px solid $colorRed;
+      cursor: default;
+    }
+  }
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $colorBorder;
+    border-radius: 10px;
+    padding: 30px 0;
+    width: 70%;
+    margin: auto;
+    .total {
+      margin-left: 20px;
+      b {
+        color: $colorGreen;
+      }
+    }
+    .next {
+      margin-right: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .next:hover {
+      color: $colorGreen;
+      transition: 0.3s;
+    }
+  }
+}
