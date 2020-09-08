@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as authActions from "../../actions/auth";
 import { useDispatch } from "react-redux";
 import '../../sass/register.scss'
+import { useTranslation } from "react-i18next";
 
 const Register = (props) => {
   const [name, setName] = useState("");
@@ -12,6 +13,7 @@ const Register = (props) => {
   const [birth, setBirth] = useState("");
   const [gender, setGender] = useState("Male");
   const dispatch = useDispatch();
+  const { t } = useTranslation("common");
 
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -52,10 +54,10 @@ const Register = (props) => {
 
   return (
     <form className="register" onSubmit={handleSubmit}>
-      <label htmlFor='name'>Name</label>
+      <label htmlFor='name'>{t("auth.name")}</label>
       <input
         name='name'
-        placeholder='Name'
+        placeholder={t("auth.name")}
         type='text'
         id='name'
         value={name}
@@ -63,10 +65,10 @@ const Register = (props) => {
       />
       <br />
 
-      <label htmlFor='phone'>Phone</label>
+      <label htmlFor='phone'>{t("auth.phone")}</label>
       <input
         name='phone'
-        placeholder='Phone'
+        placeholder={t("auth.phone")}
         value={phone}
         type='text'
         id='phone'
@@ -85,21 +87,21 @@ const Register = (props) => {
       />
       <br />
 
-      <label htmlFor='password'>Password</label>
+      <label htmlFor='password'>{t("auth.password")}</label>
       <input
         type='password'
         name='password'
-        placeholder='Password'
+        placeholder={t("auth.password")}
         id='password'
         value={password}
         onChange={handleChange}
       />
       <br />
 
-      <label htmlFor='region'>Region</label>
+      <label htmlFor='region'>{t("auth.region")}</label>
       <input
         name='region'
-        placeholder='Region'
+        placeholder={t("auth.region")}
         value={region}
         type='text'
         id='region'
@@ -107,10 +109,10 @@ const Register = (props) => {
       />
       <br />
 
-      <label htmlFor='birth'>Date of birth</label>
+      <label htmlFor='birth'>{t("auth.dateOfBirth")}</label>
       <input
         name='birth'
-        placeholder='Date of birth'
+        placeholder={t("auth.dateOfBirth")}
         value={birth}
         type='date'
         id='birth'
@@ -118,7 +120,7 @@ const Register = (props) => {
       />
       <br />
 
-      <label htmlFor="Male">Gender</label>
+      <label htmlFor="Male">{t("auth.gender")}</label>
       <label htmlFor="Male" className="gender">
         <input
           name='gender'
@@ -127,7 +129,7 @@ const Register = (props) => {
           id="Male"
           checked={gender === "Male"}
           onChange={handleChange}
-        /> Male
+        /> {t("auth.male")}
       </label>
       <br />
       <label htmlFor="Female" className="gender">
@@ -137,11 +139,11 @@ const Register = (props) => {
           value='Female'
           id="Female"
           onChange={handleChange}
-        /> Female
+        /> {t("auth.female")}
       </label>
       <br />
 
-      <input type='submit' value='Register' />
+      <input type='submit' value={t("auth.register")} />
     </form>
   );
 };

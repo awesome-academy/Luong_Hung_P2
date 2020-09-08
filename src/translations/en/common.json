@@ -1,0 +1,56 @@
+{
+  "header": {
+      "movies": "Movies",
+      "theaters": "Theaters",
+      "membership": "Membership",
+      "search": "Search",
+      "placeholderSearch": "Search movies...",
+      "register": "Register",
+      "login": "Login",
+      "profile": "Profile",
+      "logout": "Logout"
+  },
+  "footer": {
+    "about": "About Us",
+    "para": "Business registration certificate: 0303675393, the first registration on July 31, 2008, the 5th change registration on October 14, 2015, issued by the Department of Planning and Investment of Ho Chi Minh City.",
+    "term": "Term",
+    "termOfUs": "Term Of Use",
+    "paymentPolicy": "Payment Policy",
+    "privacyPolicy": "Privacy Police",
+    "FAQ": "F.A.Q",
+    "customService": "Custom Service",
+    "workingHours": "Working Hours",
+    "emailSup": "Email Support",
+    "followsUs": "Follows Us"
+  },
+  "home": {
+    "nowShowing": "Now Showing",
+    "comingSoon": "Coming Soon",
+    "booking": "Booking",
+    "detail": "Detail",
+    "viewMore": "View More",
+    "promotionInformation": "Promotion Information",
+    "genre": "Genre",
+    "runningTime": "Running Times",
+    "releaseDate": "Release Date",
+    "minutes": "minutes"
+  },
+  "auth": {
+    "password": "Password",
+    "name": "Name",
+    "phone": "Phone",
+    "region": "Region",
+    "dateOfBirth": "Date Of Birth",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "register": "Register",
+    "editAccount": "Edit Account",
+    "newPassword": "New Password",
+    "newName": "New Name",
+    "newPhone": "New Phone",
+    "newRegion": "New Region",
+    "newDateOfBirth": "New Date Of Birth",
+    "newGender": "New Gender"
+  }
+}

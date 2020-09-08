@@ -2,7 +2,7 @@
 
 form.login {
   width: 50%;
-  margin: 50px auto;
+  margin:  50px auto;
   label {
     @include customFont(18px, "Roboto");
     display: block;
@@ -15,4 +15,11 @@ form.login {
     width: 100%;
     margin-bottom: 20px;
   }
+}
+
+form.login ~ .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

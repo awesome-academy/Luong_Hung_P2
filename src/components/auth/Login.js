@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import * as authActions from "../../actions/auth";
-import '../../sass/login.scss'
+import '../../sass/login.scss';
+import { useTranslation } from "react-i18next";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
+  const { t } = useTranslation("common");
 
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -37,7 +39,7 @@ const Login = (props) => {
       />
       <br />
 
-      <label htmlFor='password'>Password</label>
+      <label htmlFor='password'>{t("auth.password")}</label>
       <input
         type='password'
         name='password'
@@ -48,7 +50,7 @@ const Login = (props) => {
       />
       <br />
 
-      <input type='submit' value='Login' />
+      <input type='submit' value={t("header.login")} />
     </form>
   );
 };

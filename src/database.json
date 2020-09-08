@@ -349,5 +349,462 @@
       "id": 8,
       "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion8.jpg"
     }
+  ],
+  "seats": [
+    {
+      "numberSeat": [
+        {
+          "MaGhe": "A01",
+          "LoaiGhe": "Thuong",
+          "GiaVe": 75000,
+          "DaDat": true
+        },
+        {
+          "MaGhe": "A02",
+          "LoaiGhe": "Thuong",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A03",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A04",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A05",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A06",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A07",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A08",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A09",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A10",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A11",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A12",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A13",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A14",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A15",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A16",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A17",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A18",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A19",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A20",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A21",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A22",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A23",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A24",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A25",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A26",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A27",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A28",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A29",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A30",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A31",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A32",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A33",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A34",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A35",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A36",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A37",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A38",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A39",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A40",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A41",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A42",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A43",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A44",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A45",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A46",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A47",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A48",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A49",
+          "GiaVe": 75000,
+          "DaDat": false
+        },
+        {
+          "MaGhe": "A50",
+          "GiaVe": 75000,
+          "DaDat": false
+        }
+      ],
+      "id": 1,
+      "branchId": 1
+    }
+  ],
+  "theaters": [
+    {
+      "id": 1,
+      "tenRap": "Lotte Cinema",
+      "branchId": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/404b8c4b80d77732e7426cdb7e24be20.png"
+    },
+    {
+      "id": 2,
+      "tenRap": "Lotte Star Cineplex",
+      "branchId": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/f32670fd0eb083c9c4c804f0f3a252ed.png"
+    },
+    {
+      "id": 3,
+      "tenRap": "Lotte a Cinema",
+      "branchId": 2,
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/e520781386bd5436e94d6e15e193a005.png"
+    },
+    {
+      "tenRap": "Lotte CineStar",
+      "branchId": 2,
+      "hinhAnh": "https://i.imgur.com/0XnfUIg.png",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "tenRap": "Lotte - Đống Đa",
+      "branchId": 3,
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/9b240f96a233bb43203ee514a21a6004.png"
+    }
+  ],
+  "branchs": [
+    {
+      "id": 1,
+      "theaterId": 1,
+      "ten": "ho chi minh",
+      "branchId": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-nam-sai-gon-15383867312967.jpg",
+      "diaChi": "Lotte Mart NSG, 469 Nguyễn Hữu Thọ, Q.7"
+    },
+    {
+      "id": 2,
+      "theaterId": 1,
+      "ten": "ha noi",
+      "branchId": 2,
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cong-hoa-15383860949090.jpg",
+      "diaChi": "Lotte, 20 Ba Tháng 2, Cầu Giấy"
+    },
+    {
+      "id": 3,
+      "theaterId": 1,
+      "ten": "da nang",
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cong-hoa-15383860949090.jpg",
+      "diaChi": "Pico Plaza, 20 Cộng Hòa, Tân Bình"
+    },
+    {
+      "id": 4,
+      "theaterId": 1,
+      "ten": "nam dinh",
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-diamond-15383868339222.jpg",
+      "diaChi": "Diamond Plaza, 34 Lê Duẩn, Q.1"
+    },
+    {
+      "id": 5,
+      "theaterId": 1,
+      "ten": "nha trang",
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cantavil-15383866510260.jpg",
+      "diaChi": "Cantavil Premier, Xa Lộ Hà Nội, Q.2"
+    }
+  ],
+  "sessions": [
+    {
+      "movieId": 1,
+      "theaterId": 1,
+      "branchsId": 1,
+      "ngay": 1,
+      "dinhDangChieu": "2D VIETSUB",
+      "phongChieu": 4,
+      "suatChieu": [
+        "08:30",
+        "10:20",
+        "13:20",
+        "18:00",
+        "08:00"
+      ],
+      "trangThai": true,
+      "id": 1
+    },
+    {
+      "movieId": 1,
+      "theaterId": 2,
+      "trangThai": true,
+      "branchsId": 2,
+      "ngay": 1,
+      "dinhDangChieu": "3D VIETSUB",
+      "phongChieu": 4,
+      "suatChieu": [
+        "08:30",
+        "10:20",
+        "13:20",
+        "15:00",
+        "18:00",
+        "21:40"
+      ],
+      "id": 2
+    },
+    {
+      "movieId": 1,
+      "theaterId": 3,
+      "trangThai": true,
+      "branchsId": 3,
+      "ngay": 1,
+      "dinhDangChieu": "2D VIETSUB",
+      "phongChieu": 3,
+      "suatChieu": [
+        "08:30",
+        "10:20",
+        "13:20",
+        "15:00",
+        "18:00"
+      ],
+      "id": 3
+    },
+    {
+      "movieId": 1,
+      "theaterId": 4,
+      "trangThai": true,
+      "branchsId": 4,
+      "ngay": 1,
+      "dinhDangChieu": "2D VIETSUB",
+      "phongChieu": 3,
+      "suatChieu": [
+        "08:30",
+        "10:20",
+        "13:20",
+        "15:00",
+        "18:00",
+        "21:40"
+      ],
+      "id": 4
+    },
+    {
+      "id": 5,
+      "movieId": 1,
+      "theaterId": 5,
+      "trangThai": true,
+      "branchsId": 5,
+      "ngay": 1,
+      "dinhDangChieu": "3D VIETSUB",
+      "phongChieu": 3,
+      "suatChieu": [
+        "08:30",
+        "10:20",
+        "13:20",
+        "15:00",
+        "18:00",
+        "21:40"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "userId": 2,
+      "ngayDang": 1562777555509,
+      "soDiem": 8,
+      "noiDung": "Phim Hay quá",
+      "soLike": 4
+    },
+    {
+      "id": 2,
+      "movieId": 1,
+      "userId": 2,
+      "ngayDang": 1562777555509,
+      "soDiem": 7,
+      "noiDung": "Phim Hay quá 2",
+      "soLike": 5
+    }
+  ],
+  "comboFood": [
+    {
+      "id": 1,
+      "hinhAnh": "https://cms.megagscinemas.vn//media/76071/big-share.png",
+      "tenCombo": "2 ly nước lớn, 1 bắp lớn",
+      "soLuong": 0,
+      "gia": 97000
+    },
+    {
+      "id": 2,
+      "hinhAnh": "https://cms.megagscinemas.vn//media/76070/share.png",
+      "tenCombo": "2 ly nước vừa, 1 bắp lớn",
+      "soLuong": 0,
+      "gia": 87000
+    }
   ]
 }

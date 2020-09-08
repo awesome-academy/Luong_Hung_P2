@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import * as authActions from "../../actions/auth";
+import { useTranslation } from 'react-i18next';
 
 const Logout = (props) => {
   const dispatch = useDispatch();
+  const { t } = useTranslation("common");
 
   useEffect(() => {
     dispatch(authActions.userLogout());
@@ -12,7 +14,7 @@ const Logout = (props) => {
 
   return(
     <div>
-      Logout
+      {t("header.logout")}
     </div>
   );
 }

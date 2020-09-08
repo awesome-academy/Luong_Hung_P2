@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import * as movieActions from "../../actions/movies";
@@ -6,6 +5,7 @@ import * as promotionAction from "../../actions/promotion";
 import * as sliderBarActions from "../../actions/sliderBars";
 import "../../sass/home.scss";
 import * as authActions from "../../actions/auth";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -17,6 +17,7 @@ const Home = () => {
   const user = useSelector(state => state.currentUser.currentUser);
   const accounts = useSelector(state => state.currentUser.accounts);
   const dispatch = useDispatch();
+  const { t } = useTranslation("common");
 
   useEffect(() => {
     dispatch(sliderBarActions.sliderBar());
@@ -117,7 +118,7 @@ const Home = () => {
               className='movie__image'
             />
             <div className='movie__name'>{movie[i].tenPhim}</div>
-            <div className="wrap-movie__btn"><span className='movie__btn'>Booking</span></div>
+            <div className="wrap-movie__btn"><span className='movie__btn'>{t("home.booking")}</span></div>
           </div>
         );
       }
@@ -168,7 +169,7 @@ const Home = () => {
             }
             onClick={() => setTag(true)}
           >
-            Now Showing
+            {t("home.nowShowing")}
           </span>
           <span
             className={
@@ -176,18 +177,18 @@ const Home = () => {
             }
             onClick={() => setTag(false)}
           >
-            Coming Soon
+            {t("home.comingSoon")}
           </span>
         </div>
         <div className='movies__main row'>
           {showMovie()}
         </div>
-        <div className="movies__btn">View More</div>
+        <div className="movies__btn">{t("home.viewMore")}</div>
       </div>
 
       <div className="promotion ">
         <div className="container">
-          <span className="movies__header__tag ">Promotion Information</span>
+          <span className="movies__header__tag ">{t("home.promotionInformation")}</span>
 
           <div className="row">
             {
@@ -196,7 +197,7 @@ const Home = () => {
                   <div className="promotion__item">
                     <img className="promotion__img" src={item.promotion_image} alt="promotion information" />
                     <div className="wrap-promotion__btn">
-                      <div className="promotion__btn">Detail</div>
+                      <div className="promotion__btn">{t("home.detail")}</div>
                     </div>
                   </div>
                 </div>

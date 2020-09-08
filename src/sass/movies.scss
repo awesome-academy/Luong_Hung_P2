@@ -17,15 +17,27 @@
     &__content {
         .movie {
             margin-bottom: 30px;
+            &__item {
+                margin-bottom: 5px;
+                @include customFont(14px, "roboto");
+            }
             &__image {
                 width: 100%;
             }
 
             &__name {
-                font-size: 1.1rem;
                 font-weight: bold;
                 margin-bottom: 7px;
                 text-transform: uppercase;
+                margin: 10px 10px 10px 0;
+                color: $colorGreen;
+                @include customFont(1rem, "Roboto");
+                height: 38px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* number of lines to show */
+                -webkit-box-orient: vertical;
             }
 
             .key {

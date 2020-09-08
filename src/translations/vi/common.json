@@ -1,0 +1,56 @@
+{
+  "header": {
+      "movies": "Phim",
+      "theaters": "Rạp",
+      "membership": "Thành Viên",
+      "search": " Tìm Kiếm",
+      "placeholderSearch": "Tìm kiếm phim...",
+      "register": "Đăng Ký",
+      "login": "Đăng Nhập",
+      "profile": "Tài Khoản",
+      "logout": "Đăng Xuất"
+  },
+  "footer": {
+    "about": "Về chúng tôi",
+    "para": "Giấy CNĐKDN: 0303675393, đăng ký lần đầu ngày 31/7/2008, đăng ký thay đổi lần thứ 5 ngày 14/10/2015, cấp bởi Sở KHĐT thành phố Hồ Chí Minh.",
+    "term": "Điều khoản",
+    "termOfUs": "Điều khoản sử dụng",
+    "paymentPolicy": "Chính sách thanh toán",
+    "privacyPolicy": "Chính sách bảo mật",
+    "FAQ": "Câu hỏi thường gặp",
+    "customService": "Chăm sóc khách hàng",
+    "workingHours": "Giờ làm việc",
+    "emailSup": "Email hỗ trợ",
+    "followsUs": "Kết nối với chúng tôi"
+  },
+  "home": {
+    "nowShowing": "Đang Chiếu",
+    "comingSoon": "Sắp Chiếu",
+    "booking": "Đặt Vé",
+    "detail": "Chi Tiết",
+    "viewMore": "Xem thêm",
+    "promotionInformation": "Thông tin khuyến mại",
+    "genre": "Thể Loại",
+    "runningTime": "Thời lượng",
+    "releaseDate": "Ngày Khởi Chiếu",
+    "minutes": "phút"
+  },
+  "auth": {
+    "password": "Mật Khẩu",
+    "name": "Tên",
+    "phone": "Số Điện Thoại",
+    "region": "Địa Chỉ",
+    "dateOfBirth": "Ngày Sinh",
+    "gender": "Giới Tính",
+    "male": "Nam",
+    "female": "Nữ",
+    "register": "Đăng Ký",
+    "editAccount": "Sửa Tài Khoản",
+    "newPassword": "Mật Khẩu Mới",
+    "newName": "Tên Mới",
+    "newPhone": "Số Điện Thoại Mới",
+    "newRegion": "Địa Chỉ Mới",
+    "newDateOfBirth": "Ngày sinh mới",
+    "newGender": "Giới Tính mới"
+  }
+}
