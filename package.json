@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
     "js-cookie": "^2.2.1",
+    "md5": "^2.3.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -22,7 +23,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "set port=4200 && react-scripts start",
+    "start": "cross-env PORT=4200 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "json-server": "^0.16.1",
     "json-server-auth": "^2.0.2"
   }

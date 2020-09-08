@@ -44,3 +44,6 @@ You will also see any lint errors in the console.
 
 ### React-toastify
     - yarn add react-toastify
+
+### Md5
+    - yarn add md5

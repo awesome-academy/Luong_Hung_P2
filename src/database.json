@@ -2,23 +2,352 @@
   "users": [
     {
       "email": "admin@admin",
-      "password": "$2a$10$WWWnGW13.EyM1lOqel4bTuwZBb43.GBSCLA556SkQaeXUIRPcwOqW",
-      "name": "React JS",
+      "password": "$2a$10$c4ArIcBpVrtqKa/21L4quOPh3lheRA6d.ZOcURGH7.xozH/czobv6",
+      "name": "admin",
       "phone": "0972093127",
-      "region": "hanoi",
+      "region": "Hà Nội",
       "birth": "1998-11-27",
       "gender": "Male",
+      "avatar": "http://gravatar.com/avatar/a3175a452c7a8fea80c62a198a40f6c9?d=identicon",
+      "ngayTao": 1599289521812,
       "id": 1
     },
     {
       "email": "ngothihuong@gmail.com",
-      "password": "$2a$10$ftf2u8AgD6cJ.WVH.ZZzXuIEV9nvIh6UYfkAYAHlThp0YlV0U0p8W",
+      "password": "$2a$10$PjGomvAyD.RFaBc9nyMkpug1vigvifk3E5XnwkgRldfW9eI6CX/Ke",
       "name": "Ngô Thị Hương",
       "phone": "0972093127",
       "region": "Thái Bình",
       "birth": "1998-05-29",
       "gender": "Female",
+      "avatar": "http://gravatar.com/avatar/1de9d8681a3a3311fe6e9f18500ecbfc?d=identicon",
+      "ngayTao": 1599370572449,
       "id": 2
+    },
+    {
+      "email": "hiep@gmail.com",
+      "password": "$2a$10$pwR3UpYrTdrzCdcIrsJYwuvX/kVqwcT5fTqOt/OPlZcsCaWSPe5ay",
+      "name": "",
+      "phone": "",
+      "region": "",
+      "birth": "",
+      "gender": "Male",
+      "avatar": "http://gravatar.com/avatar/5175a6a393b63c32f25322a30a11b322?d=identicon",
+      "ngayTao": 1599371767702,
+      "id": 3
+    }
+  ],
+  "sliderbars": [
+    {
+      "id": 1,
+      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner1.jpg"
+    },
+    {
+      "id": 2,
+      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner2.jpg"
+    },
+    {
+      "id": 3,
+      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner3.jpg"
+    },
+    {
+      "id": 4,
+      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner4.jpg"
+    },
+    {
+      "id": 5,
+      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner5.jpg"
+    }
+  ],
+  "movies": [
+    {
+      "tenPhim": "Ký Sinh Trùng - Parasite",
+      "soPhut": 132,
+      "ngayKhoiChieu": 1564531200000,
+      "theLoai": "tâm lý, xã hội",
+      "trangThai": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "trailer": "cJcj5B8hEto",
+      "diemIMDB": 8.6,
+      "doTuoi": 18,
+      "dinhDang": "2D",
+      "daoDien": "Bong Joon Ho",
+      "dienVien": "",
+      "quocGia": "Hàn Quốc",
+      "moTa": "Ký Sinh Trùng chứa đựng tiếng cười, nỗi buồn và cả bi kịch của xã hội loài người.” Về cái tên đặc biệt mang màu sắc kinh dị, Bong Joon Ho cho biết Ký Sinh Trùng chỉ là phép ẩn dụ mang nhiều tầng ý nghĩa rộng lớn, và ông hy vọng phim có thể khơi gợi lên những suy nghĩ khác nhau của khán giả.",
+      "id": 2
+    },
+    {
+      "tenPhim": "Tay Đua Huyền Thoại - Trading Paint",
+      "soPhut": 92,
+      "ngayKhoiChieu": 1564963200000,
+      "theLoai": "hành động, gia đình",
+      "trangThai": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/tay-dua-huyen-thoai-trading-paint-15617148423517_220x310.png",
+      "trailer": "T3dJGSQBeiE",
+      "diemIMDB": 4.5,
+      "doTuoi": 16,
+      "dinhDang": "2D",
+      "daoDien": "Karzan Kader",
+      "dienVien": "John Travolta",
+      "quocGia": "Mỹ",
+      "moTa": "Một huyền thoại đua xe cổ bị lôi kéo trở lại đường đua bẩn thỉu khi con trai ông, một tay đua đầy tham vọng, gia nhập một đội đua đối thủ, gây ra cuộc cạnh tranh khốc liệt và nguy hiểm giữa cha và con trai.",
+      "id": 3
+    },
+    {
+      "tenPhim": "Annabelle: Ác Quỷ Trở Về - Annabelle Comes Home",
+      "soPhut": 106,
+      "ngayKhoiChieu": 1564444800000,
+      "theLoai": "kinh dị",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/annabelle-ac-quy-tro-ve-annabelle-comes-home-c18-15601418686089_220x310.jpg",
+      "trailer": "Rm-jr2XHr1M",
+      "diemIMDB": 6.4,
+      "doTuoi": 18,
+      "dinhDang": "2D",
+      "daoDien": "Gary Dauberman",
+      "dienVien": "Charlotte Vega, Patrick Wilson",
+      "quocGia": "Mỹ",
+      "moTa": "Trong lúc Ed và Lorraine Warren vắng nhà, búp bê quỷ ám Annabelle đã phá vỡ phong ấn và thao túng các đồ vật tà ma ở phòng trưng bày. Mục tiêu tấn công của chúng là cô con gái nhỏ Judy 10 tuổi của hai vợ chồng. Cùng với cô giữ trẻ và một người bạn, Judy phải tìm cách chống trả các thế lực ác quỷ trước khi cha mẹ cô bé về “dẹp loạn”. ",
+      "id": 4
+    },
+    {
+      "tenPhim": "Câu Chuyện Đồ Chơi 4 - Toy Story 4",
+      "soPhut": 100,
+      "ngayKhoiChieu": 1564963200000,
+      "theLoai": "hoạt hình, phiêu lưu",
+      "trangThai": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/cau-chuyen-do-choi-4-toy-story-4-15591052666530_220x310.jpg",
+      "trailer": "KWB862qBC3U",
+      "diemIMDB": 8.3,
+      "doTuoi": 13,
+      "dinhDang": "2D/3D",
+      "daoDien": "Josh Cooley",
+      "dienVien": "Tom Hanks",
+      "quocGia": "Mỹ",
+      "moTa": "Chàng cao bồi Woody và người bạn thân chí cốt Buzz Lightyear bước vào cuộc phiêu lưu tìm kiếm cô nàng chăn cừu Bo Peep đã mất tích từ phần phim trước. Toy Story 4 sẽ mang hơi hướng của một phim lãng mạn với chuyện tình của Woody và Bo Peep.",
+      "id": 5
+    },
+    {
+      "tenPhim": "Đặc Vụ Áo Đen: Sứ Mệnh Toàn Cầu - Men In Black:",
+      "soPhut": 114,
+      "ngayKhoiChieu": 1564876800000,
+      "theLoai": "hành động, hài, phiêu lưu",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dac-vu-ao-den-su-menh-toan-cau-men-in-black-international-15589555411801_220x310.jpg",
+      "trailer": "_pE5hb8B3Sc",
+      "diemIMDB": 5.7,
+      "doTuoi": 13,
+      "dinhDang": "2D",
+      "daoDien": "F. Gary Gray",
+      "dienVien": "Rebecca Ferguson, Liam Neeson, Chris Hemsworth",
+      "quocGia": "Mỹ",
+      "moTa": "Bấy lâu nay, Đặc vụ Áo Đen luôn là những người hùng thầm lặng “ngầu” nhất, bảo vệ Trái Đất khỏi những hiểm họa xấu xa ngoài hành tinh. Trong cuộc phiêu lưu mới này, họ phải đối mặt với mối đe dọa mang tính toàn cầu lớn nhất từ trước đến giờ: truy tìm điệp viên hai mang ẩn mình trong tổ chức Men In Black.",
+      "id": 6
+    },
+    {
+      "tenPhim": "Vương Quốc Xe Đạp - Bikes",
+      "soPhut": 92,
+      "ngayKhoiChieu": 1564790400000,
+      "theLoai": "hoạt hình, phiêu lưu",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/vuong-quoc-xe-dap-bikes-15602370639045_220x310.jpg",
+      "trailer": "blVLooBK390",
+      "diemIMDB": 4.1,
+      "doTuoi": 13,
+      "dinhDang": "2D",
+      "daoDien": "Manuel J. García",
+      "dienVien": " ",
+      "quocGia": "Mỹ",
+      "moTa": "Được bao quanh bởi núi rừng bát ngát cùng những dòng suối chảy róc rách, Vương Quốc Xe Đạp là một thị trấn trong lành và rực rỡ màu sắc. Cuộc sống của những cư dân xe đạp ở đây vô cùng bình yên, cho đến một ngày động cơ xăng xuất hiện và mang đến mối đe doạ môi trường…. Chuyến phiêu lưu đáng yêu của những cô cậu xe đạp sẽ mang đến những giây phút  giải trí vui vẻ cho các bé và gia đình.",
+      "id": 7
+    },
+    {
+      "tenPhim": "Định Mệnh Trong Mắt Anh - Fortuna's Eye",
+      "soPhut": 110,
+      "ngayKhoiChieu": 1562889600000,
+      "theLoai": "hành động, kịch tính",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/dinh-menh-trong-mat-anh-fortuna-s-eye-15624311374199_220x310.jpg",
+      "trailer": "S_BGJqNCpU4",
+      "diemIMDB": 5.6,
+      "doTuoi": 16,
+      "dinhDang": "2D",
+      "daoDien": "Takahiro Miki",
+      "dienVien": " ",
+      "quocGia": "Nhật Bản",
+      "moTa": "Định Mệnh Trong Mắt Anh kể về Shinichiro Kiyama (Ryunosuke Kamiki) – chàng trai đã mất gia đình trong một tai nạn máy bay từ khi còn nhỏ. Cuộc sống của Shinichiro thay đổi hoàn toàn kể từ ngày anh nhận ra mình sở hữu “con mắt của Fortuna”. Anh tình cờ gặp Aoi Kiryu (Kasumi Arimura) – một cô gái rạng rỡ và tràn đầy tự tin. Cuộc sống cô độc của Shinichiro bắt đầu được tô điểm bởi những sắc màu mới mẻ. Hai người cảm mến nhau và cùng trải qua những tháng ngày hạnh phúc. Nhưng đột nhiên, Shinichiro phát hiện anh có thể nhìn xuyên thấu qua Aoi. Shinichiro sẽ làm gì khi cái giá để cứu người anh yêu thương nhất lại là sinh mạng của chính mình?",
+      "id": 16
+    },
+    {
+      "tenPhim": "Lời Nguyền Con Đầm Bích: Ác Quỷ Trong Gương - Queen of Spades: Through the Looking Glass",
+      "soPhut": 100,
+      "ngayKhoiChieu": 1562889600000,
+      "theLoai": "kinh dị",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/loi-nguyen-con-dam-bich-ac-quy-trong-guong-queen-of-spades-through-the-looking-glass-c16-15619725262782_220x310.jpg",
+      "trailer": "gBfvZYpq4vM",
+      "diemIMDB": 5.1,
+      "doTuoi": 18,
+      "dinhDang": "2D",
+      "daoDien": "Aleksandr Domogarov",
+      "dienVien": " ",
+      "quocGia": "Nga",
+      "moTa": "Truyền thuyết kể rằng, bất kỳ chiếc gương nào cũng có thể mở ra một cánh cổng dẫn đến thế giới của người chết, thông qua nghi lễ triệu hồi ác phụ Đầm Bích. Một nhóm học sinh đã phát hiện ra tấm gương ma quái ngay bên trong ngôi trường nội trú lâu đời của mình. Họ vô tình đọc một câu thần chú cổ xưa mà không biết rằng cái giá phải trả là linh hồn chính mình.",
+      "id": 17
+    },
+    {
+      "tenPhim": "Step Up 6: Vũ Điệu Đường Phố - Step Up: Year Of The Dance",
+      "soPhut": 100,
+      "ngayKhoiChieu": 1563494400000,
+      "theLoai": "âm nhạc, tình cảm",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/step-up-6-vu-dieu-duong-pho-step-up-year-of-the-dance-c16-15621420671581_220x310.jpg",
+      "trailer": "Fk9U2PRSWBM",
+      "diemIMDB": 4.2,
+      "doTuoi": 16,
+      "dinhDang": "2D",
+      "daoDien": "Ron Yuan",
+      "dienVien": " ",
+      "quocGia": " ",
+      "moTa": "Những màn vũ đạo nóng bỏng vô cùng đỉnh cao chính thức trở lại trong mùa hè năm nay. Bước nhảy điêu luyện cực chất, âm nhạc bắt tai cực đỉnh cộng hưởng dàn diễn viên trai xinh gái đẹp mãn nhãn hứa hẹn sẽ bùng nổ những tín đồ mê phim.",
+      "id": 18
+    },
+    {
+      "tenPhim": "Vòng Luân Hồi: Sadako",
+      "soPhut": 100,
+      "ngayKhoiChieu": 1563494400000,
+      "theLoai": "kinh dị",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/vong-luan-hoi-sadako-c18-15620622370416_220x310.jpg",
+      "trailer": "7s_CIBRMZCE",
+      "diemIMDB": 5.6,
+      "doTuoi": 18,
+      "dinhDang": "2D",
+      "daoDien": "Hideo Nakata",
+      "dienVien": " ",
+      "quocGia": "Nhật Bản ",
+      "moTa": "Phần tiếp theo của bộ phim ma kinh dị, khởi nguồn cho dòng phim kinh dị cả thế giới. Ma nữ Sadako chui lên từ miệng giếng mang đến nỗi khiếp sợ cho khán giả.",
+      "id": 19
+    },
+    {
+      "tenPhim": "Vua Sử Tử - The Lion King",
+      "soPhut": 118,
+      "ngayKhoiChieu": 1563494400000,
+      "theLoai": "hoạt hình, phiêu lưu",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/02/vua-su-tu-the-lion-king-15512514519540_220x310.jpg",
+      "trailer": "oQhLLxYgACo",
+      "diemIMDB": 7.6,
+      "doTuoi": 13,
+      "dinhDang": "2D",
+      "daoDien": "Jon Favreau",
+      "dienVien": "Donald Glover, Beyoncé Knowles, Chiwetel Ejiofor, Seth Rogen ",
+      "quocGia": "Mỹ",
+      "moTa": "Phiên bản live-action của Vua Sư Tử huyền thoại.",
+      "id": 20
+    },
+    {
+      "tenPhim": "Diệp Vấn 4 - Ip Man 4",
+      "soPhut": 120,
+      "ngayKhoiChieu": 1564099200000,
+      "theLoai": "võ thuật",
+      "trangThai": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/diep-van-4-ip-man-4-15586040278365_220x310.jpg",
+      "trailer": "hZwDIzVXKmE",
+      "diemIMDB": 0,
+      "doTuoi": 13,
+      "dinhDang": "2D",
+      "daoDien": "Wilson Yip",
+      "dienVien": "Chung Tử Đơn",
+      "quocGia": "Trung Quốc",
+      "moTa": "Phần tiếp theo về Diệp Vấn.",
+      "id": 21
+    },
+    {
+      "tenPhim": "Fast & Furious: Hobbs & Shaw",
+      "soPhut": 110,
+      "ngayKhoiChieu": 1564704000000,
+      "theLoai": "hành động, phiêu lưu, kịch tính",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/fast-furious-hobbs-shaw-15609308771747_220x310.jpg",
+      "trailer": "vwirX56fhsI",
+      "diemIMDB": 0,
+      "doTuoi": 16,
+      "dinhDang": "2D",
+      "daoDien": "David Leitch",
+      "dienVien": "Dwayne Johnson, Jason Statham",
+      "quocGia": "Mỹ",
+      "moTa": "Phần ngoại truyện của hai nhân vật được fan yêu thích từ loạt phim đình đám Fast & Furious: Luke Hobbs (The Rock) và Deckard Shaw (Jason Statham). Hai anh chàng thích đấu khẩu luôn mồm này sẽ bắt tay hợp tác trong một phi vụ nghẹt thở.",
+      "id": 22
+    },
+    {
+      "tenPhim": "The Invincible Dragon",
+      "soPhut": 110,
+      "ngayKhoiChieu": 1564704000000,
+      "theLoai": "hành động",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/the-invincible-dragon-15613652319315_220x310.jpg",
+      "trailer": "Vw3iyW-dxNo",
+      "diemIMDB": 3.6,
+      "doTuoi": 16,
+      "dinhDang": "2D",
+      "daoDien": "Fruit Chan",
+      "dienVien": " ",
+      "quocGia": "Hồng Kông",
+      "moTa": "Một cao nhân với hình xăm rồng liên tục giúp sức cho cảnh sát phá vỡ những vụ án lắt léo. Anh dần trở thành một người được xã hội săn đón và ngưỡng mộ. Chính sự đón nhận đó đã vô tình lôi anh vào một vụ án nghiêm trọng hơn bao giờ hết.",
+      "id": 23
+    },
+    {
+      "tenPhim": "Dora và Thành Phố Vàng Mất Tích - Dora & The Lost City Of Gold",
+      "soPhut": 110,
+      "ngayKhoiChieu": 1564704000000,
+      "theLoai": "gia đình, phiêu lưu",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dora-va-thanh-pho-vang-mat-tich-dora-the-lost-city-of-gold-15587728023764_220x310.jpg",
+      "trailer": "TfTYFVFu-fQ",
+      "diemIMDB": 4,
+      "doTuoi": 13,
+      "dinhDang": "2D",
+      "daoDien": "James Bobin",
+      "dienVien": " Michael Peña, Benicio Del Toro, Isabela Mone",
+      "quocGia": "Hồng Kông",
+      "moTa": "Bộ phim live-action đầu tiên về thương hiệu cô bé tóc ngắn ưa phiêu lưu",
+      "id": 24
+    }
+  ],
+  "promotion": [
+    {
+      "id": 1,
+      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion1.jpg"
+    },
+    {
+      "id": 2,
+      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion2.jpg"
+    },
+    {
+      "id": 3,
+      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion3.jpg"
+    },
+    {
+      "id": 4,
+      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion4.jpg"
+    },
+    {
+      "id": 5,
+      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion5.jpg"
+    },
+    {
+      "id": 6,
+      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion6.jpg"
+    },
+    {
+      "id": 7,
+      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion7.jpg"
+    },
+    {
+      "id": 8,
+      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion8.jpg"
     }
   ]
 }

@@ -20,7 +20,33 @@
         display: flex;
 
         &__item {
+            position: relative;
             margin-right: 15px;
+        }
+
+        .dropdown {
+            opacity: 0;
+            background-color: rgb(34, 34, 34);
+            font-size: 14px;
+            color: #fff;
+            white-space: nowrap;
+            padding: 4px 10px;
+            border-radius: 5px;
+            z-index: 99;
+            position: absolute;
+            top: 30px;
+            &__item {
+                cursor: pointer;
+                margin-bottom: 5px;
+            }
+
+            &__item:hover {
+                opacity: 0.7;
+            }
+        }
+
+        &__item.movies:hover .dropdown {
+            opacity: 1;
         }
 
         a {
@@ -34,9 +60,6 @@
     &__link,
     label {
         color: $colorWhite;
-    }
-    &__link:hover {
-        opacity: 0.8;
     }
 
     &__login-register {
@@ -55,7 +78,7 @@
         }
 
         .item:hover {
-            background-color: #3737a7;
+            background-color: $colorGreen;
         }
     }
 
@@ -95,7 +118,7 @@
     .logo-cenima {
         font-size: 2rem;
         font-weight: bold;
-        color: #89c441;
+        color: $colorGreen;
 
         img {
             height: 100%;
@@ -111,6 +134,7 @@
 .footer {
     background-color: $colorBlack;
     color: $colorWhite;
+    margin-top: 60px;
     padding: 40px 0px 20px;
 
     a {
