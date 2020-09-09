@@ -47,3 +47,9 @@ You will also see any lint errors in the console.
 
 ### Md5
     - yarn add md5
+
+### I18next
+    - yarn add i18next
+
+### React-i18next
+    - yarn add react-i18next

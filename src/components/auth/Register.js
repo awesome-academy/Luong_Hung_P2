@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as authActions from "../../actions/auth";
-import { useDispatch } from "react-redux";
-import '../../sass/register.scss'
+import { useDispatch, useSelector } from "react-redux";
+import "../../sass/register.scss";
 import { useTranslation } from "react-i18next";
 
 const Register = (props) => {
@@ -14,6 +14,7 @@ const Register = (props) => {
   const [gender, setGender] = useState("Male");
   const dispatch = useDispatch();
   const { t } = useTranslation("common");
+  const currentUser = useSelector((state) => state.currentUser.currentUser);
 
   const handleChange = (event) => {
     switch (event.target.name) {
@@ -49,73 +50,78 @@ const Register = (props) => {
         gender,
       })
     );
-    props.history.push("/");
+  };
+
+  const checkoutUser = () => {
+    if (currentUser) {
+      props.history.push("/");
+    }
   };
 
   return (
     <form className="register" onSubmit={handleSubmit}>
-      <label htmlFor='name'>{t("auth.name")}</label>
+      <label htmlFor="name">{t("auth.name")}</label>
       <input
-        name='name'
+        name="name"
         placeholder={t("auth.name")}
-        type='text'
-        id='name'
+        type="text"
+        id="name"
         value={name}
         onChange={handleChange}
       />
       <br />
 
-      <label htmlFor='phone'>{t("auth.phone")}</label>
+      <label htmlFor="phone">{t("auth.phone")}</label>
       <input
-        name='phone'
+        name="phone"
         placeholder={t("auth.phone")}
         value={phone}
-        type='text'
-        id='phone'
+        type="text"
+        id="phone"
         onChange={handleChange}
       />
       <br />
 
-      <label htmlFor='email'>Email</label>
+      <label htmlFor="email">Email</label>
       <input
-        name='email'
-        placeholder='Email'
+        name="email"
+        placeholder="Email"
         value={email}
-        type='text'
-        id='email'
+        type="text"
+        id="email"
         onChange={handleChange}
       />
       <br />
 
-      <label htmlFor='password'>{t("auth.password")}</label>
+      <label htmlFor="password">{t("auth.password")}</label>
       <input
-        type='password'
-        name='password'
+        type="password"
+        name="password"
         placeholder={t("auth.password")}
-        id='password'
+        id="password"
         value={password}
         onChange={handleChange}
       />
       <br />
 
-      <label htmlFor='region'>{t("auth.region")}</label>
+      <label htmlFor="region">{t("auth.region")}</label>
       <input
-        name='region'
+        name="region"
         placeholder={t("auth.region")}
         value={region}
-        type='text'
-        id='region'
+        type="text"
+        id="region"
         onChange={handleChange}
       />
       <br />
 
-      <label htmlFor='birth'>{t("auth.dateOfBirth")}</label>
+      <label htmlFor="birth">{t("auth.dateOfBirth")}</label>
       <input
-        name='birth'
+        name="birth"
         placeholder={t("auth.dateOfBirth")}
         value={birth}
-        type='date'
-        id='birth'
+        type="date"
+        id="birth"
         onChange={handleChange}
       />
       <br />
@@ -123,27 +129,30 @@ const Register = (props) => {
       <label htmlFor="Male">{t("auth.gender")}</label>
       <label htmlFor="Male" className="gender">
         <input
-          name='gender'
-          type='radio'
-          value='Male'
+          name="gender"
+          type="radio"
+          value="Male"
           id="Male"
           checked={gender === "Male"}
           onChange={handleChange}
-        /> {t("auth.male")}
+        />{" "}
+        {t("auth.male")}
       </label>
       <br />
       <label htmlFor="Female" className="gender">
         <input
-          name='gender'
-          type='radio'
-          value='Female'
+          name="gender"
+          type="radio"
+          value="Female"
           id="Female"
           onChange={handleChange}
-        /> {t("auth.female")}
+        />{" "}
+        {t("auth.female")}
       </label>
       <br />
 
-      <input type='submit' value={t("auth.register")} />
+      <input type="submit" value={t("auth.register")} />
+      {currentUser ? checkoutUser() : ""}
     </form>
   );
 };

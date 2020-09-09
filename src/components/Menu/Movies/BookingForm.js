@@ -3,10 +3,12 @@ import { useSelector, useDispatch } from 'react-redux'
 import * as bookingTimeAction from "../../../actions/bookingTime";
 import * as theaterAction from '../../../actions/theaterAction'
 import * as branchAction from '../../../actions/branchs'
-function BookingForm() {
+function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
     const [isActiveType, setIsActiveType] = useState(0)
+    const [isOpenModal, setIsOpenModal] = useState(isOpenModal2)
     const [isActiveBranch, setIsActiveBranch] = useState(0)
     const [isActiveDate, setIsActiveDate] = useState(0)
+    const [newForm, setNewForm] = useState([])
     const sessions = useSelector(state => state.bookingTimeReducer.data)
     const branchs = useSelector(state => state.branchReducer.data)
     const theaters = useSelector(state => state.theaterReducer.data)
@@ -24,12 +26,29 @@ function BookingForm() {
         dispatch(branchAction.branchRequest())
     }, [dispatch])
 
-    const showSession = (session) => {
-        return (
-            session.suatChieu.map((suat, i) =>
-                <span className="booking-form__time__item" key={i}>{suat} PM</span>)
-        )
+    useEffect(() => {
+        setIsOpenModal(isOpenModal2)
+    }, [isOpenModal2])
+
+    useEffect(() => {
+        if (theaters !== null && branchs !== null && sessions !== null) {
+            const result = [...branchs].filter(() => {
+                if (branchs.theaterId === theaters.id) {
+                    return (
+                        branchs.theaterId === theaters.id
+                    )
+                }
+            })
+            setNewForm(() => [...result])
+        }
+
+    }, [branchs, theaters, setNewForm])
+
+
+    const handleModal = () => {
+        passIsOpen(0)
     }
+
 
     const handleActiveType = (id) => {
         setIsActiveType(id)
@@ -42,29 +61,6 @@ function BookingForm() {
     const handleActiveDate = (id) => {
         setIsActiveDate(id)
     }
-
-
-
-    const showTheater = (session) => {
-        let result = []
-
-        theaters && theaters.forEach((theater) => {
-            if (session.theaterId === theater.id) {
-                return result.push(
-                    <div className="booking-form__time__name" key={theater.id}>
-                        {theater.tenRap}
-                    </div>)
-            }
-
-        })
-
-        return result
-    }
-
-    // let tomorow = today.setDate(today.getDate() + 1)
-    // let abc = new Date(tomorow)
-
-
 
 
     const bookingFormDate = () => {
@@ -91,69 +87,126 @@ function BookingForm() {
                 >{dateToday}</span>
             )
         }
-        console.log("dateToday", result)
         return result
-
     }
 
 
-    return (
-        <div className="booking-form">
-            <div className="booking-form__inner">
 
-                <div className="booking-form__date row">
-                    {bookingFormDate()}
-                </div>
+    const showTime = (movieNow, theater) => {
+        let result = []
 
-                <div className="booking-form__city row">
-                    {
-                        branchs && branchs.map((branch, i) =>
-                            <span
-                                className={isActiveBranch === branch.id ?
-                                    "booking-form__city__item active" :
-                                    "booking-form__city__item"}
-                                onClick={() => handleActiveBranch(branch.id)}
-                                key={i}
+        sessions && sessions.forEach((session) => {
+            console.log(" session.movieId", session.movieId
+                + "  movieNow.id", movieNow.id)
+            if (movieNow.id === session.movieId &&
+                session.theaterId === theater.id) {
+                return result.push(
+                    mapSuatChieu(session)
+                )
+            }
+        })
+        return result
+    }
 
-                            >{branch.ten}</span>
-                        )
-                    }
-                    {/* <span className="booking-form__city__item active">Ho Chi Minh</span>
-                    <span className="booking-form__city__item">Ha noi</span>
-                    <span className="booking-form__city__item">Da Nang</span> */}
-                </div>
+    const mapSuatChieu = (session) => {
+        return session.suatChieu.map((suat, i) =>
+            < span className="booking-form__time__item" key={i}>{suat} PM</span >
+        )
+    }
 
-                <div className="booking-form__type row">
-                    {
-                        sessions && sessions.map((session, i) =>
+    const showTheater = (movieNow) => {
+        let result = []
 
-                            <span
-                                className={isActiveType === session.id ?
-                                    "booking-form__type__item active" :
-                                    "booking-form__type__item"}
-                                onClick={() => handleActiveType(session.id)}
-                                key={i}
-                            >
-                                {session.dinhDangChieu}
-                            </span>
+        theaters && theaters.forEach((theater) => {
+            if (theater.branchId === isActiveBranch) {
+                return result.push(
+                    <div className="booking-form__time">
+                        <div
+                            className="booking-form__time__name"
+                            key={theater.id}
+                        >
+                            {theater.tenRap}
 
-                        )
-                    }
-                </div>
-
-                {
-                    sessions && sessions.map((session, i) =>
-                        <div className="booking-form__time" key={i}>
-                            {showTheater(session)}
-                            <div className="row">
-                                {showSession(session)}
-
-                            </div>
                         </div>
-                    )
-                }
+                        <div className="row">
+                            {showTime(theater, movieNow)}
+                        </div>
+                    </div>)
+            }
+        })
 
+        return result
+    }
 
+    const showType = (movieNow) => {
+        let result = []
+
+        sessions && sessions.forEach((session, i) => {
+            if (sessions) {
+                return result.push(<span
+                    className={isActiveType === session.id ?
+                        "booking-form__type__item active" :
+                        "booking-form__type__item"}
+                    onClick={() => handleActiveType(session.id)}
+                    key={i}
+                >
+                    {movieNow.dinhDang}
+                </span>)
+            }
+        })
+
+        return result
+    }
+
+    const showBranch = () => {
+        return (
+            newForm && newForm.map((branch, i) =>
+                <span
+                    className={isActiveBranch === branch.id ?
+                        "booking-form__city__item active" :
+                        "booking-form__city__item"}
+                    onClick={() => handleActiveBranch(branch.id)}
+                    key={i}
+
+                >{branch.ten}</span>
+            )
+        )
+    }
+
+    const showMovieForm = (movieNow) => {
+
+        if (movieNow !== null) {
+            return (
+                <div className="booking-form__inner">
+
+                    <div className="booking-form__date row">
+                        {bookingFormDate(movieNow)}
+                    </div>
+
+                    <div className="booking-form__city row">
+                        {showBranch(movieNow)}
+                    </div>
+
+                    <div className="booking-form__type row">
+                        {showType(movieNow)[0]}
+                    </div>
+
+                    {showTheater(movieNow)}
+
+                </div>
+
+            )
+        }
+    }
+
+    return (
+        <div className={!isOpenModal ?
+            "booking-form-container none" :
+            "booking-form-container"}>
+            <div className="background-modal"
+                onClick={handleModal}></div>
+            <div className="booking-form">
+                {showMovieForm(movieNow)}
             </div>
         </div>
     )

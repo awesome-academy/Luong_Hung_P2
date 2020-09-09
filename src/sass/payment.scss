@@ -1,6 +1,6 @@
 @import "./mixins.scss";
 
-.bookingSeats {
+.payment {
   margin: 118px 0;
   &__title {
     display: flex;
@@ -44,37 +44,43 @@
       }
     }
   }
-  &__screen {
-    @include customFont(20px, "roboto");
-    text-align: center;
-    border: 1px solid $colorBorder;
-    border-radius: 10px;
-    padding: 30px 0;
+  &__main {
     width: 70%;
-    margin: auto;
-  }
-  &__seats {
-    width: 700px;
-    margin: 30px auto;
-    border: 1px solid $colorBorder;
-    border-radius: 10px;
-    justify-content: space-between;
-    &__item {
-      margin: 9px;
-      border: 1px solid $colorGreen;
-      border-radius: 5px;
-      padding: 10px;
-      cursor: pointer;
-      transition: 0.3s;
+    margin: 40px auto;
+    &__title {
+      text-align: center;
+      @include customFont(22px , "roboto");
+      font-weight: bold;
     }
-    &__item:hover {
-      background: $colorGreen;
-      transition: 0.3s;
-    }
-    .booked {
-      background: $colorRed;
-      border: 1px solid $colorRed;
-      cursor: default;
+    &__content {
+      width: 70%;
+      margin: 30px auto;
+      .wrapper {
+        border: 1px solid $colorBorder;
+        padding: 20px;
+        border-radius: 10px;
+        .pay {
+          display: flex;
+          justify-content: space-between;
+          .pay__content {
+            margin: 10px;
+          }
+        }
+        .total {
+          text-align: center;
+          margin: 10px;
+          padding-top: 20px;
+          border-top: 1px solid $colorBorder;
+          color: $colorRed;
+        }
+      }
+      form {
+        width: 70%;
+        margin: 30px auto;
+        label {
+          margin-left: 10px;
+        }
+      }
     }
   }
   &__total {
@@ -88,17 +94,33 @@
     background: $colorGray;
     color: $colorWhite;
     .total {
-      margin-left: 20px;
-      b {
-        color: $colorGreen;
+      margin-right: 20px;
+      &__item {
+        padding: 10px 10px;
+        border: 1px solid $colorWhite;
+        color: $colorGray;
+        background: $colorWhite;
+        border-radius: 5px;
+        transition: 0.3s;
+        cursor: pointer;
+        b {
+          color: $colorGreen;
+        }
+      }
+      &__item:hover {
+        transition: 0.3s;
+        border: 1px solid $colorGreen;
+        color: $colorWhite;
+        background: $colorGreen;
       }
     }
-    .next {
-      margin-right: 20px;
+    .prev {
+      margin-left: 20px;
       cursor: pointer;
       transition: 0.3s;
+      margin-top: 10px;
     }
-    .next:hover {
+    .prev:hover {
       color: $colorGreen;
       transition: 0.3s;
     }

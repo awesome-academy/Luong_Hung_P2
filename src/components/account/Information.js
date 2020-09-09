@@ -15,9 +15,9 @@ const Information = (props) => {
   const showAccount = () => {
     let result = [];
     if (account) {
-      account.forEach((acc) => {
+      account.forEach((acc, i) => {
         return result.push(
-          <div className="information">
+          <div className="information" key={i}>
             <img
               src="http://gravatar.com/avatar/1de9d8681a3a3311fe6e9f18500ecbfc?d=identicon"
               alt="avatar"

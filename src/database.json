@@ -2,39 +2,27 @@
   "users": [
     {
       "email": "admin@admin",
-      "password": "$2a$10$c4ArIcBpVrtqKa/21L4quOPh3lheRA6d.ZOcURGH7.xozH/czobv6",
-      "name": "admin",
+      "password": "$2a$10$CaMuzBW.q1xeYjvmBY17eu62vbTyi2cntDSOA7ieYVbJdnA6q1oV6",
+      "name": " Phạm Việt Hưng",
       "phone": "0972093127",
       "region": "Hà Nội",
       "birth": "1998-11-27",
       "gender": "Male",
       "avatar": "http://gravatar.com/avatar/a3175a452c7a8fea80c62a198a40f6c9?d=identicon",
-      "ngayTao": 1599289521812,
-      "id": 1
-    },
-    {
-      "email": "ngothihuong@gmail.com",
-      "password": "$2a$10$PjGomvAyD.RFaBc9nyMkpug1vigvifk3E5XnwkgRldfW9eI6CX/Ke",
-      "name": "Ngô Thị Hương",
-      "phone": "0972093127",
-      "region": "Thái Bình",
-      "birth": "1998-05-29",
-      "gender": "Female",
-      "avatar": "http://gravatar.com/avatar/1de9d8681a3a3311fe6e9f18500ecbfc?d=identicon",
-      "ngayTao": 1599370572449,
-      "id": 2
+      "ngayTao": 1599624387081,
+      "id": 0
     },
     {
       "email": "hiep@gmail.com",
-      "password": "$2a$10$pwR3UpYrTdrzCdcIrsJYwuvX/kVqwcT5fTqOt/OPlZcsCaWSPe5ay",
-      "name": "",
-      "phone": "",
-      "region": "",
-      "birth": "",
+      "password": "$2a$10$xOjQcltKAzPI.ctdVsnHeulo42adF8YQZf6.Kqk/K5WJ2gKqOFImC",
+      "name": "Trần Văn Hiệp",
+      "phone": "0972093127",
+      "region": "Hà Nội",
+      "birth": "1998-11-27",
       "gender": "Male",
       "avatar": "http://gravatar.com/avatar/5175a6a393b63c32f25322a30a11b322?d=identicon",
-      "ngayTao": 1599371767702,
-      "id": 3
+      "ngayTao": 1599639805541,
+      "id": 1
     }
   ],
   "sliderbars": [
@@ -60,6 +48,23 @@
     }
   ],
   "movies": [
+    {
+      "tenPhim": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
+      "soPhut": 129,
+      "ngayKhoiChieu": 1565049600000,
+      "theLoai": "Hành động, Khoa học viễn tưởng",
+      "trangThai": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "trailer": "NxGiyMlB3Cw",
+      "diemIMDB": 8,
+      "doTuoi": 13,
+      "dinhDang": "2D/3D",
+      "daoDien": "Jon Watts",
+      "dienVien": "Cobie Smulders, Marisa Tomei, Jon Favreau, Samuel L. Jackson, Zendaya, Jake Gyllenhaal, Tom Holland",
+      "quocGia": "Mỹ",
+      "moTa": "Hậu chiến Vô Cực, Người Nhện Peter Parker và nhóm bạn thân cùng tham gia chuyến du lịch châu Âu của trường. Tuy nhiên, kế hoạch siêu anh hùng nghỉ phép của Peter nhanh chóng bị hủy bỏ sau khi cậu đồng ý giúp Nick Fury khám phá bí ẩn về những cuộc tấn công của nhóm kẻ thù mang sức mạnh nguyên tố đang tàn phá khắp lục địa.",
+      "id": 1
+    },
     {
       "tenPhim": "Ký Sinh Trùng - Parasite",
       "soPhut": 132,
@@ -99,7 +104,7 @@
       "soPhut": 106,
       "ngayKhoiChieu": 1564444800000,
       "theLoai": "kinh dị",
-      "trangThai": 0,
+      "trangThai": 1,
       "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/annabelle-ac-quy-tro-ve-annabelle-comes-home-c18-15601418686089_220x310.jpg",
       "trailer": "Rm-jr2XHr1M",
       "diemIMDB": 6.4,
@@ -133,7 +138,7 @@
       "soPhut": 114,
       "ngayKhoiChieu": 1564876800000,
       "theLoai": "hành động, hài, phiêu lưu",
-      "trangThai": 0,
+      "trangThai": 1,
       "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dac-vu-ao-den-su-menh-toan-cau-men-in-black-international-15589555411801_220x310.jpg",
       "trailer": "_pE5hb8B3Sc",
       "diemIMDB": 5.7,
@@ -150,7 +155,7 @@
       "soPhut": 92,
       "ngayKhoiChieu": 1564790400000,
       "theLoai": "hoạt hình, phiêu lưu",
-      "trangThai": 0,
+      "trangThai": 1,
       "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/vuong-quoc-xe-dap-bikes-15602370639045_220x310.jpg",
       "trailer": "blVLooBK390",
       "diemIMDB": 4.1,
@@ -161,6 +166,91 @@
       "quocGia": "Mỹ",
       "moTa": "Được bao quanh bởi núi rừng bát ngát cùng những dòng suối chảy róc rách, Vương Quốc Xe Đạp là một thị trấn trong lành và rực rỡ màu sắc. Cuộc sống của những cư dân xe đạp ở đây vô cùng bình yên, cho đến một ngày động cơ xăng xuất hiện và mang đến mối đe doạ môi trường…. Chuyến phiêu lưu đáng yêu của những cô cậu xe đạp sẽ mang đến những giây phút  giải trí vui vẻ cho các bé và gia đình.",
       "id": 7
+    },
+    {
+      "tenPhim": "HÙ! - BOO!",
+      "soPhut": 92,
+      "ngayKhoiChieu": 1564704000000,
+      "theLoai": "kinh dị",
+      "trangThai": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/hu-boo-c18-15603364608561_220x310.jpg",
+      "trailer": "_dt2Mn2Yy5I",
+      "diemIMDB": 4.1,
+      "doTuoi": 13,
+      "dinhDang": "2D",
+      "daoDien": "Luke Jaden",
+      "dienVien": " ",
+      "quocGia": "Mỹ",
+      "moTa": "Một gia đình tìm thấy túi quà với chữ 'BOO!' ở trước hiên nhà...Thoạt trông tưởng bình thường nhưng túi quà lại làm mọi chuyện trong nhà trở nên rối tung. Cậu con trai Caleb ( Jaden Piner ) khẳng định trong đó là một lời nguyền trong khi cha của cậu James ( Rob Zabrecky ) một con chiên ngoan đạo thì lại không tin vào ma quỷ và quyết định thiêu huỷ túi quà. Bà mẹ Elyse ( Jill Marie Jones ) cố gắng xoa dịu hai cha con, trong khi cô con gái Morgan ( Aurora Perrineau ) dửng dưng & coi toàn bộ những việc xảy ra như một trò đùa. Tiếp theo đó là hàng loạt điều kì lạ xảy ra: Caleb liên tục vẽ những bức tranh đầy máu me, cắt vụn thú nhồi bông, búp bê và cào cấu đôi mắt của các nhân vật truyện tranh, Morgan lại trở nên cáu gắt và sẵn sàng gây chiến với các thành viên khác khi bà Elyse thì bỗng dung liên tục sử dụng thuốc an thần. Liệu những chuyện xảy ra có liên quan gì đến túi quà bí ẩn kia hay không và thật sự những suy đóan của Caleb là chính xác?",
+      "id": 8
+    },
+    {
+      "tenPhim": "Vua Khủng Long: Phiêu Lưu Đến Vùng Núi Lửa - Dino King Journey to Fire Mountain",
+      "soPhut": 92,
+      "ngayKhoiChieu": 1564617600000,
+      "theLoai": "hoạt hình, phiêu lưu",
+      "trangThai": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/vua-khung-long-phieu-luu-den-vung-nui-lua-dino-king-journey-to-fire-mountain-15586033825820_220x310.jpg",
+      "trailer": "SjhiqW0AHsk",
+      "diemIMDB": 7.4,
+      "doTuoi": 13,
+      "dinhDang": "2D",
+      "daoDien": "Han Sang-Ho",
+      "dienVien": " ",
+      "quocGia": "Hàn Quốc",
+      "moTa": "Junior là một khủng long bạo chúa Taborsaurus con nhưng vô cùng yếu ớt và nhút nhát. Dino - cha của Junior lại rất khắt khe và không hài lòng với con mình. Một ngày nọ, Junior bị bọn khủng long raptor bắt cóc. Dino trên hành trình đi tìm con đã kết bạn với những loài khủng long khác. Trong khi đó, Junior cũng có thêm bạn mới, bắt đầu trưởng thành hơn và chờ đợi cha mình. Đến lúc tưởng như sắp tìm thấy nhau, nguy hiểm đến từ vùng núi lửa lại ập đến và đe dọa cả hai cha con. ",
+      "id": 9
+    },
+    {
+      "tenPhim": "Đẳng Cấp Thú Cưng 2 - The Secret Life of Pets 2",
+      "soPhut": 98,
+      "ngayKhoiChieu": 1564531200000,
+      "theLoai": "hoạt hình, hài hước",
+      "trangThai": 1,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dang-cap-thu-cung-2-the-secret-life-of-pets-2-15589461966995_220x310.jpg",
+      "trailer": "cc7qagjLwzU",
+      "diemIMDB": 6.6,
+      "doTuoi": 13,
+      "dinhDang": "2D",
+      "daoDien": "Chris Renaud",
+      "dienVien": " Harrison Ford, Patton Oswalt, Kevin Har",
+      "quocGia": "Mỹ",
+      "moTa": "Đẳng Cấp Thú Cưng 2 là câu chuyện về những gì diễn ra trong cuộc sống của thú cưng sau khi chủ của chúng đi làm hoặc đi học hàng ngày. Giám đốc điều hành và nhà sáng lập của hãng Illumination – Chris Meledandri và người cộng sự lâu năm Janet Healy sẽ sản xuất phần tiếp theo của thương hiệu hoạt hình đắt giá nhất nhì Hollywood này. Nhà biên kịch sáng giá Brian Lynch (Minions) và đạo diễn tài năng Chris Renaud (series Despicable Me, Dr. Seuss’ The Lorax) sẽ đảm nhận vai trò cầm trịch của dự án. ",
+      "id": 10
+    },
+    {
+      "tenPhim": "Kế Hoạch Đào Tẩu 3: Giải Cứu - Escape Plan: The Extractors",
+      "soPhut": 95,
+      "ngayKhoiChieu": 1562889600000,
+      "theLoai": "hành động",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/ke-hoach-dao-tau-3-giai-cuu-escape-plan-the-extractors-c18-15622464737620_220x310.jpg",
+      "trailer": "Vj2QAFIEZlc",
+      "diemIMDB": 4.4,
+      "doTuoi": 18,
+      "dinhDang": "3D",
+      "daoDien": "John Herzfeld",
+      "dienVien": " 50 Cent, Dave Bautista, Sylvester Stallone",
+      "quocGia": "Mỹ",
+      "moTa": "Chuyên gia an ninh Ray Breslin (Stallone) được thuê để giải cứu con gái của một nhà tài phiệt bị bắt cóc tại nhà tù bí ẩn mang tên Trạm Quỷ. Cộng sự của ông gồm có tay cung cấp vũ khí Trent (Dave Bautista) và hacker Hush (50 Cent). Sen Lo (Trương Tấn) - bạn trai của con tin cũng bất ngờ xuất hiện và đồng hành cùng nhóm trong cuộc giải cứu. Tuy nhiên, khi họ bước vào Trạm Quỷ cũng là lúc họ rơi vào chiếc bẫy chết người. Không những phải đối đầu với kẻ thù tàn bạo, nhóm còn phải chạy đua với thời gian để giải thoát các con tin khỏi tay tử thần.",
+      "id": 14
+    },
+    {
+      "tenPhim": "Đội Chống Tham Nhũng - P Storm",
+      "soPhut": 95,
+      "ngayKhoiChieu": 1562889600000,
+      "theLoai": "hành động, kịch tính",
+      "trangThai": 0,
+      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/doi-chong-tham-nhung-p-storm-15616946818132_220x310.jpg",
+      "trailer": "_BtyPxcaKT4",
+      "diemIMDB": 6,
+      "doTuoi": 18,
+      "dinhDang": "3D",
+      "daoDien": "David Lam",
+      "dienVien": "Lâm Phong, Cổ Thiên Lạc",
+      "quocGia": "Hồng Kông",
+      "moTa": "Phim kể về một gã cảnh sát đã nhận hối lộ 30 triệu đô la Hong Kong để giúp một kẻ giết người trong nhà tù sớm được trả tự do. Một cuộc điều tra đã được bắt đầu để tìm ra danh tính gã cảnh sát. Lục Chí Liêm (Cổ Thiên Lạc) vào tù giả làm phạm nhân để tiếp cận và tìm chứng cứ từ Tào Nguyên Nguyên (Lâm Phong) – thiếu gia ăn chơi khét tiếng đang bị giam giữ, còn đồng nghiệp Trình Đức Minh (Trịnh Gia Dĩnh) thì ở bên ngoài để tìm kiếm bằng chứng. Trong khoảng thời gian này, Lục Chí Liêm còn phải đối mặt với những kẻ từng bị anh vạch tội bỏ tù trước đây.",
+      "id": 15
     },
     {
       "tenPhim": "Định Mệnh Trong Mắt Anh - Fortuna's Eye",
@@ -263,57 +353,6 @@
       "quocGia": "Trung Quốc",
       "moTa": "Phần tiếp theo về Diệp Vấn.",
       "id": 21
-    },
-    {
-      "tenPhim": "Fast & Furious: Hobbs & Shaw",
-      "soPhut": 110,
-      "ngayKhoiChieu": 1564704000000,
-      "theLoai": "hành động, phiêu lưu, kịch tính",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/fast-furious-hobbs-shaw-15609308771747_220x310.jpg",
-      "trailer": "vwirX56fhsI",
-      "diemIMDB": 0,
-      "doTuoi": 16,
-      "dinhDang": "2D",
-      "daoDien": "David Leitch",
-      "dienVien": "Dwayne Johnson, Jason Statham",
-      "quocGia": "Mỹ",
-      "moTa": "Phần ngoại truyện của hai nhân vật được fan yêu thích từ loạt phim đình đám Fast & Furious: Luke Hobbs (The Rock) và Deckard Shaw (Jason Statham). Hai anh chàng thích đấu khẩu luôn mồm này sẽ bắt tay hợp tác trong một phi vụ nghẹt thở.",
-      "id": 22
-    },
-    {
-      "tenPhim": "The Invincible Dragon",
-      "soPhut": 110,
-      "ngayKhoiChieu": 1564704000000,
-      "theLoai": "hành động",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/the-invincible-dragon-15613652319315_220x310.jpg",
-      "trailer": "Vw3iyW-dxNo",
-      "diemIMDB": 3.6,
-      "doTuoi": 16,
-      "dinhDang": "2D",
-      "daoDien": "Fruit Chan",
-      "dienVien": " ",
-      "quocGia": "Hồng Kông",
-      "moTa": "Một cao nhân với hình xăm rồng liên tục giúp sức cho cảnh sát phá vỡ những vụ án lắt léo. Anh dần trở thành một người được xã hội săn đón và ngưỡng mộ. Chính sự đón nhận đó đã vô tình lôi anh vào một vụ án nghiêm trọng hơn bao giờ hết.",
-      "id": 23
-    },
-    {
-      "tenPhim": "Dora và Thành Phố Vàng Mất Tích - Dora & The Lost City Of Gold",
-      "soPhut": 110,
-      "ngayKhoiChieu": 1564704000000,
-      "theLoai": "gia đình, phiêu lưu",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dora-va-thanh-pho-vang-mat-tich-dora-the-lost-city-of-gold-15587728023764_220x310.jpg",
-      "trailer": "TfTYFVFu-fQ",
-      "diemIMDB": 4,
-      "doTuoi": 13,
-      "dinhDang": "2D",
-      "daoDien": "James Bobin",
-      "dienVien": " Michael Peña, Benicio Del Toro, Isabela Mone",
-      "quocGia": "Hồng Kông",
-      "moTa": "Bộ phim live-action đầu tiên về thương hiệu cô bé tóc ngắn ưa phiêu lưu",
-      "id": 24
     }
   ],
   "promotion": [
@@ -625,21 +664,39 @@
     },
     {
       "id": 3,
-      "tenRap": "Lotte a Cinema",
-      "branchId": 2,
+      "tenRap": "Lotte Skylake",
+      "branchId": 1,
       "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/e520781386bd5436e94d6e15e193a005.png"
     },
     {
+      "id": 4,
       "tenRap": "Lotte CineStar",
       "branchId": 2,
-      "hinhAnh": "https://i.imgur.com/0XnfUIg.png",
-      "id": 4
+      "hinhAnh": "https://i.imgur.com/0XnfUIg.png"
     },
     {
       "id": 5,
       "tenRap": "Lotte - Đống Đa",
-      "branchId": 3,
+      "branchId": 2,
       "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/9b240f96a233bb43203ee514a21a6004.png"
+    },
+    {
+      "id": 6,
+      "branchId": 2,
+      "tenRap": "BHD Star Cineplex - Phạm Hùng",
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-pham-hung-15379533093101.jpg"
+    },
+    {
+      "id": 7,
+      "branchId": 3,
+      "tenRap": "BHD Star Cineplex - Vincom Quang Trung",
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-quang-trung-15379536724871.jpg"
+    },
+    {
+      "id": 8,
+      "branchId": 3,
+      "tenRap": "BHD Star Cineplex - Vincom Thảo Điền",
+      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-thao-dien-15379553942188.jpg"
     }
   ],
   "branchs": [
@@ -647,150 +704,26 @@
       "id": 1,
       "theaterId": 1,
       "ten": "ho chi minh",
-      "branchId": 1,
       "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-nam-sai-gon-15383867312967.jpg",
       "diaChi": "Lotte Mart NSG, 469 Nguyễn Hữu Thọ, Q.7"
     },
     {
       "id": 2,
-      "theaterId": 1,
+      "theaterId": 2,
       "ten": "ha noi",
-      "branchId": 2,
       "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cong-hoa-15383860949090.jpg",
       "diaChi": "Lotte, 20 Ba Tháng 2, Cầu Giấy"
     },
     {
       "id": 3,
-      "theaterId": 1,
+      "theaterId": 3,
       "ten": "da nang",
       "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cong-hoa-15383860949090.jpg",
       "diaChi": "Pico Plaza, 20 Cộng Hòa, Tân Bình"
-    },
-    {
-      "id": 4,
-      "theaterId": 1,
-      "ten": "nam dinh",
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-diamond-15383868339222.jpg",
-      "diaChi": "Diamond Plaza, 34 Lê Duẩn, Q.1"
-    },
-    {
-      "id": 5,
-      "theaterId": 1,
-      "ten": "nha trang",
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cantavil-15383866510260.jpg",
-      "diaChi": "Cantavil Premier, Xa Lộ Hà Nội, Q.2"
     }
   ],
-  "sessions": [
-    {
-      "movieId": 1,
-      "theaterId": 1,
-      "branchsId": 1,
-      "ngay": 1,
-      "dinhDangChieu": "2D VIETSUB",
-      "phongChieu": 4,
-      "suatChieu": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "18:00",
-        "08:00"
-      ],
-      "trangThai": true,
-      "id": 1
-    },
-    {
-      "movieId": 1,
-      "theaterId": 2,
-      "trangThai": true,
-      "branchsId": 2,
-      "ngay": 1,
-      "dinhDangChieu": "3D VIETSUB",
-      "phongChieu": 4,
-      "suatChieu": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
-      ],
-      "id": 2
-    },
-    {
-      "movieId": 1,
-      "theaterId": 3,
-      "trangThai": true,
-      "branchsId": 3,
-      "ngay": 1,
-      "dinhDangChieu": "2D VIETSUB",
-      "phongChieu": 3,
-      "suatChieu": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00"
-      ],
-      "id": 3
-    },
-    {
-      "movieId": 1,
-      "theaterId": 4,
-      "trangThai": true,
-      "branchsId": 4,
-      "ngay": 1,
-      "dinhDangChieu": "2D VIETSUB",
-      "phongChieu": 3,
-      "suatChieu": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
-      ],
-      "id": 4
-    },
-    {
-      "id": 5,
-      "movieId": 1,
-      "theaterId": 5,
-      "trangThai": true,
-      "branchsId": 5,
-      "ngay": 1,
-      "dinhDangChieu": "3D VIETSUB",
-      "phongChieu": 3,
-      "suatChieu": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
-      ]
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "movieId": 1,
-      "userId": 2,
-      "ngayDang": 1562777555509,
-      "soDiem": 8,
-      "noiDung": "Phim Hay quá",
-      "soLike": 4
-    },
-    {
-      "id": 2,
-      "movieId": 1,
-      "userId": 2,
-      "ngayDang": 1562777555509,
-      "soDiem": 7,
-      "noiDung": "Phim Hay quá 2",
-      "soLike": 5
-    }
-  ],
+  "sessions": [],
+  "comments": [],
   "comboFood": [
     {
       "id": 1,

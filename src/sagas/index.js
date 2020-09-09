@@ -11,9 +11,10 @@ import { sliderBarSuccess, sliderBarFailed } from "../actions/sliderBars";
 import { moviesSuccess, moviesFailed } from "../actions/movies";
 import { editAccountSuccess, editAccountFailed } from "../actions/account";
 import { promotionSuccess, promotionFailed } from "../actions/promotion"
-import { theaterSuccess, theaterFailed } from '../actions/theaterAction'
+import { theaterSuccess, theaterFailed } from '../actions/theaterAction';
 import { bookingTimeSuccess, bookingTimeFailed } from "../actions/bookingTime"
-import { branchSuccess, branchFailed } from '../actions/branchs'
+import { branchSuccess, branchFailed } from '../actions/branchs';
+import { deleteUserSuccess, deleteUserFailed } from '../actions/admin';
 import { hideLoading, showLoading } from "../actions/ui";
 import {
   postLogin,
@@ -25,7 +26,8 @@ import {
   getBookingTime,
   putEditAccount,
   getTheaters,
-  getBranchs
+  getBranchs,
+  deleteUser
 }
   from "../apis/auth";
 import { STATUS_CODE } from "../constants";
@@ -37,6 +39,7 @@ import * as theaterAction from '../constants/theaters'
 import * as bookingTimeAction from '../constants/bookingTime'
 import * as branchAction from '../constants/branchs'
 import * as editAccountActions from "../constants/account";
+import * as adminActions from "../constants/admin";
 import Cookie from "js-cookie";
 import md5 from "md5";
 
@@ -195,6 +198,24 @@ function* editAccountSaga({ payload }) {
   yield put(hideLoading());
 }
 
+function* deleteUserSaga({ payload }) {
+  const { account } = payload;
+  yield put(showLoading());
+  try {
+    const resp = yield call(deleteUser, account);
+    const { status } = resp;
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(editAccountSuccess(account));
+    }
+  } catch (error) {
+    if (error === "data is not iterable") {
+      yield put(editAccountFailed(error));
+    }
+  }
+  yield delay(1000);
+  yield put(hideLoading());
+}
+
 function* rootSaga() {
   yield takeLatest(authTypes.LOGIN_USER, loginUserSaga);
   yield takeLatest(authTypes.REGISTER_USER, registerUserSaga);
@@ -206,6 +227,7 @@ function* rootSaga() {
   yield takeLatest(theaterAction.THEATER_REQUEST, theaterSaga)
   yield takeLatest(authTypes.ACCOUNT, accountSaga);
   yield takeLatest(editAccountActions.EDIT_ACCOUNT, editAccountSaga);
+  yield takeLatest(adminActions.DELETE_USER, deleteUserSaga);
 }
 
 export default rootSaga;

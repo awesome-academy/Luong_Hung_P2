@@ -13,6 +13,12 @@ import Information from "./components/account/Information";
 import EditAccount from "./components/account/editAccount";
 import BookingSeats from "./components/booking/BookingSeats";
 import BookingFood from "./components/booking/BookingFood";
+import Payment from "./components/booking/Payment";
+import Admin from "./components/admin/Admin";
+import ManagementUsers from "./components/admin/ManagementUsers";
+import ManagementMovies from "./components/admin/ManagementMovies";
+import ManagementRevenue from "./components/admin/ManagementRevenue";
+import ManagementTicket from "./components/admin/ManagementTicket";
 
 const routers = [
   {
@@ -95,6 +101,47 @@ const routers = [
     exact: false,
     main: ({ location, history }) => (
       <BookingFood location={location} history={history} />
+    ),
+  },{
+    path: "/payment",
+    exact: false,
+    main: ({ location, history }) => (
+      <Payment location={location} history={history} />
+    ),
+  },
+  {
+    path: "/admin",
+    exact: true,
+    main: ({ location, history }) => (
+      <Admin location={location} history={history} />
+    ),
+  },
+  {
+    path: "/admin/managementUsers",
+    exact: false,
+    main: ({ location, history }) => (
+      <ManagementUsers location={location} history={history} />
+    ),
+  },
+  {
+    path: "/admin/managementMovies",
+    exact: false,
+    main: ({ location, history }) => (
+      <ManagementMovies location={location} history={history} />
+    ),
+  },
+  {
+    path: "/admin/managementRevenue",
+    exact: false,
+    main: ({ location, history }) => (
+      <ManagementRevenue location={location} history={history} />
+    ),
+  },
+  {
+    path: "/admin/managementTicket",
+    exact: false,
+    main: ({ location, history }) => (
+      <ManagementTicket location={location} history={history} />
     ),
   },
   {
