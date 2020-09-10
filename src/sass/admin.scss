@@ -1,0 +1,42 @@
+@import "./mixins.scss";
+
+.sidebar {
+  position: fixed;
+  z-index: 10;
+  padding: 68px 0;
+  width: 16%;
+  height: 100vh;
+  background: $colorGray;
+  display: inline-block;
+  .admin {
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 1px solid $colorBorder;
+    &__avatar {
+      border-radius: 50%;
+      width: 35%;
+    }
+    &__name {
+      @include customFont(20px, "roboto");
+      color: $colorGreen;
+      padding: 20px 10px 0 15px;
+      display: inline-block;
+      font-weight: bold;
+      position: relative;
+      top: -15px;
+      cursor: pointer;
+    }
+    &__content {
+      @include customFont(16px, "roboto");
+      color: $colorWhite;
+      display: block;
+      margin: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        color: $colorGreen;
+        transition: 0.3s;
+      }
+    }
+   }
+}

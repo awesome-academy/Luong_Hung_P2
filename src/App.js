@@ -1,17 +1,19 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./sass/layout.scss";
-import "./sass/header.scss"
+import "./sass/header.scss";
 import Header from "./components/Partials/Header";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import routers from "./routers";
 import Footer from "./components/Partials/Footer";
 import Loading from "./commons/loading";
+import { useSelector } from "react-redux";
+import AdminSidebar from "./components/Partials/AdminSidebar";
 
 const App = () => {
-
+  const currentUser = useSelector((state) => state.currentUser.currentUser);
   const showContentMenus = (routers) => {
     let result = null;
 
@@ -32,15 +34,25 @@ const App = () => {
 
   return (
     <Router>
-      <div className='App'>
+      <div className="App">
         <Header />
+        {currentUser && currentUser.email === "admin@admin" ? (
+          <AdminSidebar />
+        ) : (
+          ""
+        )}
         <ToastContainer position="bottom-right" />
         <Loading />
         <Switch>{showContentMenus(routers)}</Switch>
-        <Footer />
+        {!currentUser ? (
+          <Footer />
+        ) : currentUser.email === "admin@admin" ? (
+          ""
+        ) : (
+          <Footer />
+        )}
       </div>
     </Router>
-
   );
 };
 

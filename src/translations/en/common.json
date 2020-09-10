@@ -33,7 +33,26 @@
     "genre": "Genre",
     "runningTime": "Running Times",
     "releaseDate": "Release Date",
-    "minutes": "minutes"
+    "minutes": "minutes",
+    "bookingOnline": "Booking Online",
+    "remaining": "Remaining",
+    "totalPayment": "Total Payment",
+    "paymentMovie": "Movie",
+    "paymentFood": "Food",
+    "discount": "Discount",
+    "choosePay": "Choose your method payload",
+    "cash": "Cash",
+    "prev": "Prev",
+    "next": "Next",
+    "payment": "Payment",
+    "screen": "Screen",
+    "concession": "Concession",
+    "price": "Price",
+    "total": "Total",
+    "managementUsers": "Management Users",
+    "managementMovies": "Management Movies",
+    "managementRevenue": "Management Revenue",
+    "managementTicket": "Management Ticket"
   },
   "auth": {
     "password": "Password",
@@ -51,6 +70,11 @@
     "newPhone": "New Phone",
     "newRegion": "New Region",
     "newDateOfBirth": "New Date Of Birth",
-    "newGender": "New Gender"
+    "newGender": "New Gender",
+    "editUser": "Edit",
+    "ngayTao": "Register Date",
+    "edit": "Edit",
+    "delete": "Delete",
+    "avatar": "Avatar"
   }
 }

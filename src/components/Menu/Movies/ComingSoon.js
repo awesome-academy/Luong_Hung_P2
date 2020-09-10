@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 function ComingSoon() {
   const [currentPage, setCurrentPage] = useState(1);
   const [productPerPage] = useState(8);
-
+  const [comingSoon, setComingSoon] = useState([])
   const movies = useSelector((state) => state.movies.movies);
   const dispatch = useDispatch();
   const { t } = useTranslation("common");
@@ -16,14 +16,28 @@ function ComingSoon() {
     dispatch(movieActions.movies());
   }, [dispatch]);
 
+  useEffect(() => {
+    if (movies !== null) {
+      const result = [...movies].filter((movie) => {
+        if (movie.trangThai === 0) {
+          return (
+            movie.trangThai === 0
+          )
+        }
+      })
+      setComingSoon(() => [...result])
+
+    }
+  }, [movies, setComingSoon])
+
   const indexOfLastPost = currentPage * productPerPage;
   const indexOfFirstPost = indexOfLastPost - productPerPage;
   const currentPosts =
-    movies && movies.slice(indexOfFirstPost, indexOfLastPost);
+    comingSoon && comingSoon.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-  const totalMovies = movies && movies.length;
+  const totalMovies = comingSoon && comingSoon.length;
 
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalMovies / productPerPage); i++) {

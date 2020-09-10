@@ -1,155 +1,158 @@
 @import "mixins";
 
-.header {
-    background-color: $colorBlack;
-    position: relative;
-    padding: 15px 30px;
-
-    .menu-icon,
-    #toggle-menu {
-        display: none;
-    }
-
-    .menu {
+header {
+    @include customPosition(fixed, 0, auto, 100, 100%, auto, true);
+    .header {
+        background-color: $colorBlack;
         position: relative;
-        align-items: center;
-        top: 3px;
-        margin-left: 30px;
-        font-size: 1.3rem;
-        font-weight: bold;
-        display: flex;
-
-        &__item {
+        padding: 15px 30px;
+    
+        .menu-icon,
+        #toggle-menu {
+            display: none;
+        }
+    
+        .menu {
             position: relative;
-            margin-right: 15px;
-        }
-
-        .dropdown {
-            opacity: 0;
-            background-color: rgb(34, 34, 34);
-            font-size: 14px;
-            color: #fff;
-            white-space: nowrap;
-            padding: 4px 10px;
-            border-radius: 5px;
-            z-index: 99;
-            position: absolute;
-            top: 30px;
+            align-items: center;
+            top: 3px;
+            margin-left: 30px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: flex;
+    
             &__item {
-                cursor: pointer;
-                margin-bottom: 5px;
+                position: relative;
+                margin-right: 15px;
             }
-
-            &__item:hover {
-                opacity: 0.7;
+    
+            .dropdown {
+                opacity: 0;
+                background-color: rgb(34, 34, 34);
+                font-size: 14px;
+                color: #fff;
+                white-space: nowrap;
+                padding: 4px 10px;
+                border-radius: 5px;
+                z-index: 99;
+                position: absolute;
+                top: 30px;
+                &__item {
+                    cursor: pointer;
+                    margin-bottom: 5px;
+                }
+    
+                &__item:hover {
+                    opacity: 0.7;
+                }
+            }
+    
+            &__item.movies:hover .dropdown {
+                opacity: 1;
+            }
+    
+            a {
+                color: $colorWhite;
+            }
+            a:hover {
+                opacity: 0.8;
             }
         }
-
-        &__item.movies:hover .dropdown {
-            opacity: 1;
-        }
-
-        a {
+    
+        &__link,
+        label {
             color: $colorWhite;
         }
-        a:hover {
-            opacity: 0.8;
+    
+        &__login-register {
+            position: absolute;
+            top: 28px;
+            right: 77px;
+    
+            .item {
+                margin-right: 10px;
+                border: 1px solid #e1e1e1;
+                padding: 7px 15px;
+                border-radius: 5px;
+                text-transform: uppercase;
+                width: 100px;
+                text-align: center;
+            }
+    
+            .item:hover {
+                background-color: $colorGreen;
+            }
         }
-    }
-
-    &__link,
-    label {
-        color: $colorWhite;
-    }
-
-    &__login-register {
-        position: absolute;
-        top: 28px;
-        right: 77px;
-
-        .item {
-            margin-right: 10px;
-            border: 1px solid #e1e1e1;
-            padding: 7px 15px;
-            border-radius: 5px;
-            text-transform: uppercase;
-            width: 100px;
-            text-align: center;
+    
+        &__translate {
+            position: absolute;
+            top: 29px;
+            right: 12px;
+            color: $colorWhite;
+            @include customFont(14px, "roboto");
+            &__EN {
+                cursor: pointer;
+                padding: 8px;
+                border: 1px solid $colorGreen;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-right: none;
+            }
+            &__VI {
+                cursor: pointer;
+                padding: 8px;
+                border: 1px solid $colorGreen;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-left: none;
+            }
+            .active {
+                background: $colorGreen;
+            }
         }
-
-        .item:hover {
-            background-color: $colorGreen;
+    
+        .wrap-search {
+            display: flex;
+            align-items: center;
         }
-    }
-
-    &__translate {
-        position: absolute;
-        top: 29px;
-        right: 12px;
-        color: $colorWhite;
-        @include customFont(14px, "roboto");
-        &__EN {
-            cursor: pointer;
-            padding: 8px;
-            border: 1px solid $colorGreen;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            border-right: none;
+    
+        form {
+            position: absolute;
+            top: 22px;
+            right: 420px;
+            #search {
+                padding: 8px 15px;
+                width: 300px;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                margin-right: 8px;
+            }
+    
+            label {
+                border: 1px solid #e1e1e1;
+                position: relative;
+                top: 2px;
+                padding: 4px 15px;
+                border-radius: 5px;
+                background-color: orange;
+                cursor: pointer;
+            }
+    
+            label:hover {
+                opacity: 0.8;
+            }
         }
-        &__VI {
-            cursor: pointer;
-            padding: 8px;
-            border: 1px solid $colorGreen;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            border-left: none;
-        }
-        .active {
-            background: $colorGreen;
-        }
-    }
-
-    .wrap-search {
-        display: flex;
-        align-items: center;
-    }
-
-    form {
-        position: absolute;
-        top: 22px;
-        right: 420px;
-        #search {
-            padding: 8px 15px;
-            width: 300px;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-            margin-right: 8px;
-        }
-
-        label {
-            border: 1px solid #e1e1e1;
-            position: relative;
-            top: 2px;
-            padding: 4px 15px;
-            border-radius: 5px;
-            background-color: orange;
-            cursor: pointer;
-        }
-
-        label:hover {
-            opacity: 0.8;
-        }
-    }
-
-    .logo-cenima {
-        font-size: 2rem;
-        font-weight: bold;
-        color: $colorGreen;
-
-        img {
-            height: 100%;
-            width: 70px;
+    
+        .logo-cenima {
+            font-size: 2rem;
+            font-weight: bold;
+            color: $colorGreen;
+    
+            img {
+                height: 100%;
+                width: 70px;
+            }
         }
     }
 }
