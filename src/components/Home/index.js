@@ -49,9 +49,9 @@ const Home = () => {
     if (movies) {
       const result = [...movies].filter((movie) => {
         if (tag === true) {
-          return movie.trangThai === 1;
+          return movie.status === 1;
         } else {
-          return movie.trangThai === 0;
+          return movie.status === 0;
         }
       });
       setMovie([...result]);
@@ -81,7 +81,7 @@ const Home = () => {
                 : "mySlides fade slideBarNone"
             }
           >
-            <img className='bar' src={bar.hinhAnh} alt='banner' />
+            <img className='bar' src={bar.image} alt='banner' />
           </div>
         );
       });
@@ -113,11 +113,11 @@ const Home = () => {
         result.push(
           <div className='movie' key={i}>
             <img
-              src={movie[i].hinhAnh}
+              src={movie[i].image}
               alt='image__movie'
               className='movie__image'
             />
-            <div className='movie__name'>{movie[i].tenPhim}</div>
+            <div className='movie__name'>{movie[i].name}</div>
             <div className="wrap-movie__btn"><span className='movie__btn'>{t("home.booking")}</span></div>
           </div>
         );

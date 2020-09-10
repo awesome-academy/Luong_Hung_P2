@@ -14,10 +14,9 @@ const ManagementTicket = (props) => {
 
   return (
     <div>
-      {/* {currentUser && currentUser.email === "admin@admin" */}
-        {/* ? showAdminUser() */}
-        {/* : checkAdmin()} */
-        showAdminUser()
+      {currentUser && currentUser.email === "admin@admin"
+        ? showAdminUser()
+        : checkAdmin()
         }
     </div>
   );

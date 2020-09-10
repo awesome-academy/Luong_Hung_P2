@@ -21,4 +21,11 @@ form.register {
     width: 100%;
     margin-bottom: 20px;
   }
+  textarea {
+    width: 100%;
+    @include customFont(18px, "Roboto");
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

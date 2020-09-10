@@ -26,3 +26,111 @@ export const deleteUserFailed = (error) => {
     },
   };
 };
+
+export const deleteMovie = (movie) => {
+  return {
+    type: adminActions.DELETE_MOVIE,
+    payload: {
+      movie
+    }
+  };
+};
+
+export const deleteMovieSuccess = (data) => {
+  return {
+    type: adminActions.DELETE_MOVIE_SUCCESS,
+    payload: {
+      data
+    },
+  };
+};
+
+export const deleteMovieFailed = (error) => {
+  return {
+    type: adminActions.DELETE_MOVIE_FAILED,
+    payload: {
+      error,
+    },
+  };
+};
+
+export const editMovie = (movie) => {
+  return {
+    type: adminActions.EDIT_MOVIE,
+    payload: {
+      movie
+    }
+  };
+};
+
+export const editMovieSuccess = (data) => {
+  return {
+    type: adminActions.EDIT_MOVIE_SUCCESS,
+    payload: {
+      data
+    },
+  };
+};
+
+export const editMovieFailed = (error) => {
+  return {
+    type: adminActions.EDIT_MOVIE_FAILED,
+    payload: {
+      error,
+    },
+  };
+};
+
+export const editUser = (user) => {
+  return {
+    type: adminActions.EDIT_USER,
+    payload: {
+      user
+    }
+  };
+};
+
+export const editUserSuccess = (data) => {
+  return {
+    type: adminActions.EDIT_USER_SUCCESS,
+    payload: {
+      data
+    },
+  };
+};
+
+export const editUserFailed = (error) => {
+  return {
+    type: adminActions.EDIT_USER_FAILED,
+    payload: {
+      error,
+    },
+  };
+};
+
+export const addMovie = (movie) => {
+  return {
+    type: adminActions.ADD_MOVIE,
+    payload: {
+      movie
+    }
+  };
+};
+
+export const addMovieSuccess = (data) => {
+  return {
+    type: adminActions.ADD_MOVIE_SUCCESS,
+    payload: {
+      data
+    },
+  };
+};
+
+export const addMovieFailed = (error) => {
+  return {
+    type: adminActions.ADD_MOVIE_FAILED,
+    payload: {
+      error,
+    },
+  };
+};

@@ -52,7 +52,8 @@
     "managementUsers": "Quản Lý Thành Viên",
     "managementMovies": "Quản Lý Phim",
     "managementRevenue": "Quản Lý Doanh Thu",
-    "managementTicket": "Quản lý Vé"
+    "managementTicket": "Quản lý Vé",
+    "addMovie": "Thêm Phim"
   },
   "auth": {
     "password": "Mật Khẩu",
@@ -72,9 +73,27 @@
     "newDateOfBirth": "Ngày sinh mới",
     "newGender": "Giới Tính mới",
     "editUser": "Sửa",
-    "ngayTao": "Ngày Tạo",
+    "registerDate": "Ngày Tạo",
     "edit": "Sửa",
     "delete": "Xoá",
-    "avatar": "Avatar"
+    "avatar": "Avatar",
+    "email": "Email",
+    "minutes": "Phút",
+    "category": "Thể Loại",
+    "status": "Trạng Thái",
+    "image": "Ảnh",
+    "pointIMDB": " Điểm IMDB",
+    "type": "Định Dang",
+    "directors": "Đạo Diễn",
+    "nation": "Quốc Gia",
+    "description": "Mô Tả",
+    "cast": "Diễn Viên",
+    "age": "Tuổi",
+    "2D": "2D",
+    "3D": "3D",
+    "2D3D": "2D/3D",
+    "editMovie": "Sửa Phim" ,
+    "birth": "Sinh Nhật",
+    "requirementChangePassword": "Bắt Buộc Đổi Mật Khẩu"
   }
 }

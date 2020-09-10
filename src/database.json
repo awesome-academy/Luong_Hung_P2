@@ -9,349 +9,355 @@
       "birth": "1998-11-27",
       "gender": "Male",
       "avatar": "http://gravatar.com/avatar/a3175a452c7a8fea80c62a198a40f6c9?d=identicon",
-      "ngayTao": 1599624387081,
+      "registerDate": 1599624387081,
       "id": 0
     },
     {
       "email": "hiep@gmail.com",
-      "password": "$2a$10$xOjQcltKAzPI.ctdVsnHeulo42adF8YQZf6.Kqk/K5WJ2gKqOFImC",
+      "password": "$2a$10$6PuAhCWPd0p/BJAPT/2I0O9h0rUXIs/xwYxLWWr1Ar4eABSL9fODO",
       "name": "Trần Văn Hiệp",
       "phone": "0972093127",
       "region": "Hà Nội",
       "birth": "1998-11-27",
       "gender": "Male",
-      "avatar": "http://gravatar.com/avatar/5175a6a393b63c32f25322a30a11b322?d=identicon",
-      "ngayTao": 1599639805541,
+      "avatar": "https://streaming1.danviet.vn/upload/3-2018/images/2018-07-06/1-1530866003-width680height453.jpg",
+      "registerDate": 1599639805541,
       "id": 1
+    },
+    {
+      "email": "anh@gmail.com",
+      "password": "$2a$10$It.eJOmMK5z/JINm9pv1VONby6Uxv3ntQl/ZxsbkczIpmlvG0MQxa",
+      "name": " Phạm Việt Hưng",
+      "phone": "0972093127",
+      "region": "",
+      "birth": "2020-01-01",
+      "gender": "Male",
+      "avatar": "https://i.vietgiaitri.com/2019/11/5/thien-than-anh-the-lao-cai-tinh-khoi-ben-hoa-cuc-hoa-mi-dau-mua-0b0d2f.jpeg",
+      "registerDate": 1599710539200,
+      "id": 2
+    },
+    {
+      "email": "anhhungx9propro@gmail.com",
+      "password": "$2a$10$XcYdYyQzh/r7Qe4j83z2qOZwexUxSCu7vSivpad69CbqHQV.HkJKK",
+      "name": " Phạm Việt Hưng",
+      "phone": "0972093127",
+      "region": "",
+      "birth": "2020-01-01",
+      "gender": "Male",
+      "avatar": "https://streaming1.danviet.vn/upload/3-2018/images/2018-07-06/1-1530866003-width680height453.jpg",
+      "registerDate": 1599712146828,
+      "id": 3
     }
   ],
   "sliderbars": [
     {
       "id": 1,
-      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner1.jpg"
+      "image": "https://www.upsieutoc.com/images/2020/09/05/baner1.jpg"
     },
     {
       "id": 2,
-      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner2.jpg"
+      "image": "https://www.upsieutoc.com/images/2020/09/05/baner2.jpg"
     },
     {
       "id": 3,
-      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner3.jpg"
+      "image": "https://www.upsieutoc.com/images/2020/09/05/baner3.jpg"
     },
     {
       "id": 4,
-      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner4.jpg"
+      "image": "https://www.upsieutoc.com/images/2020/09/05/baner4.jpg"
     },
     {
       "id": 5,
-      "hinhAnh": "https://www.upsieutoc.com/images/2020/09/05/baner5.jpg"
+      "image": "https://www.upsieutoc.com/images/2020/09/05/baner5.jpg"
     }
   ],
   "movies": [
     {
-      "tenPhim": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
-      "soPhut": 129,
-      "ngayKhoiChieu": 1565049600000,
-      "theLoai": "Hành động, Khoa học viễn tưởng",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
-      "trailer": "NxGiyMlB3Cw",
-      "diemIMDB": 8,
-      "doTuoi": 13,
-      "dinhDang": "2D/3D",
-      "daoDien": "Jon Watts",
-      "dienVien": "Cobie Smulders, Marisa Tomei, Jon Favreau, Samuel L. Jackson, Zendaya, Jake Gyllenhaal, Tom Holland",
-      "quocGia": "Mỹ",
-      "moTa": "Hậu chiến Vô Cực, Người Nhện Peter Parker và nhóm bạn thân cùng tham gia chuyến du lịch châu Âu của trường. Tuy nhiên, kế hoạch siêu anh hùng nghỉ phép của Peter nhanh chóng bị hủy bỏ sau khi cậu đồng ý giúp Nick Fury khám phá bí ẩn về những cuộc tấn công của nhóm kẻ thù mang sức mạnh nguyên tố đang tàn phá khắp lục địa.",
+      "name": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
+      "minutes": 129,
+      "releaseDate": "2020-09-10",
+      "category": "Hành động, Khoa học viễn tưởng",
+      "status": 1,
+      "image": "https://i.vietgiaitri.com/2019/11/5/thien-than-anh-the-lao-cai-tinh-khoi-ben-hoa-cuc-hoa-mi-dau-mua-0b0d2f.jpeg",
+      "pointIMDB": 8,
+      "age": 13,
+      "type": "2D/3D",
+      "directors": "Jon Watts",
+      "cast": "Cobie Smulders, Marisa Tomei, Jon Favreau, Samuel L. Jackson, Zendaya, Jake Gyllenhaal, Tom Holland",
+      "nation": "Mỹ",
+      "description": "Hậu chiến Vô Cực, Người Nhện Peter Parker và nhóm bạn thân cùng tham gia chuyến du lịch châu Âu của trường. Tuy nhiên, kế hoạch siêu anh hùng nghỉ phép của Peter nhanh chóng bị hủy bỏ sau khi cậu đồng ý giúp Nick Fury khám phá bí ẩn về những cuộc tấn công của nhóm kẻ thù mang sức mạnh nguyên tố đang tàn phá khắp lục địa.",
       "id": 1
     },
     {
-      "tenPhim": "Ký Sinh Trùng - Parasite",
-      "soPhut": 132,
-      "ngayKhoiChieu": 1564531200000,
-      "theLoai": "tâm lý, xã hội",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
-      "trailer": "cJcj5B8hEto",
-      "diemIMDB": 8.6,
-      "doTuoi": 18,
-      "dinhDang": "2D",
-      "daoDien": "Bong Joon Ho",
-      "dienVien": "",
-      "quocGia": "Hàn Quốc",
-      "moTa": "Ký Sinh Trùng chứa đựng tiếng cười, nỗi buồn và cả bi kịch của xã hội loài người.” Về cái tên đặc biệt mang màu sắc kinh dị, Bong Joon Ho cho biết Ký Sinh Trùng chỉ là phép ẩn dụ mang nhiều tầng ý nghĩa rộng lớn, và ông hy vọng phim có thể khơi gợi lên những suy nghĩ khác nhau của khán giả.",
+      "name": "Ký Sinh Trùng - Parasite",
+      "minutes": 132,
+      "releaseDate": "2020-09-11",
+      "category": "tâm lý, xã hội",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "pointIMDB": 8.6,
+      "age": 18,
+      "type": "2D",
+      "directors": "Bong Joon Ho",
+      "cast": "",
+      "nation": "Hàn Quốc",
+      "description": "Ký Sinh Trùng chứa đựng tiếng cười, nỗi buồn và cả bi kịch của xã hội loài người.” Về cái tên đặc biệt mang màu sắc kinh dị, Bong Joon Ho cho biết Ký Sinh Trùng chỉ là phép ẩn dụ mang nhiều tầng ý nghĩa rộng lớn, và ông hy vọng phim có thể khơi gợi lên những suy nghĩ khác nhau của khán giả.",
       "id": 2
     },
     {
-      "tenPhim": "Tay Đua Huyền Thoại - Trading Paint",
-      "soPhut": 92,
-      "ngayKhoiChieu": 1564963200000,
-      "theLoai": "hành động, gia đình",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/tay-dua-huyen-thoai-trading-paint-15617148423517_220x310.png",
-      "trailer": "T3dJGSQBeiE",
-      "diemIMDB": 4.5,
-      "doTuoi": 16,
-      "dinhDang": "2D",
-      "daoDien": "Karzan Kader",
-      "dienVien": "John Travolta",
-      "quocGia": "Mỹ",
-      "moTa": "Một huyền thoại đua xe cổ bị lôi kéo trở lại đường đua bẩn thỉu khi con trai ông, một tay đua đầy tham vọng, gia nhập một đội đua đối thủ, gây ra cuộc cạnh tranh khốc liệt và nguy hiểm giữa cha và con trai.",
+      "name": "Tay Đua Huyền Thoại - Trading Paint",
+      "minutes": 92,
+      "releaseDate": "2019-07-05",
+      "category": "hành động, gia đình",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/tay-dua-huyen-thoai-trading-paint-15617148423517_220x310.png",
+      "pointIMDB": 4.5,
+      "age": 16,
+      "type": "2D",
+      "directors": "Karzan Kader",
+      "cast": "John Travolta",
+      "nation": "Mỹ",
+      "description": "Một huyền thoại đua xe cổ bị lôi kéo trở lại đường đua bẩn thỉu khi con trai ông, một tay đua đầy tham vọng, gia nhập một đội đua đối thủ, gây ra cuộc cạnh tranh khốc liệt và nguy hiểm giữa cha và con trai.",
       "id": 3
     },
     {
-      "tenPhim": "Annabelle: Ác Quỷ Trở Về - Annabelle Comes Home",
-      "soPhut": 106,
-      "ngayKhoiChieu": 1564444800000,
-      "theLoai": "kinh dị",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/annabelle-ac-quy-tro-ve-annabelle-comes-home-c18-15601418686089_220x310.jpg",
-      "trailer": "Rm-jr2XHr1M",
-      "diemIMDB": 6.4,
-      "doTuoi": 18,
-      "dinhDang": "2D",
-      "daoDien": "Gary Dauberman",
-      "dienVien": "Charlotte Vega, Patrick Wilson",
-      "quocGia": "Mỹ",
-      "moTa": "Trong lúc Ed và Lorraine Warren vắng nhà, búp bê quỷ ám Annabelle đã phá vỡ phong ấn và thao túng các đồ vật tà ma ở phòng trưng bày. Mục tiêu tấn công của chúng là cô con gái nhỏ Judy 10 tuổi của hai vợ chồng. Cùng với cô giữ trẻ và một người bạn, Judy phải tìm cách chống trả các thế lực ác quỷ trước khi cha mẹ cô bé về “dẹp loạn”. ",
+      "name": "Annabelle: Ác Quỷ Trở Về - Annabelle Comes Home",
+      "minutes": 106,
+      "releaseDate": "2019-07-05",
+      "category": "kinh dị",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/annabelle-ac-quy-tro-ve-annabelle-comes-home-c18-15601418686089_220x310.jpg",
+      "pointIMDB": 6.4,
+      "age": 18,
+      "type": "2D",
+      "directors": "Gary Dauberman",
+      "cast": "Charlotte Vega, Patrick Wilson",
+      "nation": "Mỹ",
+      "description": "Trong lúc Ed và Lorraine Warren vắng nhà, búp bê quỷ ám Annabelle đã phá vỡ phong ấn và thao túng các đồ vật tà ma ở phòng trưng bày. Mục tiêu tấn công của chúng là cô con gái nhỏ Judy 10 tuổi của hai vợ chồng. Cùng với cô giữ trẻ và một người bạn, Judy phải tìm cách chống trả các thế lực ác quỷ trước khi cha mẹ cô bé về “dẹp loạn”. ",
       "id": 4
     },
     {
-      "tenPhim": "Câu Chuyện Đồ Chơi 4 - Toy Story 4",
-      "soPhut": 100,
-      "ngayKhoiChieu": 1564963200000,
-      "theLoai": "hoạt hình, phiêu lưu",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/cau-chuyen-do-choi-4-toy-story-4-15591052666530_220x310.jpg",
-      "trailer": "KWB862qBC3U",
-      "diemIMDB": 8.3,
-      "doTuoi": 13,
-      "dinhDang": "2D/3D",
-      "daoDien": "Josh Cooley",
-      "dienVien": "Tom Hanks",
-      "quocGia": "Mỹ",
-      "moTa": "Chàng cao bồi Woody và người bạn thân chí cốt Buzz Lightyear bước vào cuộc phiêu lưu tìm kiếm cô nàng chăn cừu Bo Peep đã mất tích từ phần phim trước. Toy Story 4 sẽ mang hơi hướng của một phim lãng mạn với chuyện tình của Woody và Bo Peep.",
+      "name": "Câu Chuyện Đồ Chơi 4 - Toy Story 4",
+      "minutes": 100,
+      "releaseDate": "2020-09-10",
+      "category": "hoạt hình, phiêu lưu",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/cau-chuyen-do-choi-4-toy-story-4-15591052666530_220x310.jpg",
+      "pointIMDB": 8.3,
+      "age": 13,
+      "type": "2D/3D",
+      "directors": "Josh Cooley",
+      "cast": "Tom Hanks",
+      "nation": "Mỹ",
+      "description": "Chàng cao bồi Woody và người bạn thân chí cốt Buzz Lightyear bước vào cuộc phiêu lưu tìm kiếm cô nàng chăn cừu Bo Peep đã mất tích từ phần phim trước. Toy Story 4 sẽ mang hơi hướng của một phim lãng mạn với chuyện tình của Woody và Bo Peep.",
       "id": 5
     },
     {
-      "tenPhim": "Đặc Vụ Áo Đen: Sứ Mệnh Toàn Cầu - Men In Black:",
-      "soPhut": 114,
-      "ngayKhoiChieu": 1564876800000,
-      "theLoai": "hành động, hài, phiêu lưu",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dac-vu-ao-den-su-menh-toan-cau-men-in-black-international-15589555411801_220x310.jpg",
-      "trailer": "_pE5hb8B3Sc",
-      "diemIMDB": 5.7,
-      "doTuoi": 13,
-      "dinhDang": "2D",
-      "daoDien": "F. Gary Gray",
-      "dienVien": "Rebecca Ferguson, Liam Neeson, Chris Hemsworth",
-      "quocGia": "Mỹ",
-      "moTa": "Bấy lâu nay, Đặc vụ Áo Đen luôn là những người hùng thầm lặng “ngầu” nhất, bảo vệ Trái Đất khỏi những hiểm họa xấu xa ngoài hành tinh. Trong cuộc phiêu lưu mới này, họ phải đối mặt với mối đe dọa mang tính toàn cầu lớn nhất từ trước đến giờ: truy tìm điệp viên hai mang ẩn mình trong tổ chức Men In Black.",
+      "name": "Đặc Vụ Áo Đen: Sứ Mệnh Toàn Cầu - Men In Black:",
+      "minutes": 114,
+      "releaseDate": "2020-09-12",
+      "category": "hành động, hài, phiêu lưu",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dac-vu-ao-den-su-menh-toan-cau-men-in-black-international-15589555411801_220x310.jpg",
+      "pointIMDB": 5.7,
+      "age": 13,
+      "type": "2D",
+      "directors": "F. Gary Gray",
+      "cast": "Rebecca Ferguson, Liam Neeson, Chris Hemsworth",
+      "nation": "Mỹ",
+      "description": "Bấy lâu nay, Đặc vụ Áo Đen luôn là những người hùng thầm lặng “ngầu” nhất, bảo vệ Trái Đất khỏi những hiểm họa xấu xa ngoài hành tinh. Trong cuộc phiêu lưu mới này, họ phải đối mặt với mối đe dọa mang tính toàn cầu lớn nhất từ trước đến giờ: truy tìm điệp viên hai mang ẩn mình trong tổ chức Men In Black.",
       "id": 6
     },
     {
-      "tenPhim": "Vương Quốc Xe Đạp - Bikes",
-      "soPhut": 92,
-      "ngayKhoiChieu": 1564790400000,
-      "theLoai": "hoạt hình, phiêu lưu",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/vuong-quoc-xe-dap-bikes-15602370639045_220x310.jpg",
-      "trailer": "blVLooBK390",
-      "diemIMDB": 4.1,
-      "doTuoi": 13,
-      "dinhDang": "2D",
-      "daoDien": "Manuel J. García",
-      "dienVien": " ",
-      "quocGia": "Mỹ",
-      "moTa": "Được bao quanh bởi núi rừng bát ngát cùng những dòng suối chảy róc rách, Vương Quốc Xe Đạp là một thị trấn trong lành và rực rỡ màu sắc. Cuộc sống của những cư dân xe đạp ở đây vô cùng bình yên, cho đến một ngày động cơ xăng xuất hiện và mang đến mối đe doạ môi trường…. Chuyến phiêu lưu đáng yêu của những cô cậu xe đạp sẽ mang đến những giây phút  giải trí vui vẻ cho các bé và gia đình.",
+      "name": "Vương Quốc Xe Đạp - Bikes",
+      "minutes": 92,
+      "releaseDate": "2020-09-11",
+      "category": "hoạt hình, phiêu lưu",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/vuong-quoc-xe-dap-bikes-15602370639045_220x310.jpg",
+      "pointIMDB": 4.1,
+      "age": 13,
+      "type": "2D",
+      "directors": "Manuel J. García",
+      "cast": " ",
+      "nation": "Mỹ",
+      "description": "Được bao quanh bởi núi rừng bát ngát cùng những dòng suối chảy róc rách, Vương Quốc Xe Đạp là một thị trấn trong lành và rực rỡ màu sắc. Cuộc sống của những cư dân xe đạp ở đây vô cùng bình yên, cho đến một ngày động cơ xăng xuất hiện và mang đến mối đe doạ môi trường…. Chuyến phiêu lưu đáng yêu của những cô cậu xe đạp sẽ mang đến những giây phút  giải trí vui vẻ cho các bé và gia đình.",
       "id": 7
     },
     {
-      "tenPhim": "HÙ! - BOO!",
-      "soPhut": 92,
-      "ngayKhoiChieu": 1564704000000,
-      "theLoai": "kinh dị",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/hu-boo-c18-15603364608561_220x310.jpg",
-      "trailer": "_dt2Mn2Yy5I",
-      "diemIMDB": 4.1,
-      "doTuoi": 13,
-      "dinhDang": "2D",
-      "daoDien": "Luke Jaden",
-      "dienVien": " ",
-      "quocGia": "Mỹ",
-      "moTa": "Một gia đình tìm thấy túi quà với chữ 'BOO!' ở trước hiên nhà...Thoạt trông tưởng bình thường nhưng túi quà lại làm mọi chuyện trong nhà trở nên rối tung. Cậu con trai Caleb ( Jaden Piner ) khẳng định trong đó là một lời nguyền trong khi cha của cậu James ( Rob Zabrecky ) một con chiên ngoan đạo thì lại không tin vào ma quỷ và quyết định thiêu huỷ túi quà. Bà mẹ Elyse ( Jill Marie Jones ) cố gắng xoa dịu hai cha con, trong khi cô con gái Morgan ( Aurora Perrineau ) dửng dưng & coi toàn bộ những việc xảy ra như một trò đùa. Tiếp theo đó là hàng loạt điều kì lạ xảy ra: Caleb liên tục vẽ những bức tranh đầy máu me, cắt vụn thú nhồi bông, búp bê và cào cấu đôi mắt của các nhân vật truyện tranh, Morgan lại trở nên cáu gắt và sẵn sàng gây chiến với các thành viên khác khi bà Elyse thì bỗng dung liên tục sử dụng thuốc an thần. Liệu những chuyện xảy ra có liên quan gì đến túi quà bí ẩn kia hay không và thật sự những suy đóan của Caleb là chính xác?",
+      "name": "HÙ! - BOO!",
+      "minutes": 92,
+      "releaseDate": "2020-09-12",
+      "category": "kinh dị",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/hu-boo-c18-15603364608561_220x310.jpg",
+      "pointIMDB": 4.1,
+      "age": 13,
+      "type": "2D",
+      "directors": "Luke Jaden",
+      "cast": " ",
+      "nation": "Mỹ",
+      "description": "Một gia đình tìm thấy túi quà với chữ 'BOO!' ở trước hiên nhà...Thoạt trông tưởng bình thường nhưng túi quà lại làm mọi chuyện trong nhà trở nên rối tung. Cậu con trai Caleb ( Jaden Piner ) khẳng định trong đó là một lời nguyền trong khi cha của cậu James ( Rob Zabrecky ) một con chiên ngoan đạo thì lại không tin vào ma quỷ và quyết định thiêu huỷ túi quà. Bà mẹ Elyse ( Jill Marie Jones ) cố gắng xoa dịu hai cha con, trong khi cô con gái Morgan ( Aurora Perrineau ) dửng dưng & coi toàn bộ những việc xảy ra như một trò đùa. Tiếp theo đó là hàng loạt điều kì lạ xảy ra: Caleb liên tục vẽ những bức tranh đầy máu me, cắt vụn thú nhồi bông, búp bê và cào cấu đôi mắt của các nhân vật truyện tranh, Morgan lại trở nên cáu gắt và sẵn sàng gây chiến với các thành viên khác khi bà Elyse thì bỗng dung liên tục sử dụng thuốc an thần. Liệu những chuyện xảy ra có liên quan gì đến túi quà bí ẩn kia hay không và thật sự những suy đóan của Caleb là chính xác?",
       "id": 8
     },
     {
-      "tenPhim": "Vua Khủng Long: Phiêu Lưu Đến Vùng Núi Lửa - Dino King Journey to Fire Mountain",
-      "soPhut": 92,
-      "ngayKhoiChieu": 1564617600000,
-      "theLoai": "hoạt hình, phiêu lưu",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/vua-khung-long-phieu-luu-den-vung-nui-lua-dino-king-journey-to-fire-mountain-15586033825820_220x310.jpg",
-      "trailer": "SjhiqW0AHsk",
-      "diemIMDB": 7.4,
-      "doTuoi": 13,
-      "dinhDang": "2D",
-      "daoDien": "Han Sang-Ho",
-      "dienVien": " ",
-      "quocGia": "Hàn Quốc",
-      "moTa": "Junior là một khủng long bạo chúa Taborsaurus con nhưng vô cùng yếu ớt và nhút nhát. Dino - cha của Junior lại rất khắt khe và không hài lòng với con mình. Một ngày nọ, Junior bị bọn khủng long raptor bắt cóc. Dino trên hành trình đi tìm con đã kết bạn với những loài khủng long khác. Trong khi đó, Junior cũng có thêm bạn mới, bắt đầu trưởng thành hơn và chờ đợi cha mình. Đến lúc tưởng như sắp tìm thấy nhau, nguy hiểm đến từ vùng núi lửa lại ập đến và đe dọa cả hai cha con. ",
+      "name": "Vua Khủng Long: Phiêu Lưu Đến Vùng Núi Lửa - Dino King Journey to Fire Mountain",
+      "minutes": 92,
+      "releaseDate": "2019-07-5",
+      "category": "hoạt hình, phiêu lưu",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/vua-khung-long-phieu-luu-den-vung-nui-lua-dino-king-journey-to-fire-mountain-15586033825820_220x310.jpg",
+      "pointIMDB": 7.4,
+      "age": 13,
+      "type": "2D",
+      "directors": "Han Sang-Ho",
+      "cast": " ",
+      "nation": "Hàn Quốc",
+      "description": "Junior là một khủng long bạo chúa Taborsaurus con nhưng vô cùng yếu ớt và nhút nhát. Dino - cha của Junior lại rất khắt khe và không hài lòng với con mình. Một ngày nọ, Junior bị bọn khủng long raptor bắt cóc. Dino trên hành trình đi tìm con đã kết bạn với những loài khủng long khác. Trong khi đó, Junior cũng có thêm bạn mới, bắt đầu trưởng thành hơn và chờ đợi cha mình. Đến lúc tưởng như sắp tìm thấy nhau, nguy hiểm đến từ vùng núi lửa lại ập đến và đe dọa cả hai cha con. ",
       "id": 9
     },
     {
-      "tenPhim": "Đẳng Cấp Thú Cưng 2 - The Secret Life of Pets 2",
-      "soPhut": 98,
-      "ngayKhoiChieu": 1564531200000,
-      "theLoai": "hoạt hình, hài hước",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dang-cap-thu-cung-2-the-secret-life-of-pets-2-15589461966995_220x310.jpg",
-      "trailer": "cc7qagjLwzU",
-      "diemIMDB": 6.6,
-      "doTuoi": 13,
-      "dinhDang": "2D",
-      "daoDien": "Chris Renaud",
-      "dienVien": " Harrison Ford, Patton Oswalt, Kevin Har",
-      "quocGia": "Mỹ",
-      "moTa": "Đẳng Cấp Thú Cưng 2 là câu chuyện về những gì diễn ra trong cuộc sống của thú cưng sau khi chủ của chúng đi làm hoặc đi học hàng ngày. Giám đốc điều hành và nhà sáng lập của hãng Illumination – Chris Meledandri và người cộng sự lâu năm Janet Healy sẽ sản xuất phần tiếp theo của thương hiệu hoạt hình đắt giá nhất nhì Hollywood này. Nhà biên kịch sáng giá Brian Lynch (Minions) và đạo diễn tài năng Chris Renaud (series Despicable Me, Dr. Seuss’ The Lorax) sẽ đảm nhận vai trò cầm trịch của dự án. ",
+      "name": "Đẳng Cấp Thú Cưng 2 - The Secret Life of Pets 2",
+      "minutes": 98,
+      "releaseDate": "2020-09-10",
+      "category": "hoạt hình, hài hước",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dang-cap-thu-cung-2-the-secret-life-of-pets-2-15589461966995_220x310.jpg",
+      "pointIMDB": 6.6,
+      "age": 13,
+      "type": "2D",
+      "directors": "Chris Renaud",
+      "cast": " Harrison Ford, Patton Oswalt, Kevin Har",
+      "nation": "Mỹ",
+      "description": "Đẳng Cấp Thú Cưng 2 là câu chuyện về những gì diễn ra trong cuộc sống của thú cưng sau khi chủ của chúng đi làm hoặc đi học hàng ngày. Giám đốc điều hành và nhà sáng lập của hãng Illumination – Chris Meledandri và người cộng sự lâu năm Janet Healy sẽ sản xuất phần tiếp theo của thương hiệu hoạt hình đắt giá nhất nhì Hollywood này. Nhà biên kịch sáng giá Brian Lynch (Minions) và đạo diễn tài năng Chris Renaud (series Despicable Me, Dr. Seuss’ The Lorax) sẽ đảm nhận vai trò cầm trịch của dự án. ",
       "id": 10
     },
     {
-      "tenPhim": "Kế Hoạch Đào Tẩu 3: Giải Cứu - Escape Plan: The Extractors",
-      "soPhut": 95,
-      "ngayKhoiChieu": 1562889600000,
-      "theLoai": "hành động",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/ke-hoach-dao-tau-3-giai-cuu-escape-plan-the-extractors-c18-15622464737620_220x310.jpg",
-      "trailer": "Vj2QAFIEZlc",
-      "diemIMDB": 4.4,
-      "doTuoi": 18,
-      "dinhDang": "3D",
-      "daoDien": "John Herzfeld",
-      "dienVien": " 50 Cent, Dave Bautista, Sylvester Stallone",
-      "quocGia": "Mỹ",
-      "moTa": "Chuyên gia an ninh Ray Breslin (Stallone) được thuê để giải cứu con gái của một nhà tài phiệt bị bắt cóc tại nhà tù bí ẩn mang tên Trạm Quỷ. Cộng sự của ông gồm có tay cung cấp vũ khí Trent (Dave Bautista) và hacker Hush (50 Cent). Sen Lo (Trương Tấn) - bạn trai của con tin cũng bất ngờ xuất hiện và đồng hành cùng nhóm trong cuộc giải cứu. Tuy nhiên, khi họ bước vào Trạm Quỷ cũng là lúc họ rơi vào chiếc bẫy chết người. Không những phải đối đầu với kẻ thù tàn bạo, nhóm còn phải chạy đua với thời gian để giải thoát các con tin khỏi tay tử thần.",
+      "name": "Kế Hoạch Đào Tẩu 3: Giải Cứu - Escape Plan: The Extractors",
+      "minutes": 95,
+      "releaseDate": "2020-09-10",
+      "category": "hành động",
+      "status": 0,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/ke-hoach-dao-tau-3-giai-cuu-escape-plan-the-extractors-c18-15622464737620_220x310.jpg",
+      "pointIMDB": 4.4,
+      "age": 18,
+      "type": "3D",
+      "directors": "John Herzfeld",
+      "cast": " 50 Cent, Dave Bautista, Sylvester Stallone",
+      "nation": "Mỹ",
+      "description": "Chuyên gia an ninh Ray Breslin (Stallone) được thuê để giải cứu con gái của một nhà tài phiệt bị bắt cóc tại nhà tù bí ẩn mang tên Trạm Quỷ. Cộng sự của ông gồm có tay cung cấp vũ khí Trent (Dave Bautista) và hacker Hush (50 Cent). Sen Lo (Trương Tấn) - bạn trai của con tin cũng bất ngờ xuất hiện và đồng hành cùng nhóm trong cuộc giải cứu. Tuy nhiên, khi họ bước vào Trạm Quỷ cũng là lúc họ rơi vào chiếc bẫy chết người. Không những phải đối đầu với kẻ thù tàn bạo, nhóm còn phải chạy đua với thời gian để giải thoát các con tin khỏi tay tử thần.",
       "id": 14
     },
     {
-      "tenPhim": "Đội Chống Tham Nhũng - P Storm",
-      "soPhut": 95,
-      "ngayKhoiChieu": 1562889600000,
-      "theLoai": "hành động, kịch tính",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/06/doi-chong-tham-nhung-p-storm-15616946818132_220x310.jpg",
-      "trailer": "_BtyPxcaKT4",
-      "diemIMDB": 6,
-      "doTuoi": 18,
-      "dinhDang": "3D",
-      "daoDien": "David Lam",
-      "dienVien": "Lâm Phong, Cổ Thiên Lạc",
-      "quocGia": "Hồng Kông",
-      "moTa": "Phim kể về một gã cảnh sát đã nhận hối lộ 30 triệu đô la Hong Kong để giúp một kẻ giết người trong nhà tù sớm được trả tự do. Một cuộc điều tra đã được bắt đầu để tìm ra danh tính gã cảnh sát. Lục Chí Liêm (Cổ Thiên Lạc) vào tù giả làm phạm nhân để tiếp cận và tìm chứng cứ từ Tào Nguyên Nguyên (Lâm Phong) – thiếu gia ăn chơi khét tiếng đang bị giam giữ, còn đồng nghiệp Trình Đức Minh (Trịnh Gia Dĩnh) thì ở bên ngoài để tìm kiếm bằng chứng. Trong khoảng thời gian này, Lục Chí Liêm còn phải đối mặt với những kẻ từng bị anh vạch tội bỏ tù trước đây.",
+      "name": "Đội Chống Tham Nhũng - P Storm",
+      "minutes": 95,
+      "releaseDate": "2020-09-11",
+      "category": "hành động, kịch tính",
+      "status": 0,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/doi-chong-tham-nhung-p-storm-15616946818132_220x310.jpg",
+      "pointIMDB": 6,
+      "age": 18,
+      "type": "3D",
+      "directors": "David Lam",
+      "cast": "Lâm Phong, Cổ Thiên Lạc",
+      "nation": "Hồng Kông",
+      "description": "Phim kể về một gã cảnh sát đã nhận hối lộ 30 triệu đô la Hong Kong để giúp một kẻ giết người trong nhà tù sớm được trả tự do. Một cuộc điều tra đã được bắt đầu để tìm ra danh tính gã cảnh sát. Lục Chí Liêm (Cổ Thiên Lạc) vào tù giả làm phạm nhân để tiếp cận và tìm chứng cứ từ Tào Nguyên Nguyên (Lâm Phong) – thiếu gia ăn chơi khét tiếng đang bị giam giữ, còn đồng nghiệp Trình Đức Minh (Trịnh Gia Dĩnh) thì ở bên ngoài để tìm kiếm bằng chứng. Trong khoảng thời gian này, Lục Chí Liêm còn phải đối mặt với những kẻ từng bị anh vạch tội bỏ tù trước đây.",
       "id": 15
     },
     {
-      "tenPhim": "Định Mệnh Trong Mắt Anh - Fortuna's Eye",
-      "soPhut": 110,
-      "ngayKhoiChieu": 1562889600000,
-      "theLoai": "hành động, kịch tính",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/dinh-menh-trong-mat-anh-fortuna-s-eye-15624311374199_220x310.jpg",
-      "trailer": "S_BGJqNCpU4",
-      "diemIMDB": 5.6,
-      "doTuoi": 16,
-      "dinhDang": "2D",
-      "daoDien": "Takahiro Miki",
-      "dienVien": " ",
-      "quocGia": "Nhật Bản",
-      "moTa": "Định Mệnh Trong Mắt Anh kể về Shinichiro Kiyama (Ryunosuke Kamiki) – chàng trai đã mất gia đình trong một tai nạn máy bay từ khi còn nhỏ. Cuộc sống của Shinichiro thay đổi hoàn toàn kể từ ngày anh nhận ra mình sở hữu “con mắt của Fortuna”. Anh tình cờ gặp Aoi Kiryu (Kasumi Arimura) – một cô gái rạng rỡ và tràn đầy tự tin. Cuộc sống cô độc của Shinichiro bắt đầu được tô điểm bởi những sắc màu mới mẻ. Hai người cảm mến nhau và cùng trải qua những tháng ngày hạnh phúc. Nhưng đột nhiên, Shinichiro phát hiện anh có thể nhìn xuyên thấu qua Aoi. Shinichiro sẽ làm gì khi cái giá để cứu người anh yêu thương nhất lại là sinh mạng của chính mình?",
+      "name": "Định Mệnh Trong Mắt Anh - Fortuna's Eye",
+      "minutes": 110,
+      "releaseDate": "2019-07-05",
+      "category": "hành động, kịch tính",
+      "status": 0,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/dinh-menh-trong-mat-anh-fortuna-s-eye-15624311374199_220x310.jpg",
+      "pointIMDB": 5.6,
+      "age": 16,
+      "type": "2D",
+      "directors": "Takahiro Miki",
+      "cast": " ",
+      "nation": "Nhật Bản",
+      "description": "Định Mệnh Trong Mắt Anh kể về Shinichiro Kiyama (Ryunosuke Kamiki) – chàng trai đã mất gia đình trong một tai nạn máy bay từ khi còn nhỏ. Cuộc sống của Shinichiro thay đổi hoàn toàn kể từ ngày anh nhận ra mình sở hữu “con mắt của Fortuna”. Anh tình cờ gặp Aoi Kiryu (Kasumi Arimura) – một cô gái rạng rỡ và tràn đầy tự tin. Cuộc sống cô độc của Shinichiro bắt đầu được tô điểm bởi những sắc màu mới mẻ. Hai người cảm mến nhau và cùng trải qua những tháng ngày hạnh phúc. Nhưng đột nhiên, Shinichiro phát hiện anh có thể nhìn xuyên thấu qua Aoi. Shinichiro sẽ làm gì khi cái giá để cứu người anh yêu thương nhất lại là sinh mạng của chính mình?",
       "id": 16
     },
     {
-      "tenPhim": "Lời Nguyền Con Đầm Bích: Ác Quỷ Trong Gương - Queen of Spades: Through the Looking Glass",
-      "soPhut": 100,
-      "ngayKhoiChieu": 1562889600000,
-      "theLoai": "kinh dị",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/loi-nguyen-con-dam-bich-ac-quy-trong-guong-queen-of-spades-through-the-looking-glass-c16-15619725262782_220x310.jpg",
-      "trailer": "gBfvZYpq4vM",
-      "diemIMDB": 5.1,
-      "doTuoi": 18,
-      "dinhDang": "2D",
-      "daoDien": "Aleksandr Domogarov",
-      "dienVien": " ",
-      "quocGia": "Nga",
-      "moTa": "Truyền thuyết kể rằng, bất kỳ chiếc gương nào cũng có thể mở ra một cánh cổng dẫn đến thế giới của người chết, thông qua nghi lễ triệu hồi ác phụ Đầm Bích. Một nhóm học sinh đã phát hiện ra tấm gương ma quái ngay bên trong ngôi trường nội trú lâu đời của mình. Họ vô tình đọc một câu thần chú cổ xưa mà không biết rằng cái giá phải trả là linh hồn chính mình.",
+      "name": "Lời Nguyền Con Đầm Bích: Ác Quỷ Trong Gương - Queen of Spades: Through the Looking Glass",
+      "minutes": 100,
+      "releaseDate": "2020-09-11",
+      "category": "kinh dị",
+      "status": 0,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/loi-nguyen-con-dam-bich-ac-quy-trong-guong-queen-of-spades-through-the-looking-glass-c16-15619725262782_220x310.jpg",
+      "pointIMDB": 5.1,
+      "age": 18,
+      "type": "2D",
+      "directors": "Aleksandr Domogarov",
+      "cast": " ",
+      "nation": "Nga",
+      "description": "Truyền thuyết kể rằng, bất kỳ chiếc gương nào cũng có thể mở ra một cánh cổng dẫn đến thế giới của người chết, thông qua nghi lễ triệu hồi ác phụ Đầm Bích. Một nhóm học sinh đã phát hiện ra tấm gương ma quái ngay bên trong ngôi trường nội trú lâu đời của mình. Họ vô tình đọc một câu thần chú cổ xưa mà không biết rằng cái giá phải trả là linh hồn chính mình.",
       "id": 17
     },
     {
-      "tenPhim": "Step Up 6: Vũ Điệu Đường Phố - Step Up: Year Of The Dance",
-      "soPhut": 100,
-      "ngayKhoiChieu": 1563494400000,
-      "theLoai": "âm nhạc, tình cảm",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/step-up-6-vu-dieu-duong-pho-step-up-year-of-the-dance-c16-15621420671581_220x310.jpg",
-      "trailer": "Fk9U2PRSWBM",
-      "diemIMDB": 4.2,
-      "doTuoi": 16,
-      "dinhDang": "2D",
-      "daoDien": "Ron Yuan",
-      "dienVien": " ",
-      "quocGia": " ",
-      "moTa": "Những màn vũ đạo nóng bỏng vô cùng đỉnh cao chính thức trở lại trong mùa hè năm nay. Bước nhảy điêu luyện cực chất, âm nhạc bắt tai cực đỉnh cộng hưởng dàn diễn viên trai xinh gái đẹp mãn nhãn hứa hẹn sẽ bùng nổ những tín đồ mê phim.",
+      "name": "Step Up 6: Vũ Điệu Đường Phố - Step Up: Year Of The Dance",
+      "minutes": 100,
+      "releaseDate": "2020-09-12",
+      "category": "âm nhạc, tình cảm",
+      "status": 0,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/step-up-6-vu-dieu-duong-pho-step-up-year-of-the-dance-c16-15621420671581_220x310.jpg",
+      "pointIMDB": 4.2,
+      "age": 16,
+      "type": "2D",
+      "directors": "Ron Yuan",
+      "cast": " ",
+      "nation": " ",
+      "description": "Những màn vũ đạo nóng bỏng vô cùng đỉnh cao chính thức trở lại trong mùa hè năm nay. Bước nhảy điêu luyện cực chất, âm nhạc bắt tai cực đỉnh cộng hưởng dàn diễn viên trai xinh gái đẹp mãn nhãn hứa hẹn sẽ bùng nổ những tín đồ mê phim.",
       "id": 18
     },
     {
-      "tenPhim": "Vòng Luân Hồi: Sadako",
-      "soPhut": 100,
-      "ngayKhoiChieu": 1563494400000,
-      "theLoai": "kinh dị",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/07/vong-luan-hoi-sadako-c18-15620622370416_220x310.jpg",
-      "trailer": "7s_CIBRMZCE",
-      "diemIMDB": 5.6,
-      "doTuoi": 18,
-      "dinhDang": "2D",
-      "daoDien": "Hideo Nakata",
-      "dienVien": " ",
-      "quocGia": "Nhật Bản ",
-      "moTa": "Phần tiếp theo của bộ phim ma kinh dị, khởi nguồn cho dòng phim kinh dị cả thế giới. Ma nữ Sadako chui lên từ miệng giếng mang đến nỗi khiếp sợ cho khán giả.",
+      "name": "Vòng Luân Hồi: Sadako",
+      "minutes": 100,
+      "releaseDate": "2020-09-10",
+      "category": "kinh dị",
+      "status": 0,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/vong-luan-hoi-sadako-c18-15620622370416_220x310.jpg",
+      "pointIMDB": 5.6,
+      "age": 18,
+      "type": "2D",
+      "directors": "Hideo Nakata",
+      "cast": " ",
+      "nation": "Nhật Bản ",
+      "description": "Phần tiếp theo của bộ phim ma kinh dị, khởi nguồn cho dòng phim kinh dị cả thế giới. Ma nữ Sadako chui lên từ miệng giếng mang đến nỗi khiếp sợ cho khán giả.",
       "id": 19
     },
     {
-      "tenPhim": "Vua Sử Tử - The Lion King",
-      "soPhut": 118,
-      "ngayKhoiChieu": 1563494400000,
-      "theLoai": "hoạt hình, phiêu lưu",
-      "trangThai": 0,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/02/vua-su-tu-the-lion-king-15512514519540_220x310.jpg",
-      "trailer": "oQhLLxYgACo",
-      "diemIMDB": 7.6,
-      "doTuoi": 13,
-      "dinhDang": "2D",
-      "daoDien": "Jon Favreau",
-      "dienVien": "Donald Glover, Beyoncé Knowles, Chiwetel Ejiofor, Seth Rogen ",
-      "quocGia": "Mỹ",
-      "moTa": "Phiên bản live-action của Vua Sư Tử huyền thoại.",
+      "name": "Vua Sử Tử - The Lion King",
+      "minutes": 118,
+      "releaseDate": "2020-09-11",
+      "category": "hoạt hình, phiêu lưu",
+      "status": 0,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/02/vua-su-tu-the-lion-king-15512514519540_220x310.jpg",
+      "pointIMDB": 7.6,
+      "age": 13,
+      "type": "2D",
+      "directors": "Jon Favreau",
+      "cast": "Donald Glover, Beyoncé Knowles, Chiwetel Ejiofor, Seth Rogen ",
+      "nation": "Mỹ",
+      "description": "Phiên bản live-action của Vua Sư Tử huyền thoại.",
       "id": 20
     },
     {
-      "tenPhim": "Diệp Vấn 4 - Ip Man 4",
-      "soPhut": 120,
-      "ngayKhoiChieu": 1564099200000,
-      "theLoai": "võ thuật",
-      "trangThai": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/mobile/123phim/2019/05/diep-van-4-ip-man-4-15586040278365_220x310.jpg",
-      "trailer": "hZwDIzVXKmE",
-      "diemIMDB": 0,
-      "doTuoi": 13,
-      "dinhDang": "2D",
-      "daoDien": "Wilson Yip",
-      "dienVien": "Chung Tử Đơn",
-      "quocGia": "Trung Quốc",
-      "moTa": "Phần tiếp theo về Diệp Vấn.",
+      "name": "Diệp Vấn 4 - Ip Man 4",
+      "minutes": 120,
+      "releaseDate": "2019-07-05",
+      "category": "võ thuật",
+      "status": 1,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/diep-van-4-ip-man-4-15586040278365_220x310.jpg",
+      "pointIMDB": 0,
+      "age": 13,
+      "type": "2D/3D",
+      "directors": "Wilson Yip",
+      "cast": "Chung Tử Đơn",
+      "nation": "Trung Quốc",
+      "description": "Phần tiếp theo về Diệp Vấn.",
       "id": 21
     }
   ],
@@ -393,256 +399,254 @@
     {
       "numberSeat": [
         {
-          "MaGhe": "A01",
-          "LoaiGhe": "Thuong",
-          "GiaVe": 75000,
-          "DaDat": true
+          "codeSeat": "A01",
+          "price": 75000,
+          "status": true
         },
         {
-          "MaGhe": "A02",
-          "LoaiGhe": "Thuong",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A02",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A03",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A03",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A04",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A04",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A05",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A05",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A06",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A06",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A07",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A07",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A08",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A08",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A09",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A09",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A10",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A10",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A11",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A11",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A12",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A12",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A13",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A13",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A14",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A14",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A15",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A15",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A16",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A16",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A17",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A17",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A18",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A18",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A19",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A19",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A20",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A20",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A21",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A21",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A22",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A22",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A23",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A23",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A24",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A24",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A25",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A25",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A26",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A26",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A27",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A27",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A28",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A28",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A29",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A29",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A30",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A30",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A31",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A31",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A32",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A32",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A33",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A33",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A34",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A34",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A35",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A35",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A36",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A36",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A37",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A37",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A38",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A38",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A39",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A39",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A40",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A40",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A41",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A41",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A42",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A42",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A43",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A43",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A44",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A44",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A45",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A45",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A46",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A46",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A47",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A47",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A48",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A48",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A49",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A49",
+          "price": 75000,
+          "status": false
         },
         {
-          "MaGhe": "A50",
-          "GiaVe": 75000,
-          "DaDat": false
+          "codeSeat": "A50",
+          "price": 75000,
+          "status": false
         }
       ],
       "id": 1,
@@ -652,74 +656,135 @@
   "theaters": [
     {
       "id": 1,
-      "tenRap": "Lotte Cinema",
+      "name": "Lotte Cinema",
       "branchId": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/404b8c4b80d77732e7426cdb7e24be20.png"
+      "image": "https://s3img.vcdn.vn/123phim/2018/09/404b8c4b80d77732e7426cdb7e24be20.png"
     },
     {
       "id": 2,
-      "tenRap": "Lotte Star Cineplex",
+      "name": "Lotte Star Cineplex",
       "branchId": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/f32670fd0eb083c9c4c804f0f3a252ed.png"
+      "image": "https://s3img.vcdn.vn/123phim/2018/09/f32670fd0eb083c9c4c804f0f3a252ed.png"
     },
     {
       "id": 3,
-      "tenRap": "Lotte Skylake",
+      "name": "Lotte Skylake",
       "branchId": 1,
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/e520781386bd5436e94d6e15e193a005.png"
+      "image": "https://s3img.vcdn.vn/123phim/2018/09/e520781386bd5436e94d6e15e193a005.png"
     },
     {
       "id": 4,
-      "tenRap": "Lotte CineStar",
+      "name": "Lotte CineStar",
       "branchId": 2,
-      "hinhAnh": "https://i.imgur.com/0XnfUIg.png"
+      "image": "https://i.imgur.com/0XnfUIg.png"
     },
     {
       "id": 5,
-      "tenRap": "Lotte - Đống Đa",
+      "name": "Lotte - Đống Đa",
       "branchId": 2,
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/9b240f96a233bb43203ee514a21a6004.png"
+      "image": "https://s3img.vcdn.vn/123phim/2018/09/9b240f96a233bb43203ee514a21a6004.png"
     },
     {
       "id": 6,
       "branchId": 2,
-      "tenRap": "BHD Star Cineplex - Phạm Hùng",
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-pham-hung-15379533093101.jpg"
+      "name": "BHD Star Cineplex - Phạm Hùng",
+      "image": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-pham-hung-15379533093101.jpg"
     },
     {
       "id": 7,
       "branchId": 3,
-      "tenRap": "BHD Star Cineplex - Vincom Quang Trung",
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-quang-trung-15379536724871.jpg"
+      "name": "BHD Star Cineplex - Vincom Quang Trung",
+      "image": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-quang-trung-15379536724871.jpg"
     },
     {
       "id": 8,
       "branchId": 3,
-      "tenRap": "BHD Star Cineplex - Vincom Thảo Điền",
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-thao-dien-15379553942188.jpg"
+      "name": "BHD Star Cineplex - Vincom Thảo Điền",
+      "image": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-thao-dien-15379553942188.jpg"
     }
   ],
   "branchs": [
     {
       "id": 1,
       "theaterId": 1,
-      "ten": "ho chi minh",
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-nam-sai-gon-15383867312967.jpg",
-      "diaChi": "Lotte Mart NSG, 469 Nguyễn Hữu Thọ, Q.7"
+      "name": "ho chi minh",
+      "image": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-nam-sai-gon-15383867312967.jpg",
+      "address": "Lotte Mart NSG, 469 Nguyễn Hữu Thọ, Q.7"
     },
     {
       "id": 2,
       "theaterId": 2,
-      "ten": "ha noi",
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cong-hoa-15383860949090.jpg",
-      "diaChi": "Lotte, 20 Ba Tháng 2, Cầu Giấy"
+      "name": "ha noi",
+      "image": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cong-hoa-15383860949090.jpg",
+      "address": "Lotte, 20 Ba Tháng 2, Cầu Giấy"
     },
     {
       "id": 3,
       "theaterId": 3,
-      "ten": "da nang",
-      "hinhAnh": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cong-hoa-15383860949090.jpg",
-      "diaChi": "Pico Plaza, 20 Cộng Hòa, Tân Bình"
+      "name": "da nang",
+      "image": "https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-cong-hoa-15383860949090.jpg",
+      "address": "Pico Plaza, 20 Cộng Hòa, Tân Bình"
+    }
+  ],
+  "tickets": [
+    {
+      "userId": 2,
+      "code": "X72UE",
+      "nameMovie": "Aladdin",
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/aladdin-15585337476213_220x310.jpg",
+      "count": 1,
+      "combo": [],
+      "total": 75000,
+      "pay": "Thẻ tín dụng",
+      "discount": 0,
+      "showtimes": {
+        "nameTheater": "Lotte - Nam Sài Gòn",
+        "screenings": "18:00",
+        "showDate": "2019-08-05T17:00:00.000Z",
+        "cinemaRoom": 3,
+        "seats": [
+          "A11"
+        ]
+      },
+      "timeSet": 1563639982938,
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "code": "0OA1Y",
+      "nameMovie": "Aladdin",
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/aladdin-15585337476213_220x310.jpg",
+      "count": 2,
+      "combo": [
+        {
+          "id": 1,
+          "image": "https://cms.megagscinemas.vn//media/76071/big-share.png",
+          "nameCombo": "2 ly nước lớn, 1 bắp lớn",
+          "soLuong": 1,
+          "gia": 97000
+        },
+        {
+          "id": 2,
+          "hinhAnh": "https://cms.megagscinemas.vn//media/76070/share.png",
+          "tenCombo": "2 ly nước vừa, 1 bắp lớn",
+          "soLuong": 1,
+          "gia": 87000
+        }
+      ],
+      "total": 233100,
+      "pay": "Thẻ tín dụng",
+      "discount": 10,
+      "showtimes": {
+        "nameTheater": "Lotte - Nam Sài Gòn",
+        "screenings": "15:00",
+        "showDate": "2019-08-05T17:00:00.000Z",
+        "cinemaRoom": 3,
+        "seats": [
+          "A11"
+        ]
+      },
+      "timeSet": 1563640129601,
+      "id": 4
     }
   ],
   "sessions": [],
@@ -727,17 +792,17 @@
   "comboFood": [
     {
       "id": 1,
-      "hinhAnh": "https://cms.megagscinemas.vn//media/76071/big-share.png",
-      "tenCombo": "2 ly nước lớn, 1 bắp lớn",
-      "soLuong": 0,
-      "gia": 97000
+      "image": "https://cms.megagscinemas.vn//media/76071/big-share.png",
+      "nameCombo": "2 ly nước lớn, 1 bắp lớn",
+      "count": 0,
+      "price": 97000
     },
     {
       "id": 2,
-      "hinhAnh": "https://cms.megagscinemas.vn//media/76070/share.png",
-      "tenCombo": "2 ly nước vừa, 1 bắp lớn",
-      "soLuong": 0,
-      "gia": 87000
+      "image": "https://cms.megagscinemas.vn//media/76070/share.png",
+      "nameCombo": "2 ly nước vừa, 1 bắp lớn",
+      "count": 0,
+      "price": 87000
     }
   ]
 }
