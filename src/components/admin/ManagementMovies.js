@@ -142,7 +142,7 @@ const ManagementMovies = (props) => {
             <td>{movie.pointIMDB}</td>
             <td>{movie.type}</td>
             <td>{movie.directors}</td>
-            <td>{movie.cate}</td>
+            <td>{movie.cast}</td>
             <td>{movie.nation}</td>
             <td className="descriptions">{movie.description}</td>
             <td>

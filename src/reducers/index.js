@@ -8,6 +8,9 @@ import bookingTimeReducer from './bookingTime';
 import theaterReducer from './theaters'
 import branchReducer from './branchs'
 import admin from "./admin";
+import tickets from "./tickets";
+
+import movieTypeReducer from './movieType'
 const rootReducer = combineReducers({
   ui,
   currentUser,
@@ -17,7 +20,9 @@ const rootReducer = combineReducers({
   promotionReducer,
   theaterReducer,
   branchReducer,
-  admin
+  admin,
+  tickets,
+  movieTypeReducer
 });
 
 export default rootReducer;

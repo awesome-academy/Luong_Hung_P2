@@ -3,19 +3,29 @@ import { useSelector, useDispatch } from 'react-redux'
 import * as bookingTimeAction from "../../../actions/bookingTime";
 import * as theaterAction from '../../../actions/theaterAction'
 import * as branchAction from '../../../actions/branchs'
+import { movieTypeRequest } from '../../../actions/movieType';
 function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
-    const [isActiveType, setIsActiveType] = useState(0)
+    const [isActiveType, setIsActiveType] = useState(1)
     const [isOpenModal, setIsOpenModal] = useState(isOpenModal2)
-    const [isActiveBranch, setIsActiveBranch] = useState(0)
+    const [isActiveBranch, setIsActiveBranch] = useState(1)
     const [isActiveDate, setIsActiveDate] = useState(0)
     const [newForm, setNewForm] = useState([])
+    const [newSession, setNewSession] = useState([])
+    const [newTheater, setNewTheater] = useState([])
     const sessions = useSelector(state => state.bookingTimeReducer.data)
     const branchs = useSelector(state => state.branchReducer.data)
     const theaters = useSelector(state => state.theaterReducer.data)
+    const movies = useSelector(state => state.movies.movies)
+    const movieTypes = useSelector(state => state.movieTypeReducer.data)
     const dispatch = useDispatch()
+    const [newType, setNewType] = useState(movies)
 
     useEffect(() => {
         dispatch(bookingTimeAction.bookingTimeRequest())
+    }, [dispatch])
+
+    useEffect(() => {
+        dispatch(movieTypeRequest())
     }, [dispatch])
 
     useEffect(() => {
@@ -31,7 +41,7 @@ function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
     }, [isOpenModal2])
 
     useEffect(() => {
-        if (theaters !== null && branchs !== null && sessions !== null) {
+        if (branchs !== null && theaters !== null) {
             const result = [...branchs].filter(() => {
                 if (branchs.theaterId === theaters.id) {
                     return (
@@ -41,20 +51,48 @@ function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
             })
             setNewForm(() => [...result])
         }
-
     }, [branchs, theaters, setNewForm])
 
+
+    useEffect(() => {
+        if (theaters !== null && sessions !== null) {
+
+            const result = [...theaters].filter(() => {
+                if (sessions.theaterId === theaters.id) {
+                    return (
+                        sessions.theaterId === theaters.id
+                    )
+                }
+            })
+            setNewTheater(() => [...result])
+        }
+    }, [sessions, theaters, setNewTheater])
+
+    useEffect(() => {
+        if (movies !== null && sessions !== null && newType !== null) {
+
+            const result = [...sessions].filter(() => {
+                if (sessions.movieId === movies.id && newType.type === sessions.movieType) {
+                    return (
+                        sessions.movieId === movies.id && newType.type === sessions.movieType
+                    )
+                }
+            })
+            setNewSession(() => [...result])
+        }
+    }, [sessions, movies, setNewSession])
 
     const handleModal = () => {
         passIsOpen(0)
     }
 
-
-    const handleActiveType = (id) => {
+    const handleActiveType = (id, value) => {
         setIsActiveType(id)
+        setNewType(value)
     }
 
-    const handleActiveBranch = (id) => {
+
+    const handleActiveBranch = (id,) => {
         setIsActiveBranch(id)
     }
 
@@ -68,7 +106,7 @@ function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
 
         for (let i = 0; i < 4; i++) {
             let today = new Date()
-            let weekday = new Array(7);
+            let weekday = new Array(10);
             weekday[0] = "Sunday";
             weekday[1] = "Monday";
             weekday[2] = "Tuesday";
@@ -76,6 +114,9 @@ function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
             weekday[4] = "Thursday";
             weekday[5] = "Friday";
             weekday[6] = "Saturday";
+            weekday[7] = "Sunday";
+            weekday[8] = "Monday";
+            weekday[9] = "Tuesday";
             let dateToday = (weekday[today.getDay() + i] + " - " + (today.getDate() + i) + '/' + (today.getMonth() + 1))
 
             result.push(
@@ -91,15 +132,12 @@ function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
     }
 
 
-
     const showTime = (movieNow, theater) => {
         let result = []
-
-        sessions && sessions.forEach((session) => {
-            console.log(" session.movieId", session.movieId
-                + "  movieNow.id", movieNow.id)
-            if (movieNow.id === session.movieId &&
-                session.theaterId === theater.id) {
+        newSession && newSession.forEach((session) => {
+            if (session.movieId === movieNow.id &&
+                session.theaterId === theater.id &&
+                session.movieType === newType) {
                 return result.push(
                     mapSuatChieu(session)
                 )
@@ -109,27 +147,27 @@ function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
     }
 
     const mapSuatChieu = (session) => {
-        return session.suatChieu.map((suat, i) =>
-            < span className="booking-form__time__item" key={i}>{suat} PM</span >
+        return session.movieTime.map((time, i) =>
+            < span className="booking-form__time__item" key={i}>{time}</span >
         )
     }
 
-    const showTheater = (movieNow) => {
+    const showTheater = (movieNow, movieTypes) => {
         let result = []
 
-        theaters && theaters.forEach((theater) => {
+        newTheater && newTheater.forEach((theater, i) => {
             if (theater.branchId === isActiveBranch) {
                 return result.push(
-                    <div className="booking-form__time">
+                    <div className="booking-form__time" key={i}>
                         <div
                             className="booking-form__time__name"
                             key={theater.id}
                         >
-                            {theater.tenRap}
+                            {theater.name}
 
                         </div>
                         <div className="row">
-                            {showTime(theater, movieNow)}
+                            {showTime(movieNow, theater, movieTypes)}
                         </div>
                     </div>)
             }
@@ -138,25 +176,23 @@ function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
         return result
     }
 
-    const showType = (movieNow) => {
-        let result = []
+    const showType = () => {
+        return (
+            movieTypes && movieTypes.map((type, i) =>
 
-        sessions && sessions.forEach((session, i) => {
-            if (sessions) {
-                return result.push(<span
-                    className={isActiveType === session.id ?
+                (<span
+                    className={isActiveType === type.id ?
                         "booking-form__type__item active" :
                         "booking-form__type__item"}
-                    onClick={() => handleActiveType(session.id)}
+                    onClick={() => handleActiveType(type.id, type.type)}
                     key={i}
                 >
-                    {movieNow.dinhDang}
+                    {type.type}
                 </span>)
-            }
-        })
-
-        return result
+            )
+        )
     }
+
 
     const showBranch = () => {
         return (
@@ -168,30 +204,31 @@ function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
                     onClick={() => handleActiveBranch(branch.id)}
                     key={i}
 
-                >{branch.ten}</span>
+                >{branch.name}</span>
             )
         )
     }
 
-    const showMovieForm = (movieNow) => {
+    const showMovieForm = (movieNow, movieTypes) => {
 
-        if (movieNow !== null) {
+        if (movieNow !== null && theaters !== null && movieTypes !== null) {
+
             return (
                 <div className="booking-form__inner">
 
                     <div className="booking-form__date row">
-                        {bookingFormDate(movieNow)}
+                        {bookingFormDate()}
                     </div>
 
                     <div className="booking-form__city row">
-                        {showBranch(movieNow)}
+                        {showBranch()}
                     </div>
 
                     <div className="booking-form__type row">
-                        {showType(movieNow)[0]}
+                        {showType()}
                     </div>
 
-                    {showTheater(movieNow)}
+                    {showTheater(movieNow, movieTypes)}
 
                 </div>
 
@@ -206,7 +243,7 @@ function BookingForm({ movieNow, passIsOpen, isOpenModal2 }) {
             <div className="background-modal"
                 onClick={handleModal}></div>
             <div className="booking-form">
-                {showMovieForm(movieNow)}
+                {showMovieForm(movieNow, movieTypes)}
             </div>
         </div>
     )

@@ -53,7 +53,20 @@
     "managementMovies": "Management Movies",
     "managementRevenue": "Management Revenue",
     "managementTicket": "Management Ticket",
-    "addMovie": "Add Movie"
+    "addMovie": "Add Movie",
+    "close": "Close",
+    "ticketingInformation": "Ticketing information",
+    "ticket": "Ticket",
+    "account": "Account",
+    "pay": "Payment Methods",
+    "screenings": "Screenings",
+    "showDate": "Show Date",
+    "cinemaRoom": "Cinema Room",
+    "seats": "Seats",
+    "revenue": "Revenue",
+    "day": "Day",
+    "moneyMovie": "Money Movie",
+    "moneyFood": "Money Food"
   },
   "auth": {
     "password": "Password",
@@ -94,6 +107,12 @@
     "2D3D": "2D/3D",
     "editMovie": "Edit Movie",
     "birth": "Birth Day",
-    "requirementChangePassword": "Requirement Change Password"
+    "requirementChangePassword": "Requirement Change Password",
+    "account": "Account",
+    "nameTheater": "Name Theater",
+    "timeSet": "Time Set",
+    "action": "Action",
+    "nameMovie": "Name Movie",
+    "show": "Show"
   }
 }

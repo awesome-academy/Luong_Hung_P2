@@ -54,6 +54,10 @@ export const getBranchs = () => {
   return axiosService.get(`${API_ENDPOINT}/branchs`)
 }
 
+export const getMovieType = () => {
+  return axiosService.get(`${API_ENDPOINT}/movieTypes`)
+}
+
 // http://localhost:3100/users METHOD: DELETE
 export const deleteUser = (data) => {
   return axiosService.delete(`${API_ENDPOINT}/users/${data.id}`)
@@ -72,4 +76,14 @@ export const putEditMovie = (data) => {
 // http://localhost:3100/movies METHOD: POST
 export const postAddMovie = (data) => {
   return axiosService.post(`${API_ENDPOINT}/movies/`, data)
+}
+
+// http://localhost:3100/tickets METHOD: GET
+export const getTicket = () => {
+  return axiosService.get(`${API_ENDPOINT}/tickets/`)
+}
+
+// http://localhost:3100/tickets METHOD: GET
+export const deleteTicket = (data) => {
+  return axiosService.delete(`${API_ENDPOINT}/tickets/${data.id}`)
 }

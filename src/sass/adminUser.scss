@@ -13,6 +13,7 @@
       width: 100%;
       border-collapse: collapse;
       tr {
+        line-height: 1rem;
         th, td {
           border: 1px solid $colorBorder;  
           padding: 5px 10px;
@@ -35,6 +36,7 @@
           .avatar {
             border-radius: 50%;
             width: 50px;
+            height: 50px;
           }
           .edit {
             padding: 5px;
@@ -82,25 +84,99 @@
       }
     }
   }
+  .adminRevenue {
+    .table {
+      tr {
+        line-height: 2rem;
+      }
+    }
+    .total {
+      @include customFont(18px, "roboto");
+      text-align: right;
+      margin: 20px 40px;
+      color: $colorGreen;
+    }
+  }
+  .adminTickets {
+    .table {
+      tr {
+        line-height: 2rem;
+      }
+    }
+  }
 }
 
 .booking-form {
   position: fixed;
-  top: 5%;
-  left: 20%;
-  right: 20%;
+  top: 50%;
+  left: 50%;
   width: 850px;
   height: 650px;
   z-index: 999;
   border-radius: 20px;
   overflow: scroll;
   background: $colorWhite;
+  margin-left: -425px;
+  margin-top: -325px;
   &__inner {
-      background-color: #fff;
-      padding: 40px;
-      width: 100%;
-      height: 100%;
-      opacity: 1;
+    background-color: #fff;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    .wrapper {
+      display: flex;
+      .left {
+        width: 50%;
+        &__account {
+          @include customFont(20px, "roboto");
+          text-align: center;
+        }
+        &__information {
+          @include customFont(18px, "roboto");
+          margin: 20px 0;
+          .icon {
+            width: 30px;
+            position: relative;
+            top: 6px;
+          }
+        } 
+        &__item {
+          @include customFont(16px, "roboto");
+          display: flex;
+          justify-content: space-between;
+          margin: 0 35px;
+        }
+        &__total {
+          @include customFont(16px, "roboto");
+          margin-top: 20px;
+          text-align: center;
+          color: $colorRed;
+        }
+        &__pay {
+          @include customFont(16px, "roboto");
+          text-align: center;
+        }
+      }
+      .right{
+        width: 50%;
+        &__image {
+          margin-left: 20%;
+        }
+        &--center {
+          text-align: center;
+          @include customFont(18px, "roboto");
+        }
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 35px;
+          .item {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
   .adminEditUser {
     width: 100%;
