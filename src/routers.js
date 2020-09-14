@@ -118,28 +118,28 @@ const routers = [
   },
   {
     path: "/admin/managementUsers",
-    exact: false,
+    exact: true,
     main: ({ location, history }) => (
       <ManagementUsers location={location} history={history} />
     ),
   },
   {
     path: "/admin/managementMovies",
-    exact: false,
+    exact: true,
     main: ({ location, history }) => (
       <ManagementMovies location={location} history={history} />
     ),
   },
   {
     path: "/admin/managementRevenue",
-    exact: false,
+    exact: true,
     main: ({ location, history }) => (
       <ManagementRevenue location={location} history={history} />
     ),
   },
   {
     path: "/admin/managementTicket",
-    exact: false,
+    exact: true,
     main: ({ location, history }) => (
       <ManagementTicket location={location} history={history} />
     ),

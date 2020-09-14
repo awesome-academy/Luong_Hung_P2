@@ -52,7 +52,8 @@
     "managementUsers": "Management Users",
     "managementMovies": "Management Movies",
     "managementRevenue": "Management Revenue",
-    "managementTicket": "Management Ticket"
+    "managementTicket": "Management Ticket",
+    "addMovie": "Add Movie"
   },
   "auth": {
     "password": "Password",
@@ -72,9 +73,27 @@
     "newDateOfBirth": "New Date Of Birth",
     "newGender": "New Gender",
     "editUser": "Edit",
-    "ngayTao": "Register Date",
+    "registerDate": "Register Date",
     "edit": "Edit",
     "delete": "Delete",
-    "avatar": "Avatar"
+    "avatar": "Avatar",
+    "email": "Email",
+    "minutes": "Minutes",
+    "category": "Category",
+    "status": "Status",
+    "image": "Image",
+    "pointIMDB": "Point IMDB",
+    "type": "Type",
+    "directors": "Directors",
+    "nation": "Nation",
+    "description": "Description",
+    "cast": "Cast",
+    "age": "Age",
+    "2D": "2D",
+    "3D": "3D",
+    "2D3D": "2D/3D",
+    "editMovie": "Edit Movie",
+    "birth": "Birth Day",
+    "requirementChangePassword": "Requirement Change Password"
   }
 }

@@ -19,7 +19,7 @@ const Information = (props) => {
         return result.push(
           <div className="information" key={i}>
             <img
-              src="http://gravatar.com/avatar/1de9d8681a3a3311fe6e9f18500ecbfc?d=identicon"
+              src={acc.avatar}
               alt="avatar"
               className="information__avatar"
             />

@@ -30,9 +30,9 @@ function NowShowing() {
   useEffect(() => {
     if (movies !== null) {
       const result = [...movies].filter((movie) => {
-        if (movie.trangThai === 1) {
+        if (movie.status === 1) {
           return (
-            movie.trangThai === 1
+            movie.status === 1
           )
         }
       })
@@ -60,13 +60,12 @@ function NowShowing() {
     const result = [];
     if (currentPosts) {
       currentPosts.forEach((movie, i) => {
-        const date = new Date(movie.ngayKhoiChieu);
         return result.push(
           <div className="col-12 col-sm-6 col-lg-3" key={i}>
             <div className="movie">
               <div className="wrap-image">
                 <img
-                  src={movie.hinhAnh}
+                  src={movie.image}
                   alt="image__movie"
                   className="movie__image"
                 />
@@ -79,18 +78,18 @@ function NowShowing() {
                   </button>
                 </div>
               </div>
-              <div className="movie__name">{movie.tenPhim}</div>
+              <div className="movie__name" title={movie.name}>{movie.name}</div>
               <div className="movie__genre movie__item">
                 <span className="key">{t("home.genre")}: </span>
-                <span className="value">{movie.theLoai}</span>
+                <span className="value">{movie.type}</span>
               </div>
               <div className="movie__time movie__item">
                 <span className="key">{t("home.runningTime")}: </span>
-                <span className="value">{movie.soPhut} {t("home.minutes")}</span>
+                <span className="value">{movie.minutes} {t("home.minutes")}</span>
               </div>
               <div className="movie__date movie__item">
                 <span className="key">{t("home.releaseDate")}: </span>
-                <span className="value">{date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear()}</span>
+                <span className="value">{movie.releaseDate}</span>
               </div>
             </div>
             <div className={isOpenModal === movie.id ? "" : "none"}>

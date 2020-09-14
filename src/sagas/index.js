@@ -14,7 +14,7 @@ import { promotionSuccess, promotionFailed } from "../actions/promotion"
 import { theaterSuccess, theaterFailed } from '../actions/theaterAction';
 import { bookingTimeSuccess, bookingTimeFailed } from "../actions/bookingTime"
 import { branchSuccess, branchFailed } from '../actions/branchs';
-import { deleteUserSuccess, deleteUserFailed } from '../actions/admin';
+import { deleteUserSuccess, deleteUserFailed, deleteMovieSuccess, deleteMovieFailed, editMovieSuccess, editMovieFailed, editUserSuccess, editUserFailed, addMovieSuccess, addMovieFailed } from '../actions/admin';
 import { hideLoading, showLoading } from "../actions/ui";
 import {
   postLogin,
@@ -27,7 +27,10 @@ import {
   putEditAccount,
   getTheaters,
   getBranchs,
-  deleteUser
+  deleteUser,
+  deleteMovie,
+  putEditMovie,
+  postAddMovie
 }
   from "../apis/auth";
 import { STATUS_CODE } from "../constants";
@@ -164,7 +167,7 @@ function* branchSaga() {
       yield put(branchSuccess(data))
     }
   } catch (error) {
-    yield put(bookingTimeFailed(error))
+    yield put(branchFailed(error))
   }
 }
 
@@ -182,6 +185,7 @@ function* accountSaga() {
 
 function* editAccountSaga({ payload }) {
   const { account } = payload;
+  console.log(account);
   yield put(showLoading());
   try {
     const resp = yield call(putEditAccount, account);
@@ -205,11 +209,85 @@ function* deleteUserSaga({ payload }) {
     const resp = yield call(deleteUser, account);
     const { status } = resp;
     if (status === STATUS_CODE.SUCCESS) {
-      yield put(editAccountSuccess(account));
+      yield put(deleteUserSuccess(account));
     }
   } catch (error) {
     if (error === "data is not iterable") {
-      yield put(editAccountFailed(error));
+      yield put(deleteUserFailed(error));
+    }
+  }
+  yield delay(1000);
+  yield put(hideLoading());
+}
+
+function* deleteMovieSaga({ payload }) {
+  const { movie } = payload;
+  yield put(showLoading());
+  try {
+    const resp = yield call(deleteMovie, movie);
+    const { status } = resp;
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(deleteMovieSuccess(movie));
+    }
+  } catch (error) {
+    if (error === "data is not iterable") {
+      yield put(deleteMovieFailed(error));
+    }
+  }
+  yield delay(1000);
+  yield put(hideLoading());
+}
+
+function* editMovieSaga({ payload }) {
+  const { movie } = payload;
+  yield put(showLoading());
+  try {
+    const resp = yield call(putEditMovie, movie);
+    const { status } = resp;
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(editMovieSuccess(movie));
+    }
+  } catch (error) {
+    if (error === "data is not iterable") {
+      yield put(editMovieFailed(error));
+    }
+  }
+  yield delay(1000);
+  yield put(hideLoading());
+}
+
+function* editUserSaga({ payload }) {
+  const { user } = payload;
+  yield put(showLoading());
+  try {
+    const resp = yield call(putEditAccount, user);
+    const { status } = resp;
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(editUserSuccess(user));
+    }
+  } catch (error) {
+    if (error === "data is not iterable") {
+      yield put(editUserFailed(error));
+    }
+  }
+  yield delay(1000);
+  yield put(hideLoading());
+}
+
+function* addMovieSaga({ payload }) {
+  const { movie } = payload;
+  movie.diemIMDB = 0;
+  console.log(movie);
+  yield put(showLoading());
+  try {
+    const resp = yield call(postAddMovie, movie);
+    const { status } = resp;
+    if (status === STATUS_CODE.CREATED) {
+      yield put(addMovieSuccess(movie));
+    }
+  } catch (error) {
+    if (error === "data is not iterable") {
+      yield put(addMovieFailed(error));
     }
   }
   yield delay(1000);
@@ -228,6 +306,10 @@ function* rootSaga() {
   yield takeLatest(authTypes.ACCOUNT, accountSaga);
   yield takeLatest(editAccountActions.EDIT_ACCOUNT, editAccountSaga);
   yield takeLatest(adminActions.DELETE_USER, deleteUserSaga);
+  yield takeLatest(adminActions.EDIT_USER, editUserSaga);
+  yield takeLatest(adminActions.DELETE_MOVIE, deleteMovieSaga);
+  yield takeLatest(adminActions.EDIT_MOVIE, editMovieSaga);
+  yield takeLatest(adminActions.ADD_MOVIE, addMovieSaga);
 }
 
 export default rootSaga;

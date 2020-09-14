@@ -13,6 +13,7 @@ const EditAccount = (props) => {
   const [region, setRegion] = useState("");
   const [birth, setBirth] = useState("");
   const [gender, setGender] = useState("Male");
+  const [avatar, setAvatar] = useState("");
   const dispatch = useDispatch();
   const { t } = useTranslation("common");
 
@@ -27,6 +28,7 @@ const EditAccount = (props) => {
       setRegion(account[0].region);
       setBirth(account[0].birth);
       setGender(account[0].gender);
+      setAvatar(account[0].avatar);
     }
   }, [account]);
 
@@ -38,6 +40,7 @@ const EditAccount = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(avatar);
     let templ = editAccount[0];
     templ.name = name;
     templ.phone = phone;
@@ -45,34 +48,18 @@ const EditAccount = (props) => {
     templ.birth = birth;
     templ.gender = gender;
     templ.password = password;
+    templ.avatar = avatar;
     dispatch(editAccountActions.editAccount(templ));
     props.history.push("/");
-  };
-
-  const handleChange = (event) => {
-    switch (event.target.name) {
-      case "name":
-        return setName(event.target.value);
-      case "phone":
-        return setPhone(event.target.value);
-      case "region":
-        return setRegion(event.target.value);
-      case "birth":
-        return setBirth(event.target.value);
-      case "gender":
-        return setGender(event.target.value);
-      case "password":
-        return setPassword(event.target.value);
-      default:
-        return 0;
-    }
   };
 
   const showEditAccount = () => {
     let result = [];
     result.push(
-      <form className="register" onSubmit={handleSubmit}>
+      <form className="register" onSubmit={handleSubmit} key={1}>
         {checkLogin}
+        <div className="note" style={{"color": "red"}}>{t("auth.requirementChangePassword")}</div>
+        <br />
         <label htmlFor="name">{t("auth.newName")}</label>
         <input
           name="name"
@@ -80,7 +67,7 @@ const EditAccount = (props) => {
           type="text"
           id="name"
           value={name}
-          onChange={handleChange}
+          onChange={(event) => setName(event.target.value)}
         />
         <br />
 
@@ -91,7 +78,17 @@ const EditAccount = (props) => {
           type="password"
           id="password"
           value={password}
-          onChange={handleChange}
+          onChange={(event) => setPassword(event.target.value)}
+        />
+        <br />
+        <label htmlFor="avatar">{t("auth.avatar")}</label>
+        <input
+          name="avatar"
+          placeholder={t("auth.avatar")}
+          value={avatar}
+          type="text"
+          id="avatar"
+          onChange={(event) => setAvatar(event.target.value)}
         />
         <br />
 
@@ -102,7 +99,7 @@ const EditAccount = (props) => {
           value={phone}
           type="text"
           id="phone"
-          onChange={handleChange}
+          onChange={(event) => setPhone(event.target.value)}
         />
         <br />
 
@@ -113,7 +110,7 @@ const EditAccount = (props) => {
           value={region}
           type="text"
           id="region"
-          onChange={handleChange}
+          onChange={(event) => setRegion(event.target.value)}
         />
         <br />
 
@@ -124,7 +121,7 @@ const EditAccount = (props) => {
           value={birth}
           type="date"
           id="birth"
-          onChange={handleChange}
+          onChange={(event) => setBirth(event.target.value)}
         />
         <br />
 
@@ -136,7 +133,7 @@ const EditAccount = (props) => {
             value="Male"
             id="Male"
             checked={gender === "Male"}
-            onChange={handleChange}
+            onChange={(event) => setGender(event.target.value)}
           />{" "}
           {t("auth.male")}
         </label>
@@ -148,7 +145,7 @@ const EditAccount = (props) => {
             value="Female"
             id="Female"
             checked={gender === "Female"}
-            onChange={handleChange}
+            onChange={(event) => setGender(event.target.value)}
           />{" "}
           {t("auth.female")}
         </label>

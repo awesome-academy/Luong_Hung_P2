@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import * as editAccountActions from "../../actions/account";
+import { useDispatch } from "react-redux";
+import * as adminActions from "../../actions/admin";
 import { useTranslation } from "react-i18next";
 
 const EditUser = (props) => {
@@ -10,6 +10,8 @@ const EditUser = (props) => {
   const [region, setRegion] = useState("");
   const [birth, setBirth] = useState("");
   const [gender, setGender] = useState("Male");
+  const [password, setPassword] = useState("");
+  const [avatar, setAvatar] = useState("");
   const dispatch = useDispatch();
   const { t } = useTranslation("common");
   const [editAccount, setEditAccount] = useState(props.user);
@@ -29,6 +31,8 @@ const EditUser = (props) => {
       setRegion(props.user.region);
       setBirth(props.user.birth);
       setGender(props.user.gender);
+      setAvatar(props.user.avatar);
+      setPassword("");
     }
   }, [props.user]);
 
@@ -44,27 +48,10 @@ const EditUser = (props) => {
     templ.region = region;
     templ.birth = birth;
     templ.gender = gender;
-    // templ.password = password;
-    console.log(templ);
-    dispatch(editAccountActions.editAccount(templ));
+    templ.password = password;
+    templ.avatar = avatar;
+    dispatch(adminActions.editUser(templ));
     props.passIsOpen(0);
-  };
-
-  const handleChange = (event) => {
-    switch (event.target.name) {
-      case "name":
-        return setName(event.target.value);
-      case "phone":
-        return setPhone(event.target.value);
-      case "region":
-        return setRegion(event.target.value);
-      case "birth":
-        return setBirth(event.target.value);
-      case "gender":
-        return setGender(event.target.value);
-      default:
-        return 0;
-    }
   };
 
   return (
@@ -77,6 +64,10 @@ const EditUser = (props) => {
       <div className="booking-form">
         <div className="booking-form__inner">
           <form className="register adminEditUser" onSubmit={handleSubmit}>
+            <div className="note" style={{ color: "red" }}>
+              {t("auth.requirementChangePassword")}
+            </div>
+            <br />
             <label htmlFor="name">{t("auth.newName")}</label>
             <input
               name="name"
@@ -84,7 +75,28 @@ const EditUser = (props) => {
               type="text"
               id="name"
               value={name}
-              onChange={handleChange}
+              onChange={(event) => setName(event.target.value)}
+            />
+            <br />
+
+            <label htmlFor="password">{t("auth.newPassword")}</label>
+            <input
+              name="password"
+              placeholder={t("auth.newName")}
+              type="password"
+              id="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+            />
+            <br />
+            <label htmlFor="avatar">{t("auth.avatar")}</label>
+            <input
+              name="avatar"
+              placeholder={t("auth.avatar")}
+              value={avatar}
+              type="text"
+              id="avatar"
+              onChange={(event) => setAvatar(event.target.value)}
             />
             <br />
 
@@ -95,7 +107,7 @@ const EditUser = (props) => {
               value={phone}
               type="text"
               id="phone"
-              onChange={handleChange}
+              onChange={(event) => setPhone(event.target.value)}
             />
             <br />
 
@@ -106,7 +118,7 @@ const EditUser = (props) => {
               value={region}
               type="text"
               id="region"
-              onChange={handleChange}
+              onChange={(event) => setRegion(event.target.value)}
             />
             <br />
 
@@ -117,7 +129,7 @@ const EditUser = (props) => {
               value={birth}
               type="date"
               id="birth"
-              onChange={handleChange}
+              onChange={(event) => setBirth(event.target.value)}
             />
             <br />
 
@@ -129,7 +141,7 @@ const EditUser = (props) => {
                 value="Male"
                 id="Male"
                 checked={gender === "Male"}
-                onChange={handleChange}
+                onChange={(event) => setGender(event.target.value)}
               />{" "}
               {t("auth.male")}
             </label>
@@ -141,7 +153,7 @@ const EditUser = (props) => {
                 value="Female"
                 id="Female"
                 checked={gender === "Female"}
-                onChange={handleChange}
+                onChange={(event) => setGender(event.target.value)}
               />{" "}
               {t("auth.female")}
             </label>
