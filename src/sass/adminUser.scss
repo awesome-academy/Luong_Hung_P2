@@ -8,6 +8,7 @@
   width: 84%;
   padding: 30px;
   max-width: 84%;
+  transition: 0.3s;
   .adminUsers {
     .table {
       width: 100%;
@@ -104,6 +105,13 @@
       }
     }
   }
+}
+
+.admin {
+  transition: 0.3s;
+  width: 100%;
+  max-width: 100%;
+  left: 0;
 }
 
 .booking-form {

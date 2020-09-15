@@ -1,0 +1,33 @@
+@import "./mixins";
+
+.detailPromotion {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  display: flex;
+  &__image {
+    width: 352px;
+    .image {
+      width: 352px;
+    }
+  }
+  &__detail {
+    margin: 0 20px;
+    b {
+      @include customFont(18px, "roboto");
+    }
+    &__name {
+      @include customFont(22px, "roboto");
+      color: $colorRed;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $colorBorder;
+    }
+    &__item {
+      @include customFont(16px, "roboto");
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+    .b--fontSize {
+      @include customFont(16px, "roboto");
+    }
+  }
+}

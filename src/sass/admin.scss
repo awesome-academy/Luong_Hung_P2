@@ -8,6 +8,7 @@
   height: 100vh;
   background: $colorGray;
   display: inline-block;
+  transition: 0.3s;
   .admin {
     margin: 20px;
     padding: 10px;
@@ -15,6 +16,7 @@
     &__avatar {
       border-radius: 50%;
       width: 35%;
+      height: 75px;
     }
     &__name {
       @include customFont(20px, "roboto");

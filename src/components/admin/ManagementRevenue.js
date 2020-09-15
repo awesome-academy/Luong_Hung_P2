@@ -7,6 +7,7 @@ const ManagementRevenue = (props) => {
   const currentUser = useSelector((state) => state.currentUser.currentUser);
   const [listDay, setListDay] = useState();
   const tickets = useSelector((state) => state.tickets.tickets);
+  const toggleSidebar = useSelector((state) => state.ui.showSidebar);
   const [listRevenue, setListRevenue] = useState();
   const { t } = useTranslation("common");
 
@@ -108,7 +109,7 @@ const ManagementRevenue = (props) => {
   };
 
   return (
-    <div className="wrapperAdminUsers">
+    <div className={toggleSidebar ? "wrapperAdminUsers" : "wrapperAdminUsers admin"}>
       {currentUser && currentUser.email === "admin@admin"
         ? showAdminRevenue()
         : checkAdmin()}

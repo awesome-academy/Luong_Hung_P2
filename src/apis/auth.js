@@ -54,6 +54,12 @@ export const getBranchs = () => {
   return axiosService.get(`${API_ENDPOINT}/branchs`)
 }
 
+// http://localhost:3100/seats METHOD: GET
+export const getSeats = () => {
+  return axiosService.get(`${API_ENDPOINT}/seats`)
+}
+
+// http://localhost:3100/movieTypes METHOD: GET
 export const getMovieType = () => {
   return axiosService.get(`${API_ENDPOINT}/movieTypes`)
 }
@@ -83,7 +89,27 @@ export const getTicket = () => {
   return axiosService.get(`${API_ENDPOINT}/tickets/`)
 }
 
-// http://localhost:3100/tickets METHOD: GET
+// http://localhost:3100/tickets METHOD: DELETE
 export const deleteTicket = (data) => {
   return axiosService.delete(`${API_ENDPOINT}/tickets/${data.id}`)
+}
+
+
+// http://localhost:3100/tickets METHOD: POST
+export const postAddTicket = (data) => {
+  return axiosService.post(`${API_ENDPOINT}/tickets/`, data)
+}
+// http://localhost:3100/points METHOD: GET
+export const getPoint = () => {
+  return axiosService.get(`${API_ENDPOINT}/points`)
+}
+
+// http://localhost:3100/points METHOD: POST
+export const postPoint = (data) => {
+  return axiosService.post(`${API_ENDPOINT}/points`, data)
+}
+
+// http://localhost:3100/points METHOD: PUT
+export const putEditPoint = (data) => {
+  return axiosService.put(`${API_ENDPOINT}/points/${data.id}`, data)
 }
