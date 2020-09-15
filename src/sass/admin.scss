@@ -38,5 +38,8 @@
         transition: 0.3s;
       }
     }
-   }
+    &__content.active {
+      color: $colorGreen;
+    }
+  }
 }

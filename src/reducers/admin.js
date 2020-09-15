@@ -6,7 +6,8 @@ const initialState = {
   deleteMovie: null,
   editMovie: null,
   editUser: null,
-  addMovie: null
+  addMovie: null,
+  deleteTicket: null,
 };
 
 const bookingTimeReducer = (state = initialState, action) => {
@@ -25,7 +26,7 @@ const bookingTimeReducer = (state = initialState, action) => {
     }
     case adminActions.DELETE_MOVIE:
       return { ...state };
-    case adminActions.DELETE_MOVIE_SUCCESS:{
+    case adminActions.DELETE_MOVIE_SUCCESS: {
       const { data } = action.payload;
       toastSuccess("Delete movie success.");
       return { ...state, deleteMovie: data };
@@ -37,7 +38,7 @@ const bookingTimeReducer = (state = initialState, action) => {
     }
     case adminActions.EDIT_MOVIE:
       return { ...state };
-    case adminActions.EDIT_MOVIE_SUCCESS:{
+    case adminActions.EDIT_MOVIE_SUCCESS: {
       const { data } = action.payload;
       toastSuccess("Edit movie success.");
       return { ...state, editMovie: data };
@@ -49,7 +50,7 @@ const bookingTimeReducer = (state = initialState, action) => {
     }
     case adminActions.EDIT_USER:
       return { ...state };
-    case adminActions.EDIT_USER_SUCCESS:{
+    case adminActions.EDIT_USER_SUCCESS: {
       const { data } = action.payload;
       toastSuccess("Edit user success.");
       return { ...state, editUser: data };
@@ -61,12 +62,24 @@ const bookingTimeReducer = (state = initialState, action) => {
     }
     case adminActions.ADD_MOVIE:
       return { ...state };
-    case adminActions.ADD_MOVIE_SUCCESS:{
+    case adminActions.ADD_MOVIE_SUCCESS: {
       const { data } = action.payload;
       toastSuccess("Add movie success.");
       return { ...state, addMovie: data };
     }
     case adminActions.ADD_MOVIE_FAILED: {
+      const { error } = action.payload;
+      toastError(error);
+      return { ...state };
+    }
+    case adminActions.DELETE_TICKET:
+      return { ...state };
+    case adminActions.DELETE_TICKET_SUCCESS: {
+      const { data } = action.payload;
+      toastSuccess("Delete ticket success.");
+      return { ...state, deleteTicket: data };
+    }
+    case adminActions.DELETE_TICKET_FAILED: {
       const { error } = action.payload;
       toastError(error);
       return { ...state };

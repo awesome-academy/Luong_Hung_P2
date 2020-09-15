@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import * as movieActions from "../../actions/movies";
 import * as promotionAction from "../../actions/promotion";
 import * as sliderBarActions from "../../actions/sliderBars";
+import * as ticketActions from "../../actions/admin";
 import "../../sass/home.scss";
 import * as authActions from "../../actions/auth";
 import { useTranslation } from "react-i18next";
@@ -27,6 +28,9 @@ const Home = () => {
     dispatch(movieActions.movies());
   }, [dispatch]);
 
+  useEffect(() => {
+    dispatch(ticketActions.ticket());
+  }, [dispatch]);
 
   useEffect(() => {
     dispatch(promotionAction.promotionRequest())

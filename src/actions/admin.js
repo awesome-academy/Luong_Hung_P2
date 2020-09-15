@@ -134,3 +134,54 @@ export const addMovieFailed = (error) => {
     },
   };
 };
+
+export const ticket = () => {
+  return {
+    type: adminActions.TICKET,
+  };
+};
+
+export const ticketSuccess = (data) => {
+  return {
+    type: adminActions.TICKET_SUCCESS,
+    payload: {
+      data
+    },
+  };
+};
+
+export const ticketFailed = (error) => {
+  return {
+    type: adminActions.TICKET_FAILED,
+    payload: {
+      error,
+    },
+  };
+};
+
+export const deleteTicket = (ticket) => {
+  return {
+    type: adminActions.DELETE_TICKET,
+    payload: {
+      ticket
+    }
+  };
+};
+
+export const deleteTicketSuccess = (data) => {
+  return {
+    type: adminActions.DELETE_TICKET_SUCCESS,
+    payload: {
+      data
+    },
+  };
+};
+
+export const deleteTicketFailed = (error) => {
+  return {
+    type: adminActions.DELETE_TICKET_FAILED,
+    payload: {
+      error,
+    },
+  };
+};

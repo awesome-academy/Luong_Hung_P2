@@ -53,7 +53,20 @@
     "managementMovies": "Quản Lý Phim",
     "managementRevenue": "Quản Lý Doanh Thu",
     "managementTicket": "Quản lý Vé",
-    "addMovie": "Thêm Phim"
+    "addMovie": "Thêm Phim",
+    "close": "Đóng",
+    "ticketingInformation": "Thông Tin Đặt Vé",
+    "ticket": "Vé",
+    "account": "Tài Khoản",
+    "pay": "Phương Thức Thanh Toán",
+    "screenings": "Suất Chiếu",
+    "showDate": "Ngày Chiếu",
+    "cinemaRoom": "Phòng chiếu",
+    "seats": "Số Ghế",
+    "revenue": "Doanh Thu",
+    "day": "Ngày",
+    "moneyMovie": "Tiền Vé",
+    "moneyFood": "Tiền Đồ Ăn Uống"
   },
   "auth": {
     "password": "Mật Khẩu",
@@ -94,6 +107,12 @@
     "2D3D": "2D/3D",
     "editMovie": "Sửa Phim" ,
     "birth": "Sinh Nhật",
-    "requirementChangePassword": "Bắt Buộc Đổi Mật Khẩu"
+    "requirementChangePassword": "Bắt Buộc Đổi Mật Khẩu",
+    "account": "Tài Khoản",
+    "nameTheater": "Chi Nhánh",
+    "timeSet": "Ngày Đặt",
+    "action": "Chức Năng",
+    "nameMovie": "Tên Phim",
+    "show": "Xem"
   }
 }
