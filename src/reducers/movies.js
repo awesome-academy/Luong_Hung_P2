@@ -2,6 +2,7 @@ import * as movieActions from "../constants/movies";
 
 const initialState = {
   movies: null,
+  movie: null,
 };
 
 export default function reducer(state = initialState, action) {
@@ -15,6 +16,10 @@ export default function reducer(state = initialState, action) {
     }
     case movieActions.MOVIE_FAILED: {
       return { ...state };
+    }
+    case movieActions.DETAIL_MOVIE: {
+      const { movie } = action.payload;
+      return { ...state, movie: movie }
     }
     default:
       return state;

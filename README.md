@@ -53,3 +53,5 @@ You will also see any lint errors in the console.
 
 ### React-i18next
     - yarn add react-i18next
+### React-html-parser
+    - yarn add react-html-parser

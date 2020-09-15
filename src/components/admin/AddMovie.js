@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import * as adminActions from "../../actions/admin";
 import { useTranslation } from "react-i18next";
+import * as pointActions from "../../actions/point";
 
 const AddMovie = (props) => {
   const [isOpenModal, setIsOpenModal] = useState(props.isOpenModalAddMovie);
@@ -48,6 +49,7 @@ const AddMovie = (props) => {
     templ.releaseDate = releaseDate;
     templ.image = image;
     dispatch(adminActions.addMovie(templ));
+    dispatch(pointActions.addPoint({ users: [] }));
     props.passIsOpenModalAddMovie(false);
     props.passNameMovie(templ);
   };

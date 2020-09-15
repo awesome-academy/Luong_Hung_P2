@@ -15,6 +15,7 @@ const ManagementMovies = (props) => {
   const [isOpenModal, setIsOpenModal] = useState(0);
   const [isOpenModalAddMovie, setIsOpenModalAddMovie] = useState(false);
   const [movie, setMovie] = useState(null);
+  const toggleSidebar = useSelector((state) => state.ui.showSidebar);
   const dispatch = useDispatch();
   const [productPerPage] = useState(6);
   const [currentPage, setCurrentPage] = useState(1);
@@ -83,7 +84,6 @@ const ManagementMovies = (props) => {
         <table className="table">
           <tr>
             <th>#</th>
-            <th>ID</th>
             <th>{t("auth.image")}</th>
             <th>{t("auth.name")}</th>
             <th>{t("auth.minutes")}</th>
@@ -127,7 +127,6 @@ const ManagementMovies = (props) => {
         return result.push(
           <tr key={i}>
             <td>{i + 1}</td>
-            <td>{movie.id}</td>
             <td>
               <img src={movie.image} alt="avatar" className="avatar" />
             </td>
@@ -184,7 +183,7 @@ const ManagementMovies = (props) => {
   };
 
   return (
-    <div className="wrapperAdminUsers">
+    <div className={toggleSidebar ? "wrapperAdminUsers" : "wrapperAdminUsers admin"}>
       {currentUser && currentUser.email === "admin@admin"
         ? showAdminMovies()
         : checkAdmin()}

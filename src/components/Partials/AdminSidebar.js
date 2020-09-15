@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../sass/admin.scss";
 import { Link } from "react-router-dom";
 import { FiUsers } from "react-icons/fi";
@@ -8,20 +8,25 @@ import {
   RiTicket2Line,
 } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import * as authActions from "../../actions/auth";
 
 const AdminSidebar = () => {
   const { t } = useTranslation("common");
+  const admin = useSelector((status) => status.currentUser.account);
   const [active, setActive] = useState(1);
+  const dispatch = useDispatch();
 
-  return (
+  useEffect(() => {
+    dispatch(authActions.account());
+  }, [dispatch]);
+
+  return admin ? (
     <div className="sidebar">
       <div className="admin">
-        <img
-          src="http://gravatar.com/avatar/a3175a452c7a8fea80c62a198a40f6c9?d=identicon"
-          alt="avatar__admin"
-          className="admin__avatar"
-        />
-        <Link to="/admin" className="admin__name" onClick={() => setActive(1)} >
+        <img src={admin[0].avatar} alt="avatar__admin" className="admin__avatar" />
+        <Link to="/admin" className="admin__name" onClick={() => setActive(1)}>
           Admin
         </Link>
       </div>
@@ -58,6 +63,8 @@ const AdminSidebar = () => {
         &nbsp;{t("home.managementTicket")}
       </Link>
     </div>
+  ) : (
+    ""
   );
 };
 

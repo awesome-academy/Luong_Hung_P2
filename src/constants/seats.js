@@ -1,0 +1,3 @@
+export const SEAT_REQUEST = "SEAT_REQUEST"
+export const SEAT_SUCCESS = "SEAT_SUCCESS"
+export const SEAT_FAILED = "SEAT_FAILED"

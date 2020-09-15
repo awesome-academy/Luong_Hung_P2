@@ -28,7 +28,7 @@
         font-weight: bold;
         margin: 10px 10px;
         display: inline-block;
-        padding-right: 20px;;
+        padding-right: 20px;
         border-right: 1px solid $colorRed;
       }
       .content:nth-child(3) {
@@ -71,9 +71,17 @@
       background: $colorGreen;
       transition: 0.3s;
     }
+
+    .active {
+      background: $colorGreen;
+      border: 1px solid $colorGreen;
+      transition: 0.3s;
+    }
+
     .booked {
       background: $colorRed;
       border: 1px solid $colorRed;
+      pointer-events: none;
       cursor: default;
     }
   }
