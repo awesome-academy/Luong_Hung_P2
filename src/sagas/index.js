@@ -11,6 +11,7 @@ import { sliderBarSuccess, sliderBarFailed } from "../actions/sliderBars";
 import { moviesSuccess, moviesFailed } from "../actions/movies";
 import { editAccountSuccess, editAccountFailed } from "../actions/account";
 import { promotionSuccess, promotionFailed } from "../actions/promotion";
+import { comboFoodSuccess, comboFoodFailed } from '../actions/comboFood'
 import { seatSuccess, seatFailed } from '../actions/seats'
 import { theaterSuccess, theaterFailed } from "../actions/theaterAction";
 import { bookingTimeSuccess, bookingTimeFailed } from "../actions/bookingTime";
@@ -55,13 +56,16 @@ import {
   getPoint,
   postPoint,
   putEditPoint,
-  getSeats
+  getSeats,
+  getComboFood
+
 } from "../apis/auth";
 import { STATUS_CODE } from "../constants";
 import * as authTypes from "../constants/auth";
 import * as sliderBarActions from "../constants/sliderbars";
 import * as movieActions from "../constants/movies";
 import * as promotionAction from '../constants/promotion';
+import * as comboFoodAction from '../constants/comboFood'
 import * as seatAction from '../constants/seats'
 import * as movieTypeAction from '../constants/movieType'
 import * as theaterAction from '../constants/theaters'
@@ -171,6 +175,18 @@ function* promotionSaga() {
     }
   } catch (error) {
     yield put(promotionFailed(error));
+  }
+}
+
+function* comboFoodSaga() {
+  try {
+    const resp = yield call(getComboFood)
+    const { data, status } = resp
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(comboFoodSuccess(data))
+    }
+  } catch (error) {
+    yield put(comboFoodFailed(error))
   }
 }
 
@@ -376,10 +392,12 @@ function* addMovieSaga({ payload }) {
 }
 
 function* addTicketSaga({ payload }) {
-  const { ticket } = payload;
+  const ticket = payload
   try {
     const resp = yield call(postAddTicket, ticket);
     const { status } = resp;
+    console.log("resp", resp)
+    console.log("ticket", ticket)
     if (status === STATUS_CODE.CREATED) {
       yield put(addTicketSuccess(ticket));
     }
@@ -456,6 +474,7 @@ function* rootSaga() {
   yield takeLatest(sliderBarActions.BANNER, sliderBarSaga);
   yield takeLatest(movieActions.MOVIE, movieSaga);
   yield takeLatest(promotionAction.PROMOTION_REQUEST, promotionSaga)
+  yield takeLatest(comboFoodAction.COMBO_FOOD_REQUEST, comboFoodSaga)
   yield takeLatest(seatAction.SEAT_REQUEST, seatSaga)
   yield takeLatest(movieTypeAction.MOVIE_TYPE_REQUEST, movieTypeSaga)
   yield takeLatest(bookingTimeAction.BOOKING_TIME_REQUEST, bookingTimeSaga)

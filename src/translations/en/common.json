@@ -111,12 +111,14 @@
     "2D3D": "2D/3D",
     "editMovie": "Edit Movie",
     "birth": "Birth Day",
+    "requirementConfirmPassword": "Requirement Confirm Password",
     "requirementChangePassword": "Requirement Change Password",
     "account": "Account",
     "nameTheater": "Name Theater",
     "timeSet": "Time Set",
     "action": "Action",
     "nameMovie": "Name Movie",
-    "show": "Show"
+    "show": "Show",
+    "confirmPassword": "Confirm Password"
   }
 }

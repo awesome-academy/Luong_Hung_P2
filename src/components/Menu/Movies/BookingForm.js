@@ -30,7 +30,7 @@ function BookingForm({
 
     // add ticket
     const [ticketMovieName, setTicketMovieName] = useState("")
-    const [ticketImage, setTicketImage] = useState("")
+    const [ticketMovieImage, setTicketMovieImage] = useState("")
     const [combo, setCombo] = useState([])
     const [timeSet, setTimeSet] = useState("")
     const [total, setTotal] = useState("")
@@ -133,11 +133,12 @@ function BookingForm({
         setTicketType(type)
     }
 
-    const handleTime = (session, theater, name, room) => {
+    const handleTime = (session, theater, name, room, image) => {
         setTicketSession(session)
         setTicketTheater(theater)
         setTicketMovieName(name)
         setTicketRoom(room)
+        setTicketMovieImage(image)
     }
 
 
@@ -150,7 +151,8 @@ function BookingForm({
             nameTheater: ticketTheater,
             type: ticketType,
             screenings: ticketSession,
-            cinemaRoom: ticketRoom
+            cinemaRoom: ticketRoom,
+            image: ticketMovieImage
         }))
     }
     const handleActiveBranch = (id, value) => {
@@ -218,7 +220,7 @@ function BookingForm({
                 className="booking-form__time__item"
                 key={i}
             >
-                <Link onClick={() => handleTime(time, theater.name, movieNow.name, session.room)} >
+                <Link onClick={() => handleTime(time, theater.name, movieNow.name, session.room, movieNow.image)} >
                     {time}
                 </Link>
             </span >

@@ -64,6 +64,11 @@ export const getMovieType = () => {
   return axiosService.get(`${API_ENDPOINT}/movieTypes`)
 }
 
+// http://localhost:3100/movieTypes METHOD: GET
+export const getComboFood = () => {
+  return axiosService.get(`${API_ENDPOINT}/comboFood`)
+}
+
 // http://localhost:3100/users METHOD: DELETE
 export const deleteUser = (data) => {
   return axiosService.delete(`${API_ENDPOINT}/users/${data.id}`)

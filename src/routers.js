@@ -8,7 +8,6 @@ import Logout from "./components/auth/Logout";
 import NowShowing from "./components/Menu/Movies/NowShowing";
 import ComingSoon from "./components/Menu/Movies/ComingSoon";
 import Theaters from "./components/Menu/Theaters/Theaters";
-import Membership from "./components/Menu/Membership/Membership";
 import Information from "./components/account/Information";
 import EditAccount from "./components/account/editAccount";
 import BookingSeats from "./components/booking/BookingSeats";
@@ -73,13 +72,6 @@ const routers = [
     ),
   },
   {
-    path: "/membership",
-    exact: false,
-    main: ({ location, history }) => (
-      <Membership location={location} history={history} />
-    ),
-  },
-  {
     path: "/accountInformation",
     exact: false,
     main: ({ location, history }) => (
@@ -106,7 +98,7 @@ const routers = [
     main: ({ location, history }) => (
       <BookingFood location={location} history={history} />
     ),
-  },{
+  }, {
     path: "/payment",
     exact: false,
     main: ({ location, history }) => (

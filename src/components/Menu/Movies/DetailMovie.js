@@ -48,7 +48,7 @@ const DetailMovie = (props) => {
       templ.pointIMDB = Math.round( mediumScore/count * 100 + Number.EPSILON ) / 100;
       dispatch(adminActions.editMovie(templ));
       dispatch(pointActions.editPost(result[index1]));
-      setListen(listen + 1);
+      setListen(count);
     } 
     return result;
   };
@@ -99,46 +99,46 @@ const DetailMovie = (props) => {
     return result;
   };
 
-  return movie && movie1 ? (
+  return movie ? (
     <div className="detailMovie container">
       <div className="detailMovie__image">
-        <img src={movie.image} alt="image" className="image" />
+        <img src={movie1.image} alt="image" className="image" />
       </div>
       <div className="detailMovie__detail">
-        <div className="detailMovie__detail__name">{movie.name}</div>
+        <div className="detailMovie__detail__name">{movie1.name}</div>
         <div className="detailMovie__detail__item">
-          <b>{t("auth.minutes")}:</b> {movie.minutes}
+          <b>{t("auth.minutes")}:</b> {movie1.minutes}
         </div>
         <div className="detailMovie__detail__item">
-          <b>{t("home.releaseDate")}:</b> {movie.releaseDate}
+          <b>{t("home.releaseDate")}:</b> {movie1.releaseDate}
         </div>
         <div className="detailMovie__detail__item">
-          <b>{t("auth.category")}:</b> {movie.category}
+          <b>{t("auth.category")}:</b> {movie1.category}
         </div>
         <div className="detailMovie__detail__item">
           <b>{t("auth.status")}: </b>
-          {movie.status === 1 ? t("home.nowShowing") : t("home.comingSoon")}
+          {movie1.status === 1 ? t("home.nowShowing") : t("home.comingSoon")}
         </div>
         <div className="detailMovie__detail__item">
           <b>{t("auth.pointIMDB")}:</b> {movie1.pointIMDB}
         </div>
         <div className="detailMovie__detail__item">
-          <b>{t("auth.age")}:</b> {movie.age}
+          <b>{t("auth.age")}:</b> {movie1.age}
         </div>
         <div className="detailMovie__detail__item">
-          <b>{t("auth.type")}:</b> {movie.type}
+          <b>{t("auth.type")}:</b> {movie1.type}
         </div>
         <div className="detailMovie__detail__item">
-          <b>{t("auth.directors")}:</b> {movie.directors}
+          <b>{t("auth.directors")}:</b> {movie1.directors}
         </div>
         <div className="detailMovie__detail__item">
-          <b>{t("auth.cast")}:</b> {movie.cast}
+          <b>{t("auth.cast")}:</b> {movie1.cast}
         </div>
         <div className="detailMovie__detail__item">
-          <b>{t("auth.nation")}:</b> {movie.nation}
+          <b>{t("auth.nation")}:</b> {movie1.nation}
         </div>
         <div className="detailMovie__detail__item">
-          <b>{t("auth.description")}:</b> {movie.description}
+          <b>{t("auth.description")}:</b> {movie1.description}
         </div>
         {account && movie.status === 1 ? (
           <div className="detailMovie__detail__item">

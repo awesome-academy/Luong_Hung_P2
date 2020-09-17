@@ -725,48 +725,64 @@
       "id": 1,
       "name": "Lotte Cinema",
       "branchId": 1,
+      "hotline": "0873747344",
+      "address": "Tầng 4, Mê Linh Plaza Hà Đông, Đường Tô Hiệu, P.Hà Cầu, Q.Hà Đông, TP.Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/404b8c4b80d77732e7426cdb7e24be20.png"
     },
     {
       "id": 2,
       "name": "Lotte Star Cineplex",
       "branchId": 1,
+      "hotline": "0873747344",
+      "address": "Tầng 2 Kosmo Tây Hồ, Số 161 Xuân La, P. Xuân Tảo, Q. Bắc Từ Liêm, TP. Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/f32670fd0eb083c9c4c804f0f3a252ed.png"
     },
     {
       "id": 3,
       "name": "Lotte Skylake",
       "branchId": 1,
+      "hotline": "0873747344",
+      "address": "Tầng 5&6 toà nhà Keangnam Landmark Tower, đường Phạm Hùng, KĐTM Cầu Giấy, P.Mễ Trì, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/e520781386bd5436e94d6e15e193a005.png"
     },
     {
       "id": 4,
       "name": "Lotte CineStar",
       "branchId": 2,
+      "hotline": "0873747344",
+      "address": "Tầng 3, TTTM Savico Megamall, số 7-9, đường Nguyễn Văn Linh, P.Gia Thụy, Q.Long Biên, TP.Hà Nội, Việt Nam",
       "image": "https://i.imgur.com/0XnfUIg.png"
     },
     {
       "id": 5,
       "name": "Lotte - Đống Đa",
       "branchId": 2,
+      "hotline": "0873747344",
+      "address": "Hinode City, Số 201 Minh Khai, P. Minh Khai, Q. Hai Bà Trưng, TP. Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/9b240f96a233bb43203ee514a21a6004.png"
     },
     {
       "id": 6,
       "branchId": 2,
+      "hotline": "0873747344",
       "name": "BHD Star Cineplex - Phạm Hùng",
+      "address": "Tầng 3, TTTM Big C Thăng Long, Số 222 Trần Duy Hưng, P.Trung Hoà, Q.Cầu Giấy, TP.Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-pham-hung-15379533093101.jpg"
     },
     {
       "id": 7,
       "branchId": 3,
+      "hotline": "0873747344",
       "name": "BHD Star Cineplex - Vincom Quang Trung",
+      "address": "Tầng 3, TTTM Vincom Bắc Ninh, ngã 6, P.Suối Hoa, TP.Bắc Ninh, T.Bắc Ninh, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-quang-trung-15379536724871.jpg"
     },
     {
       "id": 8,
       "branchId": 3,
+      "hotline": "0873747344",
       "name": "BHD Star Cineplex - Vincom Thảo Điền",
+      "address": "Tầng 1, TTTM Big C Hạ Long, P.Hồng Hải, TP.Hạ Long, T.Quảng Ninh, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-thao-dien-15379553942188.jpg"
     }
   ],
@@ -796,7 +812,6 @@
   "tickets": [
     {
       "userId": 2,
-      "code": "X72UE",
       "nameMovie": "Aladdin",
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/aladdin-15585337476213_220x310.jpg",
       "count": 1,
@@ -819,7 +834,6 @@
     },
     {
       "userId": 2,
-      "code": "0OA1Y",
       "nameMovie": "Aladdin",
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/aladdin-15585337476213_220x310.jpg",
       "count": 2,

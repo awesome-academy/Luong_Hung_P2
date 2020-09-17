@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
 import * as saveBookingActions from '../../actions/saveBooking'
 import * as seatAction from '../../actions/seats'
-
+import * as saveSeatAction from '../../actions/saveSeat'
+import { Link } from "react-router-dom";
 const BookingSeats = () => {
   const [clickSeat, setClickSeat] = useState(0)
   const [clickPrice, setClickPrice] = useState(0)
@@ -15,7 +16,9 @@ const BookingSeats = () => {
   const [bookedSeat, setBookedSeat] = useState([])
   const dispatch = useDispatch()
   const { t } = useTranslation("common")
+  // save Seat
 
+  // end save Seat
   useEffect(() => {
     dispatch(saveBookingActions.saveBookingRequest())
   }, [dispatch])
@@ -86,10 +89,6 @@ const BookingSeats = () => {
     }
   }, [getSeats])
 
-  console.log("bookedSeat", bookedSeat)
-
-
-
   const searchIndex = (value) => {
     let index = -1
     if (arraySeat.length > 0) {
@@ -102,15 +101,23 @@ const BookingSeats = () => {
     return index
   }
 
+  const handleSaveSeat = (e) => {
+    e.preventDefault()
+    dispatch(saveSeatAction.saveSeatSuccess({
+      seats: arraySeat,
+      arrMoviePrice: arrayPrice
+    }))
+  }
+
   const handleClickSeat = (id, price) => {
     setClickSeat(id)
     setClickPrice(price)
+
   }
 
   let newArrPrice = arrayPrice
 
   const totalMoviePrice = () => {
-    console.log("newArrPrice", newArrPrice)
     let total
     if (newArrPrice !== undefined) {
       total = newArrPrice.reduce((a, b) => a + b, 0)
@@ -128,9 +135,6 @@ const BookingSeats = () => {
       )
     }
   }
-
-
-
 
 
   const showInfoBoard = () => {
@@ -171,7 +175,6 @@ const BookingSeats = () => {
     return result
   }
 
-  console.log("clickSeat", clickSeat)
 
   // const numberSeatSub = (number) => {
   //   let result = []
@@ -239,7 +242,9 @@ const BookingSeats = () => {
         <div className="bookingSeats__total">
 
           <span className="total">{t("home.paymentMovie")}: <b>{totalMoviePrice()} VND</b></span>
-          <span className="next">{t("home.next")} &#10095;</span>
+          <span className="next" onClick={handleSaveSeat}>
+            <Link to="/bookingfood">{t("home.next")} &#10095;</Link>
+          </span>
         </div>
       </div>
     </div>

@@ -103,8 +103,8 @@ function Header() {
               onClick={() => dispatch(uiActions.toggleSidebar(!toggleSidebar))}
             />
           ) : (
-            ""
-          )}
+              ""
+            )}
           <Link className="header__link logo-cenima" to="/">
             Cinema
           </Link>
@@ -124,9 +124,7 @@ function Header() {
             <div className="menu__item">
               <Link to="/theaters">{t("header.theaters")}</Link>
             </div>
-            <div className="menu__item">
-              <Link to="/membership">{t("header.membership")}</Link>
-            </div>
+
           </div>
         </nav>
 
@@ -150,19 +148,19 @@ function Header() {
               {t("header.profile")}
             </Link>
           ) : (
-            <Link className="header__link item" to="/register">
-              {t("header.register")}
-            </Link>
-          )}
+              <Link className="header__link item" to="/register">
+                {t("header.register")}
+              </Link>
+            )}
           {currentUser ? (
             <Link className="header__link item" to="/logout">
               {t("header.logout")}
             </Link>
           ) : (
-            <Link className="header__link item" to="/login">
-              {t("header.login")}
-            </Link>
-          )}
+              <Link className="header__link item" to="/login">
+                {t("header.login")}
+              </Link>
+            )}
         </div>
 
         <div className="header__translate">

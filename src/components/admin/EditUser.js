@@ -79,7 +79,7 @@ const EditUser = (props) => {
             />
             <br />
 
-            <label htmlFor="password">{t("auth.newPassword")}</label>
+            <label htmlFor="password" style={{ color: "red" }}>{t("auth.newPassword")}</label>
             <input
               name="password"
               placeholder={t("auth.newName")}

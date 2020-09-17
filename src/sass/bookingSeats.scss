@@ -102,12 +102,17 @@
       }
     }
     .next {
+      a {
+        color: $colorWhite;
+      }
       margin-right: 20px;
       cursor: pointer;
       transition: 0.3s;
     }
     .next:hover {
-      color: $colorGreen;
+      a {
+        color: $colorGreen;
+      }
       transition: 0.3s;
     }
   }

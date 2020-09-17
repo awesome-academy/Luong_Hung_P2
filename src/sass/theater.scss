@@ -1,0 +1,58 @@
+.theater-container {
+    margin-top: 100px;
+    .wrap-theater__title {
+        margin: 40px 0;
+    }
+
+    .theater {
+        &__item {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 3px solid #e1e1e1;
+        }
+        &__image {
+            width: 100%;
+        }
+
+        &__name {
+            color: #89c441;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        &__branch,
+        &__address,
+        &__hotline {
+            margin-top: 10px;
+        }
+
+        &__branch {
+            .value {
+                text-transform: uppercase;
+            }
+        }
+
+        &__title {
+            border-bottom: 3px solid #89c441;
+            font-size: 24px;
+            font-family: "Roboto";
+            padding: 10px 15px;
+            transition: 0.2s;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .key {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .value {
+            font-style: italic;
+        }
+    }
+}

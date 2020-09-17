@@ -111,12 +111,14 @@
     "2D3D": "2D/3D",
     "editMovie": "Sửa Phim" ,
     "birth": "Sinh Nhật",
+    "requirementConfirmPassword": "Bắt Buộc Xác Thực Mật Khẩu",
     "requirementChangePassword": "Bắt Buộc Đổi Mật Khẩu",
     "account": "Tài Khoản",
     "nameTheater": "Chi Nhánh",
     "timeSet": "Ngày Đặt",
     "action": "Chức Năng",
     "nameMovie": "Tên Phim",
-    "show": "Xem"
+    "show": "Xem",
+    "confirmPassword": "Xác Thực Mật Khẩu"
   }
 }
