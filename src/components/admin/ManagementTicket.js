@@ -13,6 +13,7 @@ const ManagementTicket = (props) => {
   const [deleteMovie, setDeleteMovie] = useState(-1);
   const [isOpenModal, setIsOpenModal] = useState(0);
   const accounts = useSelector(state => state.currentUser.accounts);
+  const toggleSidebar = useSelector((state) => state.ui.showSidebar);
   const dispatch = useDispatch();
   const [productPerPage] = useState(6);
   const [currentPage, setCurrentPage] = useState(1);
@@ -146,7 +147,7 @@ const ManagementTicket = (props) => {
   };
 
   return (
-    <div className="wrapperAdminUsers">
+    <div className={toggleSidebar ? "wrapperAdminUsers" : "wrapperAdminUsers admin"}>
       {currentUser && currentUser.email === "admin@admin"
         ? showAdminTicket()
         : checkAdmin()}

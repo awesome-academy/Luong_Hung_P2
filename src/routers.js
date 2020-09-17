@@ -8,7 +8,6 @@ import Logout from "./components/auth/Logout";
 import NowShowing from "./components/Menu/Movies/NowShowing";
 import ComingSoon from "./components/Menu/Movies/ComingSoon";
 import Theaters from "./components/Menu/Theaters/Theaters";
-import Membership from "./components/Menu/Membership/Membership";
 import Information from "./components/account/Information";
 import EditAccount from "./components/account/editAccount";
 import BookingSeats from "./components/booking/BookingSeats";
@@ -19,12 +18,16 @@ import ManagementUsers from "./components/admin/ManagementUsers";
 import ManagementMovies from "./components/admin/ManagementMovies";
 import ManagementRevenue from "./components/admin/ManagementRevenue";
 import ManagementTicket from "./components/admin/ManagementTicket";
+import DetailMovie from "./components/Menu/Movies/DetailMovie";
+import DetailPromotion from "./components/Promotion/DetailPromotion";
 
 const routers = [
   {
     path: "/",
     exact: true,
-    main: () => <Home />,
+    main: ({ location, history }) => (
+      <Home location={location} history={history} />
+    ),
   },
   {
     path: "/login",
@@ -69,13 +72,6 @@ const routers = [
     ),
   },
   {
-    path: "/membership",
-    exact: false,
-    main: ({ location, history }) => (
-      <Membership location={location} history={history} />
-    ),
-  },
-  {
     path: "/accountInformation",
     exact: false,
     main: ({ location, history }) => (
@@ -102,7 +98,7 @@ const routers = [
     main: ({ location, history }) => (
       <BookingFood location={location} history={history} />
     ),
-  },{
+  }, {
     path: "/payment",
     exact: false,
     main: ({ location, history }) => (
@@ -142,6 +138,20 @@ const routers = [
     exact: true,
     main: ({ location, history }) => (
       <ManagementTicket location={location} history={history} />
+    ),
+  },
+  {
+    path: "/detailMovie",
+    exact: false,
+    main: ({ location, history }) => (
+      <DetailMovie location={location} history={history} />
+    ),
+  },
+  {
+    path: "/detailPromotion",
+    exact: false,
+    main: ({ location, history }) => (
+      <DetailPromotion location={location} history={history} />
     ),
   },
   {

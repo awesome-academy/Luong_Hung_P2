@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import * as editAccountActions from "../../actions/account";
 import { useTranslation } from "react-i18next";
+import { toastError } from "../../commons/toast";
 
 const EditAccount = (props) => {
   const account = useSelector((state) => state.currentUser.account);
+  const currentUser = useSelector((state) => state.currentUser.currentUser);
   const [editAccount, setEditAccount] = useState(account);
 
   const [name, setName] = useState("");
@@ -40,7 +42,6 @@ const EditAccount = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(avatar);
     let templ = editAccount[0];
     templ.name = name;
     templ.phone = phone;
@@ -49,8 +50,12 @@ const EditAccount = (props) => {
     templ.gender = gender;
     templ.password = password;
     templ.avatar = avatar;
-    dispatch(editAccountActions.editAccount(templ));
-    props.history.push("/");
+    if(templ.password === currentUser.password) {
+      dispatch(editAccountActions.editAccount(templ));
+      props.history.push("/");
+    } else {
+      toastError({message: "Invalid Password"});
+    }
   };
 
   const showEditAccount = () => {
@@ -58,7 +63,9 @@ const EditAccount = (props) => {
     result.push(
       <form className="register" onSubmit={handleSubmit} key={1}>
         {checkLogin}
-        <div className="note" style={{"color": "red"}}>{t("auth.requirementChangePassword")}</div>
+        <div className="note" style={{ color: "red" }}>
+          {t("auth.requirementConfirmPassword")}
+        </div>
         <br />
         <label htmlFor="name">{t("auth.newName")}</label>
         <input
@@ -71,10 +78,10 @@ const EditAccount = (props) => {
         />
         <br />
 
-        <label htmlFor="password">{t("auth.newPassword")}</label>
+        <label htmlFor="password" style={{ color: "red" }}>{t("auth.confirmPassword")}</label>
         <input
           name="password"
-          placeholder={t("auth.newPassword")}
+          placeholder={t("auth.confirmPassword")}
           type="password"
           id="password"
           value={password}

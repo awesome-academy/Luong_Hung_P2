@@ -14,6 +14,8 @@ import AdminSidebar from "./components/Partials/AdminSidebar";
 
 const App = () => {
   const currentUser = useSelector((state) => state.currentUser.currentUser);
+  const toggleSidebar = useSelector((state) => state.ui.showSidebar);
+  
   const showContentMenus = (routers) => {
     let result = null;
 
@@ -36,7 +38,7 @@ const App = () => {
     <Router>
       <div className="App">
         <Header />
-        {currentUser && currentUser.email === "admin@admin" ? (
+        {currentUser && currentUser.email === "admin@admin" && toggleSidebar ? (
           <AdminSidebar />
         ) : (
           ""

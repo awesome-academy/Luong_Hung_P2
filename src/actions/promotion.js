@@ -19,3 +19,12 @@ export const promotionFailed = (error) => {
         payload: error
     }
 }
+
+export const detailPromotion = (promotion) => {
+    return {
+        type: promotionAction.DETAIL_PROMOTION,
+        payload: {
+            promotion
+        }
+    }
+}

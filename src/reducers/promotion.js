@@ -4,6 +4,7 @@ import * as promotionAction from '../constants/promotion'
 const initialState = {
     loading: false,
     promotions: null,
+    promotion: null,
     error: ""
 }
 
@@ -25,6 +26,10 @@ const promotionReducer = (state = initialState, action) => {
                 promotions: null,
                 error: action.payload
             }
+        }
+        case promotionAction.DETAIL_PROMOTION: {
+            const { promotion } = action.payload;
+            return { ...state, promotion }
         }
         default: return state
     }

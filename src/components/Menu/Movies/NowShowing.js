@@ -4,42 +4,50 @@ import { useSelector, useDispatch } from "react-redux";
 import * as movieActions from "../../../actions/movies";
 import BookingForm from "./BookingForm";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
-function NowShowing() {
-  const [isOpenModal, setIsOpenModal] = useState(0)
+function NowShowing(props) {
+  const [isOpenModal, setIsOpenModal] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [productPerPage] = useState(8);
   const [nowShowing, setNowShowing] = useState([])
+  const [ticketMovieName, setTicketMovieName] = useState("")
   const movies = useSelector((state) => state.movies.movies);
+  const account = useSelector((state) => state.currentUser.account);
   const dispatch = useDispatch();
   const { t } = useTranslation("common");
 
-  const handleModal = (id) => {
-    setIsOpenModal(id)
-  }
+  const handleModal = (id, value) => {
+    if (!account) {
+      props.history.push("/login")
+    } else {
+      setIsOpenModal(id)
+      setTicketMovieName(value)
+    }
+  };
 
   const passIsOpen = (value) => {
-    setIsOpenModal(value)
+    setIsOpenModal(value);
+  };
+
+  const passTicketMovieName = (value) => {
+    setTicketMovieName(value)
   }
 
   useEffect(() => {
     dispatch(movieActions.movies());
   }, [dispatch]);
 
-
   useEffect(() => {
     if (movies !== null) {
       const result = [...movies].filter((movie) => {
         if (movie.status === 1) {
-          return (
-            movie.status === 1
-          )
+          return movie.status === 1;
         }
-      })
-      setNowShowing(() => [...result])
-
+      });
+      setNowShowing(() => [...result]);
     }
-  }, [movies, setNowShowing])
+  }, [movies, setNowShowing]);
 
   const indexOfLastPost = currentPage * productPerPage;
   const indexOfFirstPost = indexOfLastPost - productPerPage;
@@ -54,7 +62,6 @@ function NowShowing() {
   for (let i = 1; i <= Math.ceil(totalMovies / productPerPage); i++) {
     pageNumbers.push(i);
   }
-
 
   const showNowShowing = () => {
     const result = [];
@@ -72,32 +79,48 @@ function NowShowing() {
                 <div className="wrap-movie__btn">
                   <button
                     className="movie__btn"
-                    onClick={() => handleModal(movie.id)}
+                    onClick={() => handleModal(movie.id, movie.name)}
                   >
                     {t("home.booking")}
                   </button>
                 </div>
               </div>
-              <div className="movie__name" title={movie.name}>{movie.name}</div>
+              <Link
+                onClick={() => dispatch(movieActions.detailMovie(movie))}
+                to="/detailMovie"
+                className="movie__name"
+                title={movie.name}
+              >
+                {movie.name}
+              </Link>
               <div className="movie__genre movie__item">
                 <span className="key">{t("home.genre")}: </span>
                 <span className="value">{movie.type}</span>
               </div>
               <div className="movie__time movie__item">
                 <span className="key">{t("home.runningTime")}: </span>
-                <span className="value">{movie.minutes} {t("home.minutes")}</span>
+                <span className="value">
+                  {movie.minutes} {t("home.minutes")}
+                </span>
               </div>
               <div className="movie__date movie__item">
                 <span className="key">{t("home.releaseDate")}: </span>
                 <span className="value">{movie.releaseDate}</span>
               </div>
             </div>
-            <div className={isOpenModal === movie.id ? "" : "none"}>
-              <BookingForm
-                isOpenModal2={isOpenModal}
-                passIsOpen={passIsOpen}
-                movieNow={movie} />
-            </div>
+            {account ? (
+              <div className={isOpenModal === movie.id ? "" : "none"}>
+                <BookingForm
+                  isOpenModal2={isOpenModal}
+                  passIsOpen={passIsOpen}
+                  movieNow={movie}
+                  ticketMovieName2={ticketMovieName}
+                  passTicketMovieName={passTicketMovieName}
+                />
+              </div>
+            ) : (
+                ""
+              )}
           </div>
         );
       });

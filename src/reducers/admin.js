@@ -40,7 +40,9 @@ const bookingTimeReducer = (state = initialState, action) => {
       return { ...state };
     case adminActions.EDIT_MOVIE_SUCCESS: {
       const { data } = action.payload;
-      toastSuccess("Edit movie success.");
+      if(data.pointIMDB === "N/A") {
+        toastSuccess("Edit movie success.");
+      }
       return { ...state, editMovie: data };
     }
     case adminActions.EDIT_MOVIE_FAILED: {

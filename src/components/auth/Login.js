@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import * as authActions from "../../actions/auth";
+import * as uiActions from "../../actions/ui";
 import "../../sass/login.scss";
 import { useTranslation } from "react-i18next";
 
@@ -25,6 +26,7 @@ const Login = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(authActions.userLogin({ email, password }));
+    dispatch(uiActions.toggleSidebar(true));
   };
 
   const checkoutAdmin = () => {

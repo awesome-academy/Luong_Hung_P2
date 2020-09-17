@@ -1,0 +1,11 @@
+export const POINT = "POINT";
+export const POINT_SUCCESS = "POINT_SUCCESS";
+export const POINT_FAILED = "POINT_FAILED";
+
+export const ADD_POINT = "ADD_POINT";
+export const ADD_POINT_SUCCESS = "ADD_POINT_SUCCESS";
+export const ADD_POINT_FAILED = "ADD_POINT_FAILED";
+
+export const EDIT_POINT = "EDIT_POINT";
+export const EDIT_POINT_SUCCESS = "EDIT_POINT_SUCCESS";
+export const EDIT_POINT_FAILED = "EDIT_POINT_FAILED";
