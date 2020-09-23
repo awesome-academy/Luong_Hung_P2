@@ -12,6 +12,7 @@ const ManagementUsers = (props) => {
   const [listUsers, setListUsers] = useState(accounts);
   const [deleteUser, setDeleteUser] = useState(-1);
   const [isOpenModal, setIsOpenModal] = useState(0);
+  const toggleSidebar = useSelector((state) => state.ui.showSidebar);
   const dispatch = useDispatch();
   const [productPerPage] = useState(6);
   const [currentPage, setCurrentPage] = useState(1);
@@ -57,7 +58,6 @@ const ManagementUsers = (props) => {
         <table className="table">
           <tr>
             <th>#</th>
-            <th>ID</th>
             <th>{t("auth.avatar")}</th>
             <th>{t("auth.name")}</th>
             <th>{t("auth.email")}</th>
@@ -96,7 +96,6 @@ const ManagementUsers = (props) => {
           return result.push(
             <tr key={i}>
               <td>{i}</td>
-              <td>{user.id}</td>
               <td>
                 <img src={user.avatar} alt="avatar" className="avatar" />
               </td>
@@ -133,10 +132,13 @@ const ManagementUsers = (props) => {
   };
 
   const handleDeleteUser = (user) => {
-    dispatch(adminActions.deleteUser(user));
-    const index = searchIndex(user.id);
-    if (index !== -1) {
-      setDeleteUser(index);
+    const string = t("auth.deleteConfirm");
+    if(window.confirm(string)) {
+      dispatch(adminActions.deleteUser(user));
+      const index = searchIndex(user.id);
+      if (index !== -1) {
+        setDeleteUser(index);
+      }
     }
   };
 
@@ -149,7 +151,7 @@ const ManagementUsers = (props) => {
   };
 
   return (
-    <div className="wrapperAdminUsers">
+    <div className={toggleSidebar ? "wrapperAdminUsers" : "wrapperAdminUsers admin"}>
       {currentUser && currentUser.email === "admin@admin"
         ? showAdminUser()
         : checkAdmin()}

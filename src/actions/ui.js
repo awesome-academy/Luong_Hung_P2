@@ -7,3 +7,10 @@ export const showLoading = () => ({
 export const hideLoading = () => ({
   type: uiTypes.HIDE_LOADING,
 });
+
+export const toggleSidebar = (data) => ({
+  type: uiTypes.TOGGLE_SIDEBAR,
+  payload: {
+    data
+  }
+});

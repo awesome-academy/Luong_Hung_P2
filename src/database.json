@@ -2,31 +2,19 @@
   "users": [
     {
       "email": "admin@admin",
-      "password": "$2a$10$CaMuzBW.q1xeYjvmBY17eu62vbTyi2cntDSOA7ieYVbJdnA6q1oV6",
+      "password": "$2a$10$FVqhkMBBBA0pOhq0VXjm2.Pk0Vhk347HuZ1NwFNfuwOBZP90oG3Eq",
       "name": " Phạm Việt Hưng",
       "phone": "0972093127",
       "region": "Hà Nội",
       "birth": "1998-11-27",
       "gender": "Male",
-      "avatar": "http://gravatar.com/avatar/a3175a452c7a8fea80c62a198a40f6c9?d=identicon",
+      "avatar": "https://i.redd.it/cyvfhsb69xmy.png",
       "registerDate": 1599624387081,
       "id": 0
     },
     {
-      "email": "hiep@gmail.com",
-      "password": "$2a$10$6PuAhCWPd0p/BJAPT/2I0O9h0rUXIs/xwYxLWWr1Ar4eABSL9fODO",
-      "name": "Trần Văn Hiệp",
-      "phone": "0972093127",
-      "region": "Hà Nội",
-      "birth": "1998-11-27",
-      "gender": "Male",
-      "avatar": "https://streaming1.danviet.vn/upload/3-2018/images/2018-07-06/1-1530866003-width680height453.jpg",
-      "registerDate": 1599639805541,
-      "id": 1
-    },
-    {
       "email": "anh@gmail.com",
-      "password": "$2a$10$It.eJOmMK5z/JINm9pv1VONby6Uxv3ntQl/ZxsbkczIpmlvG0MQxa",
+      "password": "$2a$10$Md2tBykq9tPN.y/vUSkiZOlCXiWPAxG16vqKOVEN7LJlnm6RxK5d.",
       "name": " Phạm Việt Hưng",
       "phone": "0972093127",
       "region": "",
@@ -38,12 +26,12 @@
     },
     {
       "email": "anhhungx9propro@gmail.com",
-      "password": "$2a$10$XcYdYyQzh/r7Qe4j83z2qOZwexUxSCu7vSivpad69CbqHQV.HkJKK",
+      "password": "$2a$10$fujFyoQurwKraf1SF5zM3OC46buH3u9hN1xN7S3pw9N7Qc7h9JF5.",
       "name": " Phạm Việt Hưng",
       "phone": "0972093127",
       "region": "",
       "birth": "2020-01-01",
-      "gender": "Male",
+      "gender": "Female",
       "avatar": "https://streaming1.danviet.vn/upload/3-2018/images/2018-07-06/1-1530866003-width680height453.jpg",
       "registerDate": 1599712146828,
       "id": 3
@@ -78,8 +66,8 @@
       "releaseDate": "2020-09-10",
       "category": "Hành động, Khoa học viễn tưởng",
       "status": 1,
-      "image": "https://i.vietgiaitri.com/2019/11/5/thien-than-anh-the-lao-cai-tinh-khoi-ben-hoa-cuc-hoa-mi-dau-mua-0b0d2f.jpeg",
-      "pointIMDB": 8,
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "pointIMDB": 7.25,
       "age": 13,
       "type": "2D/3D",
       "directors": "Jon Watts",
@@ -95,7 +83,7 @@
       "category": "tâm lý, xã hội",
       "status": 1,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
-      "pointIMDB": 8.6,
+      "pointIMDB": 8.1,
       "age": 18,
       "type": "2D",
       "directors": "Bong Joon Ho",
@@ -105,29 +93,13 @@
       "id": 2
     },
     {
-      "name": "Tay Đua Huyền Thoại - Trading Paint",
-      "minutes": 92,
-      "releaseDate": "2019-07-05",
-      "category": "hành động, gia đình",
-      "status": 1,
-      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/tay-dua-huyen-thoai-trading-paint-15617148423517_220x310.png",
-      "pointIMDB": 4.5,
-      "age": 16,
-      "type": "2D",
-      "directors": "Karzan Kader",
-      "cast": "John Travolta",
-      "nation": "Mỹ",
-      "description": "Một huyền thoại đua xe cổ bị lôi kéo trở lại đường đua bẩn thỉu khi con trai ông, một tay đua đầy tham vọng, gia nhập một đội đua đối thủ, gây ra cuộc cạnh tranh khốc liệt và nguy hiểm giữa cha và con trai.",
-      "id": 3
-    },
-    {
       "name": "Annabelle: Ác Quỷ Trở Về - Annabelle Comes Home",
       "minutes": 106,
       "releaseDate": "2019-07-05",
       "category": "kinh dị",
       "status": 1,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/annabelle-ac-quy-tro-ve-annabelle-comes-home-c18-15601418686089_220x310.jpg",
-      "pointIMDB": 6.4,
+      "pointIMDB": "N/A",
       "age": 18,
       "type": "2D",
       "directors": "Gary Dauberman",
@@ -143,7 +115,7 @@
       "category": "hoạt hình, phiêu lưu",
       "status": 1,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/cau-chuyen-do-choi-4-toy-story-4-15591052666530_220x310.jpg",
-      "pointIMDB": 8.3,
+      "pointIMDB": "N/A",
       "age": 13,
       "type": "2D/3D",
       "directors": "Josh Cooley",
@@ -159,7 +131,7 @@
       "category": "hành động, hài, phiêu lưu",
       "status": 1,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dac-vu-ao-den-su-menh-toan-cau-men-in-black-international-15589555411801_220x310.jpg",
-      "pointIMDB": 5.7,
+      "pointIMDB": "N/A",
       "age": 13,
       "type": "2D",
       "directors": "F. Gary Gray",
@@ -175,7 +147,7 @@
       "category": "hoạt hình, phiêu lưu",
       "status": 1,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/vuong-quoc-xe-dap-bikes-15602370639045_220x310.jpg",
-      "pointIMDB": 4.1,
+      "pointIMDB": "N/A",
       "age": 13,
       "type": "2D",
       "directors": "Manuel J. García",
@@ -191,7 +163,7 @@
       "category": "kinh dị",
       "status": 1,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/hu-boo-c18-15603364608561_220x310.jpg",
-      "pointIMDB": 4.1,
+      "pointIMDB": "N/A",
       "age": 13,
       "type": "2D",
       "directors": "Luke Jaden",
@@ -207,7 +179,7 @@
       "category": "hoạt hình, phiêu lưu",
       "status": 1,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/vua-khung-long-phieu-luu-den-vung-nui-lua-dino-king-journey-to-fire-mountain-15586033825820_220x310.jpg",
-      "pointIMDB": 7.4,
+      "pointIMDB": "N/A",
       "age": 13,
       "type": "2D",
       "directors": "Han Sang-Ho",
@@ -223,7 +195,7 @@
       "category": "hoạt hình, hài hước",
       "status": 1,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/dang-cap-thu-cung-2-the-secret-life-of-pets-2-15589461966995_220x310.jpg",
-      "pointIMDB": 6.6,
+      "pointIMDB": "N/A",
       "age": 13,
       "type": "2D",
       "directors": "Chris Renaud",
@@ -239,7 +211,7 @@
       "category": "hành động",
       "status": 0,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/ke-hoach-dao-tau-3-giai-cuu-escape-plan-the-extractors-c18-15622464737620_220x310.jpg",
-      "pointIMDB": 4.4,
+      "pointIMDB": "N/A",
       "age": 18,
       "type": "3D",
       "directors": "John Herzfeld",
@@ -255,7 +227,7 @@
       "category": "hành động, kịch tính",
       "status": 0,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/06/doi-chong-tham-nhung-p-storm-15616946818132_220x310.jpg",
-      "pointIMDB": 6,
+      "pointIMDB": "N/A",
       "age": 18,
       "type": "3D",
       "directors": "David Lam",
@@ -271,7 +243,7 @@
       "category": "hành động, kịch tính",
       "status": 0,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/dinh-menh-trong-mat-anh-fortuna-s-eye-15624311374199_220x310.jpg",
-      "pointIMDB": 5.6,
+      "pointIMDB": "N/A",
       "age": 16,
       "type": "2D",
       "directors": "Takahiro Miki",
@@ -287,13 +259,13 @@
       "category": "kinh dị",
       "status": 0,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/loi-nguyen-con-dam-bich-ac-quy-trong-guong-queen-of-spades-through-the-looking-glass-c16-15619725262782_220x310.jpg",
-      "pointIMDB": 5.1,
+      "pointIMDB": "N/A",
       "age": 18,
       "type": "2D",
       "directors": "Aleksandr Domogarov",
       "cast": " ",
       "nation": "Nga",
-      "description": "Truyền thuyết kể rằng, bất kỳ chiếc gương nào cũng có thể mở ra một cánh cổng dẫn đến thế giới của người chết, thông qua nghi lễ triệu hồi ác phụ Đầm Bích. Một nhóm học sinh đã phát hiện ra tấm gương ma quái ngay bên trong ngôi trường nội trú lâu đời của mình. Họ vô tình đọc một câu thần chú cổ xưa mà không biết rằng cái giá phải trả là linh hồn chính mình.",
+      "description": "Truyền thuyết kể rằng, bất kỳ chiếc gương nào cũng có thể mở ra một cánh cổng dẫn đến thế giới của người chết, thông qua nghi lễ triệu hồi ác phụ Đầm Bích. Một nhóm học sinh đã phát hiện ra tấm gương ma quái date bên trong ngôi trường nội trú lâu đời của mình. Họ vô tình đọc một câu thần chú cổ xưa mà không biết rằng cái giá phải trả là linh hồn chính mình.",
       "id": 17
     },
     {
@@ -303,7 +275,7 @@
       "category": "âm nhạc, tình cảm",
       "status": 0,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/step-up-6-vu-dieu-duong-pho-step-up-year-of-the-dance-c16-15621420671581_220x310.jpg",
-      "pointIMDB": 4.2,
+      "pointIMDB": "N/A",
       "age": 16,
       "type": "2D",
       "directors": "Ron Yuan",
@@ -319,7 +291,7 @@
       "category": "kinh dị",
       "status": 0,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/07/vong-luan-hoi-sadako-c18-15620622370416_220x310.jpg",
-      "pointIMDB": 5.6,
+      "pointIMDB": "N/A",
       "age": 18,
       "type": "2D",
       "directors": "Hideo Nakata",
@@ -335,7 +307,7 @@
       "category": "hoạt hình, phiêu lưu",
       "status": 0,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/02/vua-su-tu-the-lion-king-15512514519540_220x310.jpg",
-      "pointIMDB": 7.6,
+      "pointIMDB": "N/A",
       "age": 13,
       "type": "2D",
       "directors": "Jon Favreau",
@@ -351,7 +323,7 @@
       "category": "võ thuật",
       "status": 1,
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/diep-van-4-ip-man-4-15586040278365_220x310.jpg",
-      "pointIMDB": 0,
+      "pointIMDB": "N/A",
       "age": 13,
       "type": "2D/3D",
       "directors": "Wilson Yip",
@@ -359,40 +331,73 @@
       "nation": "Trung Quốc",
       "description": "Phần tiếp theo về Diệp Vấn.",
       "id": 21
+    },
+    {
+      "name": "Nguyễn Văn Lượng",
+      "minutes": "130",
+      "category": "kinh di",
+      "status": 0,
+      "type": "2D/3D",
+      "nation": "my",
+      "description": "dddd",
+      "cast": "đ,d,đ",
+      "age": "18",
+      "directors": "dd",
+      "releaseDate": "2020-12-11",
+      "image": "https://upload.wikimedia.org/wikipedia/vi/1/1d/N%C6%A1i_n%C3%A0y_c%C3%B3_anh_-_Single_Cover.jpg",
+      "pointIMDB": "N/A",
+      "id": 22
     }
   ],
   "promotion": [
     {
       "id": 1,
-      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion1.jpg"
+      "promotion_image": "https://www.cgv.vn/media/wysiwyg/2020/062020/vnpay-350x495-0.png",
+      "name": "THANH TOÁN BẰNG VNPAY-QR, GIẢM NGAY 10% KHI MUA VÉ XEM PHIM TẠI CINEMA",
+      "content": "<div class='detailPromotion__detail__item'><b>Giảm 10% tối đa 50K/hóa đơn khi mua vé và/ hoặc bỏng, nước trênwebsite CGV, áp dụng cho thanh toán bằng VNPAY-QR<br />Nhập mã: YEUVNPAY</b></div><div class='detailPromotion__detail__item'><b>Thời gian ưu đãi: </b> từ 16/06/2020 đến 31/07/2020</div><div class='detailPromotion__detail__item'><b>Hướng dẫn thanh toán VNPAY-QR để hưởng khuyến mại: </b><br/>- Bước 1: Khách hàng chọn phim và/hoặc combo và/ hoặc bỏng nước trên website/APP CGV<br/>- Bước 2: Chọn hình thức thanh toán bằng VNPAY-QR<br/>- Bước 3: Đăng nhập ứng dụng Mobile Banking, chọn tính năng QR Pay<br/>- Bước 4: Quét mã QR hiển thị trên màn hình, nhập mã khuyến mại (YEUVNPAY) và hoàn tất giao dịch</div><div class='detailPromotion__detail__item'><b>Lưu ý: </b> <br/>- Khuyến mại chỉ áp dụng khi mua vé và/ hoặc bỏng, nước trên website Cinema.<br/>- Thanh toán bằng ứng dụng Mobile Banking trên điện thoại di động của các ngân hàng sau: Agribank, BIDV, VietinBank, Vietcombank, SCB, IVB, VPBank, ABBank, Eximbank, HDBank, NCB, Nam A Bank, Vietbank, BIDC bank, Saigonbank, SeABank, Ocean Bank, Kienlongbank cùng nhiều ngân hàng khác.<br/>- Mỗi khách hàng chỉ được sử dụng Mã giảm giá YEUVNPAY 1 lần/tuần.<br/>- VNPAY có quyền quyết định cuối cùng trong việc xét duyệt các giao dịch hợp lệ.</div>"
     },
     {
       "id": 2,
-      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion2.jpg"
+      "promotion_image": "https://www.cgv.vn/media/wysiwyg/2020/072020/KICHI_VOUCHER_350x495.jpg",
+      "name": "SĂN COMBO HÈ, GOM QUÀ 'NO BỤNG'",
+      "time": "17/07/2020 – 20/09/2020",
+      "content": "<div class='detailPromotion__detail__item'><b>THỜI GIAN ƯU ĐÃI:</b><br />- Từ 17/07/2020 – 20/09/2020</div><div class='detailPromotion__detail__item'><b>NỘI DUNG ƯU ĐÃI:</b><br />-  Khách hàng mua đủ 02 COKE SUMMER COMBO sẽ được tặng 01 Bộ voucher Kichi Kichi hấp dẫn bao gồm voucher buffet Kichi Kichi và voucher uống Coca miễn phí</div><div class='detailPromotion__detail__item'><b>KÊNH ÁP DỤNG ƯU ĐÃI:</b><br />-  Mua COKE SUMMER COMBO trực tiếp tại quầy<br />-  Thực hiện thanh toán trực tuyến qua website www.cgv.vn hoặc ứng dụng điện thoại CGV Cinemas.</div><div class='detailPromotion__detail__item'><b>ĐIỀU KIỆN ÁP DỤNG:</b><br />-  Áp dụng tại tất cả các rạp CGV khu vực Hồ Chí Minh và Hà Nội<br/>-  Chỉ áp dụng cho khách hàng thành viên tại CGV<br />-  Áp dụng cộng dồn đối với các giao dịch thỏa điều kiện trong thời gian khuyến mãi<br />-  Khuyến mại không áp dụng đồng thời với các chương trình khuyến mãi khác của CGV và đối tác.</div><div class='detailPromotion__detail__item'><b>CÁCH THỨC NHẬN QUÀ:</b><br />- Bước 1: Đến tất cả các rạp CGV khu vực Hồ Chí Minh & Hà Nội<br />- Bước 2: Xuất trình thẻ thành viên CGV(Thẻ cứng hoặc thẻ thành viên trên APP) và chứng minh nhân dân của bạn cho nhân viên tại quầy<br />- Bước 3: CGV gửi tặng bạn 01 Bộ voucher Kichi-Kichi. Hãy kiểm tra trong bộ quà tặng đã có đủ 01 vé buffet băng chuyền Kichi-Kichi và 01 vé nước ngọt Coca miễn phí trước khi rời khỏi quầy nhé.</div>"
     },
     {
       "id": 3,
-      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion3.jpg"
+      "promotion_image": "https://www.cgv.vn/media/wysiwyg/2020/072020/Viettel-Pay-350x495.png",
+      "name": "MUA VÉ XEM PHIM CGV GIÁ CHỈ 79.000Đ/VÉ QUA VIETTELPAY",
+      "content": "<div class='detailPromotion__detail__item'><b>NỘI DUNG ƯU ĐÃI:</b><br />- Thuê bao Viettelpay sẽ được mua vé xem phim CGV với giá 79k/ vé vào tất cả các ngày trong tuần<br />- Khách hàng (thuê bao ViettelPay) sẽ có cơ hội mua tối đa 02 vé KM/ tuần, 10 vé KM/ tháng</div><div class='detailPromotion__detail__item'><b>KÊNH ÁP DỤNG ƯU ĐÃI:</b><br />Các hình thức thanh toán bằng ViettelPay được chấp nhận bao gồm<br />- Mua vé CGV trên ứng dụng điện thoại Viettelpay<br />- Mua vé trên website www.cgv.vn hoặc ứng dụng điện thoại CGV Cinemas và chọn hình thức thanh toán Viettelpay</div><div class='detailPromotion__detail__item'><b>CÁCH THỨC NHẬN ƯU ĐÃI:</b><br /><b class='b--fontSize'>Đối với hình thức mua vé trên ứng dụng ViettelPay</b><br />- Bước 1: Mở ViettelPay, chọn mua vé xem phim CGV<br />- Bước 2: Lựa chọn phim, rạp, giờ chiếu, số ghế, và chọn thanh toán<br />- Bước 3: Hệ thống sẽ hiển thị giá trị giao dịch khách hàng cần thanh toán sau khi đã được áp dụng mã khuyến mãi<br />- Bước 4: Nhập mã PIN và OTP<br />- Bước 5: Hệ thống sẽ trả thông tin xác nhận thanh toán thành công và code vé xem phim qua SMS/ app/website/email<br /><b class='b--fontSize'>Đối với hình thức mua vé trên ứng dụng/ website CGV</b><br />- Bước 1: Mở ứng dụng CGV cinemas hoặc truy cập website www.cgv.vn<br />- Bước 2: Lựa chọn phim, rạp, giờ chiếu, số ghế, và chọn thanh toán<br />- Bước 3: Chọn hình thức thanh toán qua Viettelpay<br />- Bước 4: Quét QRCode (đối với phiên bản web) hoặc đăng nhập ViettePay bằng cách nhập số điện thoại và OTP (đối với phiên bản mobile để thanh toán)<br />- Bước 5: Hệ thống sẽ hiển thị giá trị giao dịch khách hàng cần thanh toán sau khi đã được áp dụng mã khuyến mãi<br />- Bước 6: Nhập mã PIN và OTP<br />- Bước 7: Hệ thống sẽ trả thông tin xác nhận thanh toán thành công và code vé xem phim qua SMS/ app/ webssite/email</div><div class='detailPromotion__detail__item'><b>ĐIỀU KIỆN VÀ ĐIỀU KHOẢN: </b><br />- Không áp dụng cho các suất chiếu ngày lễ, Tết (Tết dương lịch, Tết âm lịch (từ 29 Âm đến mùng 5 âm ), giỗ tổ Hùng Vương, 30/4 -1/5, 2/9 )<br />- Áp dụng cho các giao dịch mua vé xem phim 2D có giá trị tối thiểu từ 80.000 VND<br />- Chương trình chỉ áp dụng cho hạng ghế thường và hạng ghế VIP cho phim 2D<br />- Áp dụng cho suất chiếu Sneak Show<br />- Không áp dụng cho các phòng chiếu đặc biệt (IMAX, 4DX, Gold Class, L’Amour, Starium, Sweetbox…)<br />- Khuyến mại không áp dụng đồng thời với các chương trình khuyến mãi khác của CGV và đối tác.<br />- Chương trình áp dụng cho tất cả các cụm rạp CGV tại các tỉnh/ thành mà Viettel thực hiện Thông báo Chương trình Khuyến Mãi<br />- Vé xem phim không có giá trị quy đổi thành tiền mặt hay hoàn trả.</div>"
     },
     {
       "id": 4,
-      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion4.jpg"
+      "promotion_image": "https://www.cgv.vn/media/wysiwyg/2020/072020/sc-cgv-350X495.jpg",
+      "name": "MUA VÉ XEM PHIM 2D TẠI CGV VỚI GIÁ CHỈ 69K",
+      "content": "<div class='detailPromotion__detail__item'><b>Thời gian ưu đãi: </b><br />- Các ngày thứ 7 và Chủ Nhật hàng tuần từ 01/07/2020 đến 31/12/2020<br />- Chỉ áp dụng tại các cụm rạp CGV tại Tp. Hà Nội và Tp. Hồ Chí Minh</div><div class='detailPromotion__detail__item'><b>Nội dung ưu đãi: </b><br />- Mua 01 (một) vé xem phim 2D tại CGV với giá 69.000 VNĐ (áp dụng cho giao dịch gồm 02 vé)<br />- Khách hàng thực hiện giao dịch mua vé vào thứ bảy và chủ nhật hàng tuần, áp dụng cho các suất chiếu vào thứ Bảy và Chủ Nhật của tuần giao dịch, từ 6:00 – 23:59<br />- Chương trình sẽ được tái hiệu lực từ  6:00 giờ sáng của mỗi thứ 7 và Chủ Nhật trong thời gian ưu đãi.</div><div class='detailPromotion__detail__item'><b>Kênh áp dụng ưu đãi: </b><br />- Mua vé trực tuyến trên ứng dụng Cinema Cinemas hoặc trên trang chủ của Cinema<br />- Lưu ý: Chương trình KHÔNG áp dụng cho khách hàng mua vé trực tiếp tại quầy. Mọi thông tin chi tiết vui lòng liên hệ theo số: 1900 6017.</div><div class='detailPromotion__detail__item'><b>Cách thức nhận ưu đãi: </b><br /><b class='b-fontSize'>- Bước 1: Chọn mua 02 vé xem phim 2D<br />- Bước 2: Tại mục “Giảm giá”, chọn ô “Đối tác”, tiếp tục chọn “Standard Chartered”<br />- Bước 3: Chọn thanh toán bằng thẻ Standard Chartered. Hệ thống sẽ tự động giảm trừ giá trị thanh toán về 69.000 VNĐ/ vé<br />- Bước 4: Nhận vé tại rạp CGV<br /></b>*Ghi chú: Trong một số trường hợp, chủ thẻ có thể phải liên hệ Ngân Hàng phát hành thẻ để kích hoạt chức năng thanh toán trực tuyến trước khi sử dụng. Các điều khoản và điều kiện liên quan của Ngân Hàng có thể sẽ được áp dụng. Đường dây nóng: (84-28) 39110000 / (84-24) 36960000</div><div class='detailPromotion__detail__item'><b>Điều kiện và điều khoản: </b><br />- Khuyến mãi chỉ áp dụng cho các suất chiếu 2D - cùng một bộ phim, cùng suất chiếu và cùng hạng ghế (VIP hoặc Standard).<br />- KHÔNG áp dụng cho ngày lễ, Tết và các ngày đặc biệt.<br />- Mỗi chủ thẻ chỉ được hưởng tối đa 02 (hai) vé xem phim 2D ưu đãi trong một giao dịch; tối đa 4 giao dịch/ tháng và  tối đa 25 giao dịch cho toàn bộ chương trình. .<br />- Áp dụng cho thẻ tín dụng  MasterCard Platinum Cashback, MasterCard WorldMiles và MasterCard Priority WorldMiles được phát hành bởi Ngân Hàng Standard Chartered Việt Nam (Số BIN bắt đầu là: 516101, 526181)<br />- Áp dụng cho tất cả các suất chiếu 2D, NGOẠI TRỪ các suất chiếu Sneak Show, Early Show và các phòng chiếu đặc biệt (IMAX, 4DX, GOLD CLASS, STARIUM, L’AMOUR, SWEETBOX…);<br />- Khuyến mãi không áp dụng đồng thời với các chương trình khuyến mãi khác của CGV và đối tác. <br />- CGV bảo lưu toàn quyền điều chỉnh hoặc kết thúc chương trình tại bất kỳ thời điểm nào mà không cần thông báo trước hoặc chịu trách nhiệm bồi thường bằng tiền mặt hoặc tài sản.<br />- CGV bảo lưu quyền không chấp nhận hoặc từ chối người tham gia có dấu hiệu vi phạm các quy định chương trình (căn cứ theo Điều khoản sử dụng dịch vụ hoặc có bất kì hành vi nào mà bên tổ chức cho rằng là không phù hợp hoặc không thể chấp nhận).<br />- CGV bảo lưu quyền hủy bỏ, sửa đổi và/hoặc điều chỉnh toàn bộ hoặc một phần bất kì các điều kiện và điều khoản của chương trình tại bất kỳ thời điểm nào mà không cần thông báo trước cho người tham gia.<br />- Trong trường hợp xảy ra tranh chấp, quyết định của CGV là quyết định cuối cùng.</div>"
     },
     {
       "id": 5,
-      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion5.jpg"
+      "promotion_image": "https://www.cgv.vn/media/wysiwyg/2020/072020/HSBC_CGV_Banner_350x495.jpg",
+      "name": "MUA 2 VÉ GIÁ 85.000Đ VỚI THẺ TÍN DỤNG HSBC",
+      "content": "<div class='detailPromotion__detail__item'>Khách hàng cần lưu ý rằng khi Khách hàng tham gia Chương Trình hoặc đồng ý nhận các ưu đãi theo Chương Trình, Khách hàng sẽ được xem là đã đọc, hiểu và chấp thuận bản Điều Khoản và Điều Kiện này.</div><div class='detailPromotion__detail__item'><b>1. Chương Trình 'Mua 2 vé giá 85.000đ với Thẻ Tín Dụng HSBC'</b>(“Chương Trình”) áp dụng tại CGV và có hiệu lực từ 17/06/2020 – 31/08/2020 ('Thời Gian Chương Trình').<br /></div><div class='detailPromotion__detail__item'><b>2. Chương Trình áp dụng cho các khách hàng đáp ứng các điều kiện sau:</b>('Khách Hàng Đủ Điều Kiện' hoặc 'Chủ Thẻ Hợp Lệ' hoặc 'Chủ Thẻ')<br />2.1 Chương Trình áp dụng cho các chủ thẻ tín dụng HSBC hiện là chủ thẻ của các thẻ tín dụng do Ngân Hàng TNHH Một Thành Viên HSBC (Việt Nam) (“HSBC” hoặc “Ngân Hàng”) phát hành tại Việt Nam như sau:<br />- Thẻ Tín Dụng HSBC  Premier World Mastercard®<br />- Thẻ Tín Dụng HSBC Visa Bạch Kim<br />- Thẻ Tín Dụng HSBC Visa Cash Back<br />- Thẻ Tín Dụng HSBC Visa Chuẩn <br />(gọi chung là “Thẻ Tín Dụng HSBC” hoặc “Thẻ”)</div><div class='detailPromotion__detail__item'><b>3. Chương Trình này không áp dụng với:</b><br />- Chương Trình này không áp dụng cho Thẻ Tín Dụng Thương Mại HSBC. <br />- Chủ Thẻ không được tham gia Chương Trình nếu thanh toán chậm các khoản phí, các khoản dư nợ thẻ tại HSBC, thẻ bị khóa vì bất kỳ lý do gì.<br />Lưu ý: Chủ Thẻ sở hữu Thẻ trong tình trạng chưa được kích hoạt cần kích hoạt Thẻ trước khi tham gia Chương Trình.</div><div class='detailPromotion__detail__item'><b>4. Nội dung chi tiết của Chương Trình:</b><br />4.1 Chi tiết ưu đãi (“Ưu Đãi”): <br />- Mua 2 vé xem phim 2D CGV chỉ với 85.000 đ vào thứ 7, chủ nhật khi thanh toán bằng thẻ tín dụng HSBC <br />- Áp dụng từ 7:00 sáng đến 23:59 vào mỗi Ngày ưu đãi trong thời gian ưu đãi, căn cứ theo giờ Việt Nam GMT+7 và theo hệ thống của CGV<br />- Áp dụng cho 150 Chủ Thẻ Hợp Lệ Đầu Tiên của mỗi Ngày Ưu Đãi thanh toán trực tuyến bằng Thẻ HSBC <br />- Mỗi chủ thẻ chỉ hưởng 2 vé xem phim 2D trong một giao dịch; 1 chủ thẻ chỉ nhận tối đa 01 ưu đãi trong 1 tháng (được tính khi khách hàng nhận ưu đãi),  tối đa 03 ưu đãi trong toàn bộ Chương trình  <br />4.2 Mỗi cặp vé HSBC Couple của Chương Trình được áp dụng cho cùng một bộ phim, một suất chiếu và cùng hạng ghế (Standard hoặc VIP).<br /4.3 Giao dịch hợp lệ phải là giao dịch thực hiện đúng cách thức nhận ưu đãi của chương trình được quy định tại điều 6. <br />4.4 Ưu Đãi áp dụng cho số lượng Chủ Thẻ Hợp Lệ trong mỗi Ngày Ưu Đãi quy định tại mục 4.1.  <br />4.5 Chủ Thẻ Hợp Lệ có thể không nhận được Ưu Đãi nếu số lượng Ưu Đãi phân bố trong Ngày Ưu Đãi đã được sử dụng hết.</div><div class='detailPromotion__detail__item'><b>5. HSBC và CGV sẽ thông báo chi tiết cách thức nhận Ưu Đãi cho khách hàng qua website www.hsbc.com.vn và www.cgv.vn từ ngày 17/06/2020.</b><br /></div><div class='detailPromotion__detail__item'><b>6. Cách thức để nhận được Ưu Đãi của Chương Trình:</b><br />a. Chủ Thẻ Hợp Lệ đăng nhập vào tài khoản thành viên của www.cgv.vn hoặc trên ứng dụng CGV mobile.<br />b. Chủ Thẻ Hợp Lệ chọn mua 02 vé xem phim 2D.<br />c. Tại mục “Giảm Giá”, Chủ Thẻ Hợp Lệ chọn ô “Đối Tác”, tiếp tục chọn “Mua 2 vé giá 85.000đ Với Thẻ HSBC”.<br />d. Chủ Thẻ Hợp Lệ tiếp tục đến bước thanh toán và sử dụng Thẻ HSBC, hệ thống sẽ tự động giảm trừ còn 85.000 VND.<br />e. Chủ Thẻ Hợp Lệ xuất trình thông tin tại rạp CGV để nhận vé xem phim.</div><div class='detailPromotion__detail__item'><b>7. Các quy định khác: </b><br />- Ưu Đãi sẽ không được chuyển đổi thành tiền mặt hoặc tiền tặng vào tài khoản thẻ tín dụng hoặc tài khoản thanh toán của Chủ Thẻ.<br />- Việc mua hàng hóa tại CGV sẽ tuân theo điều khoản và điều kiện của CGV. <br />- Ưu đãi không áp dụng đồng thời với các chương trình khuyến mãi khác.<br />- Áp dụng tại tất cả các cụm rạp của CGV trên toàn quốc. Trong trường hợp có cụm rạp mới khai trương, đóng cửa tạm thời hoặc ngưng hoạt động, CGV sẽ thông báo trên website của CGV.<br />- Chương trình áp dụng cho tất cả phim vào tất cả các ngày trong thời gian diễn ra chương trình (trừ các suất chiếu ngày lễ, Tết theo quy định của Pháp Luật Việt Nam).<br />- Không áp dụng cho Suất chiếu Sớm, Suất chiếu Đặc biệt, và các phòng chiếu đặc biệt như: IMAX, 4DX, GOLD GLASS, STARIUM, L’AMOUR, SWEET BOX… <br />- Áp dụng cho tất cả các suất chiếu thông thường</div><div class='detailPromotion__detail__item'><b>8. Chủ Thẻ Hợp Lệ đủ điều kiện tham gia sẽ bị ràng buộc bởi bản Điều Khoản và Điều Kiện của Chương Trình này.</b></div><div class='detailPromotion__detail__item'><b>9. HSBC có quyền yêu cầu</b><br />Chủ Thẻ cung cấp hóa đơn tài chính và các chứng từ liên quan chứng minh rằng giao dịch của Chủ Thẻ là hợp lệ. Trong trường hợp Chủ Thẻ không chứng minh được giao dịch của Chủ Thẻ là hợp lệ, Chủ Thẻ sẽ không được hưởng Ưu Đãi của Chương Trình.<br /></div><div class='detailPromotion__detail__item'><b>10. Đối với các tranh chấp phát sinh</b><br />Liên quan đến Chương Trình, CGV Việc mua hàng hóa tại CGV sẽ tuân theo điều khoản và điều kiện của CGV. Đối với những thắc mắc liên quan đến việc mua hàng của CGV, Chủ Thẻ liên hệ CGV để được hướng dẫn và giải quyết. Mọi thắc mắc, khiếu nại khác liên quan đến nội dung Chương Trình, Chủ Thẻ liên hệ HSBC để được giải quyết.<br />- Hotline CGV: 19006017<br />- Trung Tâm Dịch Vụ Khách Hàng HSBC (hoạt động hằng ngày từ 8h sáng đến 10h đêm): (84 28) 37 247 247 (miền Nam) hoặc (84 24) 62 707 707 (miền Bắc)</div><div class='detailPromotion__detail__item'><b>11. CGV và HSBC sẽ giải quyết</b><br />Trên tinh thần hợp tác với khách hàng. Trong trường hợp các bên không đạt được thỏa thuận, tranh chấp sẽ được giải quyết theo quy định của pháp luật Việt Nam tại Tòa án có thẩm quyền.</div><div class='detailPromotion__detail__item'><b>12. Bản Điều khoản và Điều kiện</b><br />Này được áp dụng đồng thời với các điều khoản và điều kiện của Bản Chấp Thuận Sử Dụng Thẻ Tín Dụng.</div><div class='detailPromotion__detail__item'><b>13. Bản Điều Khoản và Điều Kiện</b><br />Của Chương Trình này có thể bị điều chỉnh tại từng thời điểm theo quyết định của HSBC và CGV. Nội dung thay đổi (nếu có) sẽ được thông báo, đăng ký theo quy định pháp luật và cập nhật trên website của HSBC và CGV trước ngày áp dụng.</div><div class='detailPromotion__detail__item'><b>14. Điều Khoản và Điều Kiện của Chương Trình</b><br />Này được lập thành tiếng Anh và tiếng Việt. Trong trường hợp có sự mâu thuẫn giữa bản tiếng Anh và tiếng Việt của các Điều Khoản và Điều Kiện của Chương Trình, bản tiếng Việt</div>"
     },
     {
       "id": 6,
-      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion6.jpg"
+      "promotion_image": "https://www.cgv.vn/media/wysiwyg/2020/052020/km-scb-350x495_CGV.JPG",
+      "name": "XEM PHIM KHỦNG - GIÁ SINH VIÊN",
+      "content": "<div class='detailPromotion__detail__item'><b>Chương trình ưu đãi dành cho Chủ thẻ quốc tế SCB tại CGV</b><br />1. Nội dung: Mua hai vé xem phim 2D với 85.000 đồng trên ứng dụng CGV Cinema hoặc website www.cgv.vn. (chỉ áp dụng cho giao dịch trực tuyến).<br />2. Thời gian: Thứ Sáu hàng tuần từ ngày 15/05/2020 đến hết ngày 24/07/2020.<br />3. Đối tượng Khách hàng: Chủ thẻ quốc tế SCB Visa/Mastercard, có đầu BIN: 453618, 550796, 489516, 489517, 489518, 510235, 545579, 554627.<br />4. Điều khoản và điều kiện khác:<br />- Số lượt ưu đãi áp dụng: 150 giao dịch đầu tiên/ ngày.<br />- Chương trình bắt đầu từ 09h - 23h59 các ngày Thứ Sáu hàng tuần từ ngày 15/05/2020 - 24/07/2020.<br />- Áp dụng cho vé xem phim 2D tại tất cả rạp CGV trên toàn quốc.<br />- Mỗi chủ thẻ/ user được hưởng ưu đãi 01 (một) lần ưu đãi/ đợt trong suốt thời gian khuyến mại:<br /• Đợt 1: 15/5/2020-15/6/2020<br />• Đợt 2: 16/6/2020-16/7/2020<br />• Đợt 3: 17/7/2020-24/7/2020<br />- Chương trình chỉ áp dụng cho hạng ghế thường và hạng ghế VIP cho phim 2D. Mỗi cặp vé được áp dụng cho cùng một bộ phim, một suất chiếu và cùng hạng ghế.<br />- Khuyến mại không áp dụng đồng thời với các chương trình khuyến mãi khác của CGV và đối tác.<br />- Không áp dụng cho suất chiếu sớm, suất chiếu đặc biệt, và các phòng chiếu đặc biệt như: IMAX, 4DX, GOLD CLASS, STARIUM, L’AMOUR, SWEETBOX…<br /- Không áp dung cho các suất chiếu ngày Lễ, Tết theo quy định của pháp luật<br />- Vé xem phim không có giá trị đổi thành tiền mặt hay hoàn trả.<br />- KH chỉ tiến hành thanh toán khi hệ thống đã hiển thị số tiền giảm giá. SCB và CGV không chịu trách nhiệm về việc hệ thống không hiển thị số tiền giảm giá mà KH vẫn tiến hành thanh toán.<br />- CGV bảo lưu toàn quyền điều chỉnh hoặc kết thúc chương trình tại bất kỳ thời điểm nào mà không cần thông báo trước hoặc chịu trách nhiệm bồi thường bằng tiền mặt hoặc tài sản.<br />- CGV bảo lưu quyền không chấp nhận hoặc từ chối người tham gia có dấu hiệu vi phạm các quy định chương trình (căn cứ theo Điều khoản sử dụng dịch vụ hoặc có bất kì hành vi nào mà bên tổ chức cho rằng là không phù hợp hoặc không thể chấp nhận).<br />- CGV bảo lưu quyền hủy bỏ, sửa đổi và/hoặc điều chỉnh toàn bộ hoặc một phần bất kì các điều kiện và điều khoản của chương trình tại bất kỳ thời điểm nào mà không cần thông báo trước cho người tham gia.<br />- Trong trường hợp xảy ra tranh chấp, quyết định của CGV là quyết định cuối cùng.<br /><b>- Cách thức nhận ưu đãi</b><br />+ Bước 1: Chọn mua vé xem phim.<br />+ Bước 2: Tại mục “Giảm giá”, chọn ô “Đối tác”, tiếp tục chọn “Saigon Commercial Card”.<br />+ Bước 3: Chủ thẻ hợp lệ tiếp tục đến bước thanh toán và sử dụng thẻ quốc tế SCB.<br/>+ Bước 4: Chủ thẻ hợp lệ xuất trình thông tin tại rạp CGV để nhận vé xem phim.</div>"
     },
     {
       "id": 7,
-      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion7.jpg"
+      "promotion_image": "https://www.cgv.vn/media/wysiwyg/2020/022020/uu-dai-visa-cgv-350X495.jpg",
+      "name": "MUA VÉ XEM PHIM GIÁ 50K BẰNG THẺ VISA",
+      "content": "<div class='detailPromotion__detail__item'><b>THỜI GIAN ƯU ĐÃI:</b><br /> Áp dụng vào các ngày Thứ ba (Bắt đầu vào lúc 9:00 sáng) hàng tuần từ 20/02/2020 – 17/11/2020 (Toàn quốc) <br /><b>NỘI DUNG ƯU ĐÃI:</b><br />- Khách hàng khi sử dụng thẻ do VISA phát hành thực hiện giao dịch mua vé xem phim 2D CGV sẽ được hưởng ưu đãi mua vé xem phim với giá 50.000VNĐ/ vé<br />KÊNH ÁP DỤNG ƯU ĐÃI:  <br />- Mua vé trực tuyến trên ứng dụng CGV Cinemas hoặc trên trang chủ của CGV: www.cgv.vn :Áp dụng cho tất cả các loại thẻ VISA<br />- Mua vé trực tiếp tại quầy: Áp dụng cho thẻ VISA một chạm (CONTACTLESS)<br /><b>CÁCH THỨC NHẬN ƯU ĐÃI KHI MUA VÉ TRỰC TUYẾN:</b><br />- Bước 1: Chọn mua 01 vé xem phim 2D <br />- Bước 2: Tại mục “Thanh toán”, chọn ô “Đối tác”, tiếp tục chọn “VISA_MUA VE GIA 50K” <br />- Bước 3: Chọn “Xác Nhận”. Hệ thống sẽ tự động giảm trừ giá trị thanh toán về 50.000 VNĐ.<br />- Bước 4: Nhận vé tại rạp CGV<br /><b>CÁCH THỨC NHẬN ƯU ĐÃI KHI MUA VÉ TẠI QUẦY:</b><br />- Bước 1: Mang thẻ “VISA một chạm” (Contactless) đến các rạp chiếu phim CGV trên toàn quốc. <br />- Bước 2: Thông báo với rạp tham gia chương trình khuyến mãi “MUA VÉ XEM PHIM GIÁ 50K BẰNG THẺ VISA” trước khi chọn vé. <br />- Bước 3: Chọn vé và thanh toán chạm bẳng thẻ “VISA một chạm” (Contactless) theo hướng dẫn của nhân viên rạp<br /><b>Điều kiện và điều khoản:</b><br />- Không giới hạn số lượng ưu đãi cho mỗi chủ thẻ<br />- Mỗi giao dịch chỉ gồm 01 vé xem phim với giá ưu đãi<br />- Áp dụng cho 300 giao dịch đầu tiên vào mỗi thứ Ba hằng tuần<br />- Vé xem phim không có giá trị quy đổi thành tiền mặt hay hoàn trả.<br />- Chương trình áp dụng cho các giao dịch vào  Thứ ba hằng tuần trong suốt thời gian diễn ra chương trình ,khách hàng có thể chọn mua vé xem phim cho các suất chiếu ở tất cả các ngày trong tuần (trừ các ngày lễ, Tết theo quy định của Nhà Nước),<br />- Vé xem phim áp dụng cho các suất chiếu thông thường.<br />- Khuyến mãi KHÔNG áp dụng cho Suất chiếu Sớm, Suất chiếu Đặc biệt, và các phòng chiếu đặc biệt như: IMAX, 4DX, GOLD CLASS, STARIUM, L’AMOUR, SCREENX, PREMIUM, SWEETBOX… <br />- Khuyến mãi không áp dụng đồng thời với các chương trình khuyến mãi khác của CGV và đối tác. <br />- Chương trình có thể kết thúc trước thời hạn nếu số lượng vé ưu đãi tặng khách hàng đạt số lượng vé quy định trước thời gian kết thúc chương trình và theo quy tắc mua trước, hưởng khuyến mại trước.<br />- CGV bảo lưu toàn quyền điều chỉnh hoặc kết thúc chương trình tại bất kỳ thời điểm nào mà không cần thông báo trước hoặc chịu trách nhiệm bồi thường bằng tiền mặt hoặc tài sản.<br />- CGV bảo lưu quyền không chấp nhận hoặc từ chối người tham gia có dấu hiệu vi phạm các quy định chương trình (căn cứ theo Điều khoản sử dụng dịch vụ hoặc có bất kì hành vi nào mà bên tổ chức cho rằng là không phù hợp hoặc không thể chấp nhận).<br />- CGV bảo lưu quyền hủy bỏ, sửa đổi và/hoặc điều chỉnh toàn bộ hoặc một phần bất kì các điều kiện và điều khoản của chương trình tại bất kỳ thời điểm nào mà không cần thông báo trước cho người tham gia.<br />- Trong trường hợp xảy ra tranh chấp, quyết định của CGV là quyết định cuối cùng</div>"
     },
     {
       "id": 8,
-      "promotion_image": "https://www.upsieutoc.com/images/2020/09/05/promotion8.jpg"
+      "promotion_image": "https://www.cgv.vn/media/wysiwyg/2019/DEC2019/rsz_1late-show-new-122019-350x495.jpg",
+      "name": "XEM PHIM XUYÊN ĐÊM - GIÁ CHỈ TỪ 60K",
+      "content": "<div class='detailPromotion__detail__item'><b>XEM PHIM XUYÊN ĐÊM</b><br />Tận hưởng giá vé siêu ưu đãi cho các suất chiếu sau 22:00<br />- Đồng giá từ 60.000 VNĐ* – Vé xem phim 2D<br />- Đồng giá 85.000 VNĐ* – 2 Nước + 1 Bắp<br /><b>Điều kiện áp dụng:</b><br /><b class='b--fontSize'>*CGV Liberty Citypoint/CGV Vincom Đồng Khởi/CGV Parkson Đồng Khởi/CGV IMC Trần Quang Khải/CGV Sư Vạn Hạnh/CGV Vincom Bà Triệu/CGV Vincom Times City/CGV Nguyễn Chí Thanh/CGV Trần Duy Hưng/CGV Vincom Liễu Giai/CGV Xuân Diệu:</b><br />- Đồng giá vé 2D 70.000 VNĐ: Từ Thứ 2 đến Thứ 5<br />- Đồng giá vé 2D 80.000 VNĐ: Từ Thứ 6 đến Chủ Nhật<br /><b class='b--fontSize'>*Các rạp còn lại trong khu vực TP.Hồ Chí Minh, Hà Nội & Vũng Tàu:</b><br />- Đồng giá vé 2D 60.000 VNĐ: Từ Thứ 2 đến Thứ 5<br />- Đồng giá vé 2D 70.000 VNĐ: Từ Thứ 6 đến Chủ Nhật<br />*Đồng giá 85.000 VNĐ cho 2 Nước + 1 Bắp áp dụng tại TP.Hồ Chí Minh và Hà Nội<br />* Đồng giá 75.000 VNĐ cho 2 Nước + 1 Bắp tại Vũng Tàu<br />- Áp dụng cho khu vực Hồ Chí Minh, Hà Nội và Vũng Tàu<br />- Không áp dụng cho Culture Day, Happy Day và Lễ Tết<br />- Không áp dụng khi mua vé nhóm (Group Sales), suất chiếu sớm, suất chiếu đặc biệt<br />- Không áp dụng cho định dạng 3D và các phòng chiếu đặc biệt (4DX, IMAX, GOLDCLASS, L’amour, ScreenX, Starium, Premium, Cine & Forêt, Cine & Living Room)<br />- Vé ưu đãi có thể mua trực tuyến hoặc trực tiếp tại quầy<br />- Combo bắp & nước ưu đãi không áp dụng khi mua trực tuyến<br />- Không áp dụng đồng thời với các chương trình khuyến mãi khác của CGV và đối tác<br /></div>"
     }
   ],
   "seats": [
@@ -401,256 +406,921 @@
         {
           "codeSeat": "A01",
           "price": 75000,
-          "status": true
+          "status": true,
+          "id": 1
         },
         {
           "codeSeat": "A02",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 2
         },
         {
           "codeSeat": "A03",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 3
         },
         {
           "codeSeat": "A04",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 4
         },
         {
           "codeSeat": "A05",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 5
         },
         {
           "codeSeat": "A06",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 6
         },
         {
           "codeSeat": "A07",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 7
         },
         {
           "codeSeat": "A08",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 8
         },
         {
           "codeSeat": "A09",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 9
         },
         {
           "codeSeat": "A10",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 10
         },
         {
-          "codeSeat": "A11",
+          "codeSeat": "B01",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 11
         },
         {
-          "codeSeat": "A12",
+          "codeSeat": "B02",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 12
         },
         {
-          "codeSeat": "A13",
+          "codeSeat": "B03",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 13
         },
         {
-          "codeSeat": "A14",
+          "codeSeat": "B04",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 14
         },
         {
-          "codeSeat": "A15",
+          "codeSeat": "B05",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 15
         },
         {
-          "codeSeat": "A16",
+          "codeSeat": "B06",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 16
         },
         {
-          "codeSeat": "A17",
+          "codeSeat": "B07",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 17
         },
         {
-          "codeSeat": "A18",
+          "codeSeat": "B08",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 18
         },
         {
-          "codeSeat": "A19",
+          "codeSeat": "B09",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 19
         },
         {
-          "codeSeat": "A20",
+          "codeSeat": "B10",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 20
         },
         {
-          "codeSeat": "A21",
+          "codeSeat": "C01",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 21
         },
         {
-          "codeSeat": "A22",
+          "codeSeat": "C02",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 22
         },
         {
-          "codeSeat": "A23",
+          "codeSeat": "C03",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 23
         },
         {
-          "codeSeat": "A24",
+          "codeSeat": "C04",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 24
         },
         {
-          "codeSeat": "A25",
+          "codeSeat": "C05",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 25
         },
         {
-          "codeSeat": "A26",
+          "codeSeat": "C06",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 26
         },
         {
-          "codeSeat": "A27",
+          "codeSeat": "C07",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 27
         },
         {
-          "codeSeat": "A28",
+          "codeSeat": "C08",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 28
         },
         {
-          "codeSeat": "A29",
+          "codeSeat": "C09",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 29
         },
         {
-          "codeSeat": "A30",
+          "codeSeat": "C10",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 30
         },
         {
-          "codeSeat": "A31",
+          "codeSeat": "D01",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 31
         },
         {
-          "codeSeat": "A32",
+          "codeSeat": "D02",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 32
         },
         {
-          "codeSeat": "A33",
+          "codeSeat": "D03",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 33
         },
         {
-          "codeSeat": "A34",
+          "codeSeat": "D04",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 34
         },
         {
-          "codeSeat": "A35",
+          "codeSeat": "D05",
           "price": 75000,
-          "status": false
+          "status": true,
+          "id": 35
         },
         {
-          "codeSeat": "A36",
+          "codeSeat": "D06",
           "price": 75000,
-          "status": false
+          "status": true,
+          "id": 36
         },
         {
-          "codeSeat": "A37",
+          "codeSeat": "D07",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 37
         },
         {
-          "codeSeat": "A38",
+          "codeSeat": "D08",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 38
         },
         {
-          "codeSeat": "A39",
+          "codeSeat": "D09",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 39
         },
         {
-          "codeSeat": "A40",
+          "codeSeat": "D10",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 40
         },
         {
-          "codeSeat": "A41",
+          "codeSeat": "E01",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 41
         },
         {
-          "codeSeat": "A42",
+          "codeSeat": "E02",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 42
         },
         {
-          "codeSeat": "A43",
+          "codeSeat": "E03",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 43
         },
         {
-          "codeSeat": "A44",
+          "codeSeat": "E04",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 44
         },
         {
-          "codeSeat": "A45",
+          "codeSeat": "E05",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 45
         },
         {
-          "codeSeat": "A46",
+          "codeSeat": "E06",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 46
         },
         {
-          "codeSeat": "A47",
+          "codeSeat": "E07",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 47
         },
         {
-          "codeSeat": "A48",
+          "codeSeat": "E08",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 48
         },
         {
-          "codeSeat": "A49",
+          "codeSeat": "E09",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 49
         },
         {
-          "codeSeat": "A50",
+          "codeSeat": "E10",
           "price": 75000,
-          "status": false
+          "status": false,
+          "id": 50
         }
       ],
       "id": 1,
-      "branchId": 1
+      "sessionId": 1,
+      "movieTime": "08:30 ~ 10:40"
+    },
+    {
+      "id": 2,
+      "numberSeat": [
+        {
+          "codeSeat": "A01",
+          "price": 75000,
+          "status": true,
+          "id": 1
+        },
+        {
+          "codeSeat": "A02",
+          "price": 75000,
+          "status": true,
+          "id": 2
+        },
+        {
+          "codeSeat": "A03",
+          "price": 75000,
+          "status": true,
+          "id": 3
+        },
+        {
+          "codeSeat": "A04",
+          "price": 75000,
+          "status": false,
+          "id": 4
+        },
+        {
+          "codeSeat": "A05",
+          "price": 75000,
+          "status": false,
+          "id": 5
+        },
+        {
+          "codeSeat": "A06",
+          "price": 75000,
+          "status": false,
+          "id": 6
+        },
+        {
+          "codeSeat": "A07",
+          "price": 75000,
+          "status": false,
+          "id": 7
+        },
+        {
+          "codeSeat": "A08",
+          "price": 75000,
+          "status": false,
+          "id": 8
+        },
+        {
+          "codeSeat": "A09",
+          "price": 75000,
+          "status": false,
+          "id": 9
+        },
+        {
+          "codeSeat": "A10",
+          "price": 75000,
+          "status": false,
+          "id": 10
+        },
+        {
+          "codeSeat": "B01",
+          "price": 75000,
+          "status": false,
+          "id": 11
+        },
+        {
+          "codeSeat": "B02",
+          "price": 75000,
+          "status": false,
+          "id": 12
+        },
+        {
+          "codeSeat": "B03",
+          "price": 75000,
+          "status": false,
+          "id": 13
+        },
+        {
+          "codeSeat": "B04",
+          "price": 75000,
+          "status": false,
+          "id": 14
+        },
+        {
+          "codeSeat": "B05",
+          "price": 75000,
+          "status": false,
+          "id": 15
+        },
+        {
+          "codeSeat": "B06",
+          "price": 75000,
+          "status": false,
+          "id": 16
+        },
+        {
+          "codeSeat": "B07",
+          "price": 75000,
+          "status": false,
+          "id": 17
+        },
+        {
+          "codeSeat": "B08",
+          "price": 75000,
+          "status": false,
+          "id": 18
+        },
+        {
+          "codeSeat": "B09",
+          "price": 75000,
+          "status": false,
+          "id": 19
+        },
+        {
+          "codeSeat": "B10",
+          "price": 75000,
+          "status": false,
+          "id": 20
+        },
+        {
+          "codeSeat": "C01",
+          "price": 75000,
+          "status": false,
+          "id": 21
+        },
+        {
+          "codeSeat": "C02",
+          "price": 75000,
+          "status": false,
+          "id": 22
+        },
+        {
+          "codeSeat": "C03",
+          "price": 75000,
+          "status": false,
+          "id": 23
+        },
+        {
+          "codeSeat": "C04",
+          "price": 75000,
+          "status": false,
+          "id": 24
+        },
+        {
+          "codeSeat": "C05",
+          "price": 75000,
+          "status": false,
+          "id": 25
+        },
+        {
+          "codeSeat": "C06",
+          "price": 75000,
+          "status": false,
+          "id": 26
+        },
+        {
+          "codeSeat": "C07",
+          "price": 75000,
+          "status": false,
+          "id": 27
+        },
+        {
+          "codeSeat": "C08",
+          "price": 75000,
+          "status": false,
+          "id": 28
+        },
+        {
+          "codeSeat": "C09",
+          "price": 75000,
+          "status": false,
+          "id": 29
+        },
+        {
+          "codeSeat": "C10",
+          "price": 75000,
+          "status": false,
+          "id": 30
+        },
+        {
+          "codeSeat": "D01",
+          "price": 75000,
+          "status": false,
+          "id": 31
+        },
+        {
+          "codeSeat": "D02",
+          "price": 75000,
+          "status": false,
+          "id": 32
+        },
+        {
+          "codeSeat": "D03",
+          "price": 75000,
+          "status": false,
+          "id": 33
+        },
+        {
+          "codeSeat": "D04",
+          "price": 75000,
+          "status": false,
+          "id": 34
+        },
+        {
+          "codeSeat": "D05",
+          "price": 75000,
+          "status": true,
+          "id": 35
+        },
+        {
+          "codeSeat": "D06",
+          "price": 75000,
+          "status": true,
+          "id": 36
+        },
+        {
+          "codeSeat": "D07",
+          "price": 75000,
+          "status": false,
+          "id": 37
+        },
+        {
+          "codeSeat": "D08",
+          "price": 75000,
+          "status": false,
+          "id": 38
+        },
+        {
+          "codeSeat": "D09",
+          "price": 75000,
+          "status": false,
+          "id": 39
+        },
+        {
+          "codeSeat": "D10",
+          "price": 75000,
+          "status": false,
+          "id": 40
+        },
+        {
+          "codeSeat": "E01",
+          "price": 75000,
+          "status": false,
+          "id": 41
+        },
+        {
+          "codeSeat": "E02",
+          "price": 75000,
+          "status": false,
+          "id": 42
+        },
+        {
+          "codeSeat": "E03",
+          "price": 75000,
+          "status": false,
+          "id": 43
+        },
+        {
+          "codeSeat": "E04",
+          "price": 75000,
+          "status": false,
+          "id": 44
+        },
+        {
+          "codeSeat": "E05",
+          "price": 75000,
+          "status": false,
+          "id": 45
+        },
+        {
+          "codeSeat": "E06",
+          "price": 75000,
+          "status": false,
+          "id": 46
+        },
+        {
+          "codeSeat": "E07",
+          "price": 75000,
+          "status": true,
+          "id": 47
+        },
+        {
+          "codeSeat": "E08",
+          "price": 75000,
+          "status": true,
+          "id": 48
+        },
+        {
+          "codeSeat": "E09",
+          "price": 75000,
+          "status": true,
+          "id": 49
+        },
+        {
+          "codeSeat": "E10",
+          "price": 75000,
+          "status": true,
+          "id": 50
+        }
+      ],
+      "sessionId": 2,
+      "movieTime": "12:00 ~ 14:10"
+    },
+    {
+      "id": 3,
+      "numberSeat": [
+        {
+          "codeSeat": "A01",
+          "price": 75000,
+          "status": true,
+          "id": 1
+        },
+        {
+          "codeSeat": "A02",
+          "price": 75000,
+          "status": true,
+          "id": 2
+        },
+        {
+          "codeSeat": "A03",
+          "price": 75000,
+          "status": true,
+          "id": 3
+        },
+        {
+          "codeSeat": "A04",
+          "price": 75000,
+          "status": false,
+          "id": 4
+        },
+        {
+          "codeSeat": "A05",
+          "price": 75000,
+          "status": false,
+          "id": 5
+        },
+        {
+          "codeSeat": "A06",
+          "price": 75000,
+          "status": false,
+          "id": 6
+        },
+        {
+          "codeSeat": "A07",
+          "price": 75000,
+          "status": false,
+          "id": 7
+        },
+        {
+          "codeSeat": "A08",
+          "price": 75000,
+          "status": false,
+          "id": 8
+        },
+        {
+          "codeSeat": "A09",
+          "price": 75000,
+          "status": false,
+          "id": 9
+        },
+        {
+          "codeSeat": "A10",
+          "price": 75000,
+          "status": false,
+          "id": 10
+        },
+        {
+          "codeSeat": "B01",
+          "price": 75000,
+          "status": false,
+          "id": 11
+        },
+        {
+          "codeSeat": "B02",
+          "price": 75000,
+          "status": false,
+          "id": 12
+        },
+        {
+          "codeSeat": "B03",
+          "price": 75000,
+          "status": false,
+          "id": 13
+        },
+        {
+          "codeSeat": "B04",
+          "price": 75000,
+          "status": false,
+          "id": 14
+        },
+        {
+          "codeSeat": "B05",
+          "price": 75000,
+          "status": false,
+          "id": 15
+        },
+        {
+          "codeSeat": "B06",
+          "price": 75000,
+          "status": false,
+          "id": 16
+        },
+        {
+          "codeSeat": "B07",
+          "price": 75000,
+          "status": false,
+          "id": 17
+        },
+        {
+          "codeSeat": "B08",
+          "price": 75000,
+          "status": false,
+          "id": 18
+        },
+        {
+          "codeSeat": "B09",
+          "price": 75000,
+          "status": false,
+          "id": 19
+        },
+        {
+          "codeSeat": "B10",
+          "price": 75000,
+          "status": false,
+          "id": 20
+        },
+        {
+          "codeSeat": "C01",
+          "price": 75000,
+          "status": false,
+          "id": 21
+        },
+        {
+          "codeSeat": "C02",
+          "price": 75000,
+          "status": false,
+          "id": 22
+        },
+        {
+          "codeSeat": "C03",
+          "price": 75000,
+          "status": false,
+          "id": 23
+        },
+        {
+          "codeSeat": "C04",
+          "price": 75000,
+          "status": false,
+          "id": 24
+        },
+        {
+          "codeSeat": "C05",
+          "price": 75000,
+          "status": false,
+          "id": 25
+        },
+        {
+          "codeSeat": "C06",
+          "price": 75000,
+          "status": false,
+          "id": 26
+        },
+        {
+          "codeSeat": "C07",
+          "price": 75000,
+          "status": false,
+          "id": 27
+        },
+        {
+          "codeSeat": "C08",
+          "price": 75000,
+          "status": false,
+          "id": 28
+        },
+        {
+          "codeSeat": "C09",
+          "price": 75000,
+          "status": false,
+          "id": 29
+        },
+        {
+          "codeSeat": "C10",
+          "price": 75000,
+          "status": false,
+          "id": 30
+        },
+        {
+          "codeSeat": "D01",
+          "price": 75000,
+          "status": false,
+          "id": 31
+        },
+        {
+          "codeSeat": "D02",
+          "price": 75000,
+          "status": false,
+          "id": 32
+        },
+        {
+          "codeSeat": "D03",
+          "price": 75000,
+          "status": false,
+          "id": 33
+        },
+        {
+          "codeSeat": "D04",
+          "price": 75000,
+          "status": false,
+          "id": 34
+        },
+        {
+          "codeSeat": "D05",
+          "price": 75000,
+          "status": true,
+          "id": 35
+        },
+        {
+          "codeSeat": "D06",
+          "price": 75000,
+          "status": true,
+          "id": 36
+        },
+        {
+          "codeSeat": "D07",
+          "price": 75000,
+          "status": false,
+          "id": 37
+        },
+        {
+          "codeSeat": "D08",
+          "price": 75000,
+          "status": false,
+          "id": 38
+        },
+        {
+          "codeSeat": "D09",
+          "price": 75000,
+          "status": false,
+          "id": 39
+        },
+        {
+          "codeSeat": "D10",
+          "price": 75000,
+          "status": false,
+          "id": 40
+        },
+        {
+          "codeSeat": "E01",
+          "price": 75000,
+          "status": false,
+          "id": 41
+        },
+        {
+          "codeSeat": "E02",
+          "price": 75000,
+          "status": false,
+          "id": 42
+        },
+        {
+          "codeSeat": "E03",
+          "price": 75000,
+          "status": false,
+          "id": 43
+        },
+        {
+          "codeSeat": "E04",
+          "price": 75000,
+          "status": false,
+          "id": 44
+        },
+        {
+          "codeSeat": "E05",
+          "price": 75000,
+          "status": false,
+          "id": 45
+        },
+        {
+          "codeSeat": "E06",
+          "price": 75000,
+          "status": false,
+          "id": 46
+        },
+        {
+          "codeSeat": "E07",
+          "price": 75000,
+          "status": false,
+          "id": 47
+        },
+        {
+          "codeSeat": "E08",
+          "price": 75000,
+          "status": true,
+          "id": 48
+        },
+        {
+          "codeSeat": "E09",
+          "price": 75000,
+          "status": true,
+          "id": 49
+        },
+        {
+          "codeSeat": "E10",
+          "price": 75000,
+          "status": true,
+          "id": 50
+        }
+      ],
+      "sessionId": 3,
+      "movieTime": "08:30 ~ 10:40"
     }
   ],
   "theaters": [
@@ -658,48 +1328,64 @@
       "id": 1,
       "name": "Lotte Cinema",
       "branchId": 1,
+      "hotline": "0873747344",
+      "address": "Tầng 4, Mê Linh Plaza Hà Đông, Đường Tô Hiệu, P.Hà Cầu, Q.Hà Đông, TP.Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/404b8c4b80d77732e7426cdb7e24be20.png"
     },
     {
       "id": 2,
       "name": "Lotte Star Cineplex",
       "branchId": 1,
+      "hotline": "0873747344",
+      "address": "Tầng 2 Kosmo Tây Hồ, Số 161 Xuân La, P. Xuân Tảo, Q. Bắc Từ Liêm, TP. Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/f32670fd0eb083c9c4c804f0f3a252ed.png"
     },
     {
       "id": 3,
       "name": "Lotte Skylake",
       "branchId": 1,
+      "hotline": "0873747344",
+      "address": "Tầng 5&6 toà nhà Keangnam Landmark Tower, đường Phạm Hùng, KĐTM Cầu Giấy, P.Mễ Trì, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/e520781386bd5436e94d6e15e193a005.png"
     },
     {
       "id": 4,
       "name": "Lotte CineStar",
       "branchId": 2,
+      "hotline": "0873747344",
+      "address": "Tầng 3, TTTM Savico Megamall, số 7-9, đường Nguyễn Văn Linh, P.Gia Thụy, Q.Long Biên, TP.Hà Nội, Việt Nam",
       "image": "https://i.imgur.com/0XnfUIg.png"
     },
     {
       "id": 5,
       "name": "Lotte - Đống Đa",
       "branchId": 2,
+      "hotline": "0873747344",
+      "address": "Hinode City, Số 201 Minh Khai, P. Minh Khai, Q. Hai Bà Trưng, TP. Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/9b240f96a233bb43203ee514a21a6004.png"
     },
     {
       "id": 6,
       "branchId": 2,
+      "hotline": "0873747344",
       "name": "BHD Star Cineplex - Phạm Hùng",
+      "address": "Tầng 3, TTTM Big C Thăng Long, Số 222 Trần Duy Hưng, P.Trung Hoà, Q.Cầu Giấy, TP.Hà Nội, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-pham-hung-15379533093101.jpg"
     },
     {
       "id": 7,
       "branchId": 3,
+      "hotline": "0873747344",
       "name": "BHD Star Cineplex - Vincom Quang Trung",
+      "address": "Tầng 3, TTTM Vincom Bắc Ninh, ngã 6, P.Suối Hoa, TP.Bắc Ninh, T.Bắc Ninh, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-quang-trung-15379536724871.jpg"
     },
     {
       "id": 8,
       "branchId": 3,
+      "hotline": "0873747344",
       "name": "BHD Star Cineplex - Vincom Thảo Điền",
+      "address": "Tầng 1, TTTM Big C Hạ Long, P.Hồng Hải, TP.Hạ Long, T.Quảng Ninh, Việt Nam",
       "image": "https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-thao-dien-15379553942188.jpg"
     }
   ],
@@ -729,7 +1415,6 @@
   "tickets": [
     {
       "userId": 2,
-      "code": "X72UE",
       "nameMovie": "Aladdin",
       "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/aladdin-15585337476213_220x310.jpg",
       "count": 1,
@@ -740,6 +1425,7 @@
       "showtimes": {
         "nameTheater": "Lotte - Nam Sài Gòn",
         "screenings": "18:00",
+        "nameBranch": "Ha Noi",
         "showDate": "2019-08-05",
         "cinemaRoom": 3,
         "seats": [
@@ -751,10 +1437,194 @@
     },
     {
       "userId": 2,
-      "code": "0OA1Y",
-      "nameMovie": "Aladdin",
-      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/aladdin-15585337476213_220x310.jpg",
+      "nameMovie": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "combo": [
+        {
+          "id": 1,
+          "image": "https://cms.megagscinemas.vn//media/76071/big-share.png",
+          "nameCombo": "2 ly nước lớn, 1 bắp lớn",
+          "count": 0,
+          "price": 97000
+        },
+        {
+          "id": 2,
+          "image": "https://cms.megagscinemas.vn//media/76070/share.png",
+          "nameCombo": "2 ly nước vừa, 1 bắp lớn",
+          "count": 1,
+          "price": 87000
+        }
+      ],
+      "pay": "CASH",
+      "total": 162000,
+      "count": 1,
+      "discount": 0,
+      "showtimes": {
+        "nameTheater": "Lotte Cinema",
+        "screenings": "10:50 ~ 13:00",
+        "nameBranch": "",
+        "showDate": "Sunday - 20/9",
+        "cinemaRoom": 4,
+        "seats": [
+          "E10"
+        ]
+      },
+      "timeSet": "2020-09-17",
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "nameMovie": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "combo": [
+        {
+          "id": 1,
+          "image": "https://cms.megagscinemas.vn//media/76071/big-share.png",
+          "nameCombo": "2 ly nước lớn, 1 bắp lớn",
+          "count": 0,
+          "price": 97000
+        },
+        {
+          "id": 2,
+          "image": "https://cms.megagscinemas.vn//media/76070/share.png",
+          "nameCombo": "2 ly nước vừa, 1 bắp lớn",
+          "count": 1,
+          "price": 87000
+        }
+      ],
+      "pay": "CASH",
+      "total": 237000,
       "count": 2,
+      "discount": 0,
+      "showtimes": {
+        "nameTheater": "Lotte Cinema",
+        "screenings": "08:30 ~ 10:40",
+        "nameBranch": "ho chi minh",
+        "showDate": "Monday - 21/9",
+        "cinemaRoom": 4,
+        "seats": [
+          "E08",
+          "E07"
+        ]
+      },
+      "timeSet": "2020-09-20",
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "nameMovie": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "combo": [
+        {
+          "id": 1,
+          "image": "https://cms.megagscinemas.vn//media/76071/big-share.png",
+          "nameCombo": "2 ly nước lớn, 1 bắp lớn",
+          "count": 0,
+          "price": 97000
+        },
+        {
+          "id": 2,
+          "image": "https://cms.megagscinemas.vn//media/76070/share.png",
+          "nameCombo": "2 ly nước vừa, 1 bắp lớn",
+          "count": 0,
+          "price": 87000
+        }
+      ],
+      "pay": "CASH",
+      "total": 75000,
+      "count": 1,
+      "discount": 0,
+      "showtimes": {
+        "nameTheater": "Lotte Star Cineplex",
+        "screenings": "12:00 ~ 14:10",
+        "nameBranch": "",
+        "showDate": "Friday - 25/9",
+        "cinemaRoom": 4,
+        "seats": [
+          "A02"
+        ]
+      },
+      "timeSet": "2020-09-22",
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "nameMovie": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "combo": [
+        {
+          "id": 1,
+          "image": "https://cms.megagscinemas.vn//media/76071/big-share.png",
+          "nameCombo": "2 ly nước lớn, 1 bắp lớn",
+          "count": 0,
+          "price": 97000
+        },
+        {
+          "id": 2,
+          "image": "https://cms.megagscinemas.vn//media/76070/share.png",
+          "nameCombo": "2 ly nước vừa, 1 bắp lớn",
+          "count": 0,
+          "price": 87000
+        }
+      ],
+      "pay": "CASH",
+      "total": 75000,
+      "count": 1,
+      "discount": 0,
+      "showtimes": {
+        "nameTheater": "Lotte Star Cineplex",
+        "screenings": "12:00 ~ 14:10",
+        "nameBranch": "",
+        "showDate": "Friday - 25/9",
+        "cinemaRoom": 4,
+        "seats": [
+          "A02"
+        ]
+      },
+      "timeSet": "2020-09-22",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "nameMovie": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "combo": [
+        {
+          "id": 1,
+          "image": "https://cms.megagscinemas.vn//media/76071/big-share.png",
+          "nameCombo": "2 ly nước lớn, 1 bắp lớn",
+          "count": 0,
+          "price": 97000
+        },
+        {
+          "id": 2,
+          "image": "https://cms.megagscinemas.vn//media/76070/share.png",
+          "nameCombo": "2 ly nước vừa, 1 bắp lớn",
+          "count": 0,
+          "price": 87000
+        }
+      ],
+      "pay": "CASH",
+      "total": 75000,
+      "count": 1,
+      "discount": 0,
+      "showtimes": {
+        "nameTheater": "Lotte Star Cineplex",
+        "screenings": "12:00 ~ 14:10",
+        "nameBranch": "",
+        "showDate": "Saturday - 26/9",
+        "cinemaRoom": 4,
+        "seats": [
+          "A03"
+        ]
+      },
+      "timeSet": "2020-09-23",
+      "id": 9
+    },
+    {
+      "userId": 2,
+      "nameMovie": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
       "combo": [
         {
           "id": 1,
@@ -767,25 +1637,64 @@
           "id": 2,
           "image": "https://cms.megagscinemas.vn//media/76070/share.png",
           "nameCombo": "2 ly nước vừa, 1 bắp lớn",
+          "count": 0,
+          "price": 87000
+        }
+      ],
+      "pay": "CASH",
+      "total": 172000,
+      "count": 1,
+      "discount": 0,
+      "showtimes": {
+        "nameTheater": "Lotte Skylake",
+        "screenings": "08:30 ~ 10:40",
+        "nameBranch": "",
+        "showDate": "Saturday - 26/9",
+        "cinemaRoom": 3,
+        "seats": [
+          "E08"
+        ]
+      },
+      "timeSet": "2020-09-23",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "nameMovie": "Spider-Man: Người Nhện Xa Nhà - Spider-Man: Far From Home",
+      "image": "https://s3img.vcdn.vn/mobile/123phim/2019/05/ky-sinh-trung-parasite-15576856821439_220x310.jpg",
+      "combo": [
+        {
+          "id": 1,
+          "image": "https://cms.megagscinemas.vn//media/76071/big-share.png",
+          "nameCombo": "2 ly nước lớn, 1 bắp lớn",
+          "count": 0,
+          "price": 97000
+        },
+        {
+          "id": 2,
+          "image": "https://cms.megagscinemas.vn//media/76070/share.png",
+          "nameCombo": "2 ly nước vừa, 1 bắp lớn",
           "count": 1,
           "price": 87000
         }
       ],
-      "total": 259000,
-      "pay": "Thẻ tín dụng",
-      "discount": 10,
+      "pay": "CASH",
+      "total": 237000,
+      "count": 2,
+      "discount": 0,
       "showtimes": {
-        "nameTheater": "Lotte - Nam Sài Gòn",
-        "screenings": "15:00",
-        "showDate": "2019-08-05",
-        "cinemaRoom": 3,
+        "nameTheater": "Lotte Star Cineplex",
+        "screenings": "12:00 ~ 14:10",
+        "nameBranch": "ho chi minh",
+        "showDate": "Wednesday - 23/9",
+        "cinemaRoom": 4,
         "seats": [
-          "A11",
-          "A12"
+          "E07",
+          "E08"
         ]
       },
-      "timeSet": "2020-09-11",
-      "id": 4
+      "timeSet": "2020-09-23",
+      "id": 11
     }
   ],
   "sessions": [
@@ -797,11 +1706,11 @@
       "movieType": "3D",
       "room": 4,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "18:00",
-        "20:00"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "trangThai": true,
       "id": 1
@@ -815,12 +1724,11 @@
       "movieType": "2D",
       "room": 4,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "12:00 ~ 14:10",
+        "14:20 ~ 16:30",
+        "16:50 ~ 19:00",
+        "19:10 ~ 21:20",
+        "21:30 ~ 23:40"
       ],
       "id": 2
     },
@@ -833,11 +1741,11 @@
       "movieType": "2D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:50"
       ],
       "id": 3
     },
@@ -850,12 +1758,11 @@
       "movieType": "2D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "08:00 ~ 10:20",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:10"
       ],
       "id": 4
     },
@@ -868,12 +1775,11 @@
       "movieType": "2D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 5
     },
@@ -886,12 +1792,11 @@
       "movieType": "2D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 6
     },
@@ -904,12 +1809,11 @@
       "movieType": "2D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 7
     },
@@ -922,12 +1826,11 @@
       "movieType": "2D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 8
     },
@@ -940,11 +1843,11 @@
       "movieType": "2D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 9
     },
@@ -957,12 +1860,11 @@
       "movieType": "3D",
       "room": 4,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 10
     },
@@ -975,10 +1877,11 @@
       "movieType": "3D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "15:00",
-        "18:00"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 11
     },
@@ -991,11 +1894,11 @@
       "movieType": "3D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 12
     },
@@ -1008,11 +1911,11 @@
       "movieType": "3D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "18:00",
-        "21:40"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 13
     },
@@ -1025,11 +1928,11 @@
       "movieType": "3D",
       "room": 3,
       "movieTime": [
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 14
     },
@@ -1042,11 +1945,11 @@
       "movieType": "3D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "13:20",
-        "15:00",
-        "18:00",
-        "21:40"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 15
     },
@@ -1059,11 +1962,11 @@
       "movieType": "3D",
       "room": 3,
       "movieTime": [
-        "08:30",
-        "10:20",
-        "13:20",
-        "15:00",
-        "18:00"
+        "08:30 ~ 10:40",
+        "10:50 ~ 13:00",
+        "13:20 ~ 15:30",
+        "15:40 ~ 17:50",
+        "18:00 ~ 20:20"
       ],
       "id": 16
     }
@@ -1093,6 +1996,114 @@
       "nameCombo": "2 ly nước vừa, 1 bắp lớn",
       "count": 0,
       "price": 87000
+    }
+  ],
+  "points": [
+    {
+      "id": 1,
+      "users": [
+        {
+          "usersId": 1,
+          "point": 5
+        },
+        {
+          "usersId": 3,
+          "point": 7
+        },
+        {
+          "usersId": 2,
+          "point": 8
+        },
+        {
+          "usersId": 0,
+          "point": 9
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "users": [
+        {
+          "usersId": 1,
+          "point": 5
+        },
+        {
+          "usersId": 2,
+          "point": 9
+        },
+        {
+          "usersId": 3,
+          "point": 8
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "users": []
+    },
+    {
+      "id": 4,
+      "users": []
+    },
+    {
+      "id": 5,
+      "users": []
+    },
+    {
+      "id": 6,
+      "users": []
+    },
+    {
+      "id": 7,
+      "users": []
+    },
+    {
+      "id": 8,
+      "users": []
+    },
+    {
+      "id": 9,
+      "users": []
+    },
+    {
+      "id": 10,
+      "users": []
+    },
+    {
+      "id": 14,
+      "users": []
+    },
+    {
+      "id": 15,
+      "users": []
+    },
+    {
+      "id": 16,
+      "users": []
+    },
+    {
+      "id": 17,
+      "users": []
+    },
+    {
+      "id": 18,
+      "users": []
+    },
+    {
+      "id": 19,
+      "users": []
+    },
+    {
+      "id": 20,
+      "users": []
+    },
+    {
+      "id": 21,
+      "users": []
+    },
+    {
+      "users": [],
+      "id": 22
     }
   ]
 }

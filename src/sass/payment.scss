@@ -28,7 +28,7 @@
         font-weight: bold;
         margin: 10px 10px;
         display: inline-block;
-        padding-right: 20px;;
+        padding-right: 20px;
         border-right: 1px solid $colorRed;
       }
       .content:nth-child(3) {
@@ -49,7 +49,7 @@
     margin: 40px auto;
     &__title {
       text-align: center;
-      @include customFont(22px , "roboto");
+      @include customFont(22px, "roboto");
       font-weight: bold;
     }
     &__content {
@@ -65,6 +65,17 @@
           .pay__content {
             margin: 10px;
           }
+
+          .key {
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+
+          .value {
+            font-size: 1.2rem;
+            color: $colorGreen;
+            font-weight: bold;
+          }
         }
         .total {
           text-align: center;
@@ -72,6 +83,8 @@
           padding-top: 20px;
           border-top: 1px solid $colorBorder;
           color: $colorRed;
+          font-weight: bold;
+          font-size: 1.5rem;
         }
       }
       form {
@@ -119,9 +132,14 @@
       cursor: pointer;
       transition: 0.3s;
       margin-top: 10px;
+      a {
+        color: $colorWhite;
+      }
     }
     .prev:hover {
-      color: $colorGreen;
+      a {
+        color: $colorGreen;
+      }
       transition: 0.3s;
     }
   }

@@ -15,30 +15,17 @@ const Register = (props) => {
   const dispatch = useDispatch();
   const { t } = useTranslation("common");
   const currentUser = useSelector((state) => state.currentUser.currentUser);
-
-  const handleChange = (event) => {
-    switch (event.target.name) {
-      case "name":
-        return setName(event.target.value);
-      case "phone":
-        return setPhone(event.target.value);
-      case "email":
-        return setEmail(event.target.value);
-      case "password":
-        return setPassword(event.target.value);
-      case "region":
-        return setRegion(event.target.value);
-      case "birth":
-        return setBirth(event.target.value);
-      case "gender":
-        return setGender(event.target.value);
-      default:
-        return 0;
-    }
-  };
+  const error1 = useSelector((state) => state.currentUser.error);
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setName("");
+    setPhone("");
+    setEmail("");
+    setPassword("");
+    setRegion("");
+    setBirth("");
+    setGender("Male");
     dispatch(
       authActions.userRegister({
         name,
@@ -67,7 +54,7 @@ const Register = (props) => {
         type="text"
         id="name"
         value={name}
-        onChange={handleChange}
+        onChange={(e) => setName(e.target.value)}
       />
       <br />
 
@@ -78,29 +65,41 @@ const Register = (props) => {
         value={phone}
         type="text"
         id="phone"
-        onChange={handleChange}
+        onChange={(e) => setPhone(e.target.value)}
       />
       <br />
 
-      <label htmlFor="email">Email</label>
+      <label
+        htmlFor="email"
+        style={error1 ? { color: "red" } : { color: "black" }}
+      >
+        Email
+      </label>
       <input
         name="email"
         placeholder="Email"
         value={email}
         type="text"
         id="email"
-        onChange={handleChange}
+        onChange={(e) => setEmail(e.target.value)}
+        style={error1 ? { borderColor: "red" } : { color: "black" }}
       />
       <br />
 
-      <label htmlFor="password">{t("auth.password")}</label>
+      <label
+        htmlFor="password"
+        style={error1 ? { color: "red" } : { color: "black" }}
+      >
+        {t("auth.password")}
+      </label>
       <input
         type="password"
         name="password"
         placeholder={t("auth.password")}
         id="password"
         value={password}
-        onChange={handleChange}
+        onChange={(e) => setPassword(e.target.value)}
+        style={error1 ? { borderColor: "red" } : { color: "black" }}
       />
       <br />
 
@@ -111,7 +110,7 @@ const Register = (props) => {
         value={region}
         type="text"
         id="region"
-        onChange={handleChange}
+        onChange={(e) => setRegion(e.target.value)}
       />
       <br />
 
@@ -122,7 +121,7 @@ const Register = (props) => {
         value={birth}
         type="date"
         id="birth"
-        onChange={handleChange}
+        onChange={(e) => setBirth(e.target.value)}
       />
       <br />
 
@@ -134,7 +133,7 @@ const Register = (props) => {
           value="Male"
           id="Male"
           checked={gender === "Male"}
-          onChange={handleChange}
+          onChange={(e) => setGender(e.target.value)}
         />{" "}
         {t("auth.male")}
       </label>
@@ -145,7 +144,7 @@ const Register = (props) => {
           type="radio"
           value="Female"
           id="Female"
-          onChange={handleChange}
+          onChange={(e) => setGender(e.target.value)}
         />{" "}
         {t("auth.female")}
       </label>

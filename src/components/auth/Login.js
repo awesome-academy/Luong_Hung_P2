@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import * as authActions from "../../actions/auth";
+import * as uiActions from "../../actions/ui";
 import "../../sass/login.scss";
 import { useTranslation } from "react-i18next";
 
@@ -11,20 +12,12 @@ const Login = (props) => {
   const { t } = useTranslation("common");
   const currentUser = useSelector((state) => state.currentUser.currentUser);
 
-  const handleChange = (event) => {
-    switch (event.target.name) {
-      case "email":
-        return setEmail(event.target.value);
-      case "password":
-        return setPassword(event.target.value);
-      default:
-        return 0;
-    }
-  };
-
   const handleSubmit = (event) => {
     event.preventDefault();
+    setEmail("");
+    setPassword("");
     dispatch(authActions.userLogin({ email, password }));
+    dispatch(uiActions.toggleSidebar(true));
   };
 
   const checkoutAdmin = () => {
@@ -47,7 +40,7 @@ const Login = (props) => {
         placeholder="Email"
         id="email"
         value={email}
-        onChange={handleChange}
+        onChange={(e) => setEmail(e.target.value)}
       />
       <br />
 
@@ -58,7 +51,7 @@ const Login = (props) => {
         placeholder="Password"
         id="password"
         value={password}
-        onChange={handleChange}
+        onChange={(e) => setPassword(e.target.value)}
       />
       <br />
 
