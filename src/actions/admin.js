@@ -185,3 +185,30 @@ export const deleteTicketFailed = (error) => {
     },
   };
 };
+
+export const showMovie = (id) => {
+  return {
+    type: adminActions.SHOW_MOVIE,
+    payload: {
+      id
+    }
+  };
+};
+
+export const showMovieSuccess = (data) => {
+  return {
+    type: adminActions.SHOW_MOVIE_SUCCESS,
+    payload: {
+      data
+    },
+  };
+};
+
+export const showMovieFailed = (error) => {
+  return {
+    type: adminActions.SHOW_MOVIE_FAILED,
+    payload: {
+      error,
+    },
+  };
+};

@@ -11,9 +11,17 @@ import { sliderBarSuccess, sliderBarFailed } from "../actions/sliderBars";
 import { moviesSuccess, moviesFailed } from "../actions/movies";
 import { editAccountSuccess, editAccountFailed } from "../actions/account";
 import { promotionSuccess, promotionFailed } from "../actions/promotion";
+import { comboFoodSuccess, comboFoodFailed } from "../actions/comboFood";
+import { seatSuccess, seatFailed } from "../actions/seats";
 import { theaterSuccess, theaterFailed } from "../actions/theaterAction";
 import { bookingTimeSuccess, bookingTimeFailed } from "../actions/bookingTime";
 import { branchSuccess, branchFailed } from "../actions/branchs";
+import {
+  addTicketFailed,
+  addTicketSuccess,
+  editSeatFailed,
+  editSeatSuccess
+} from "../actions/users";
 import {
   deleteUserSuccess,
   deleteUserFailed,
@@ -29,6 +37,8 @@ import {
   ticketFailed,
   deleteTicketSuccess,
   deleteTicketFailed,
+  showMovieSuccess,
+  showMovieFailed,
 } from "../actions/admin";
 import { hideLoading, showLoading } from "../actions/ui";
 import {
@@ -45,26 +55,45 @@ import {
   deleteUser,
   deleteMovie,
   putEditMovie,
+  putEditSeat,
   postAddMovie,
   getTicket,
   deleteTicket,
-  getMovieType
-}
-  from "../apis/auth";
+  getMovieType,
+  postAddTicket,
+  getPoint,
+  postPoint,
+  putEditPoint,
+  getSeats,
+  getComboFood,
+  getShowMovie,
+} from "../apis/auth";
 import { STATUS_CODE } from "../constants";
 import * as authTypes from "../constants/auth";
 import * as sliderBarActions from "../constants/sliderbars";
 import * as movieActions from "../constants/movies";
-import * as promotionAction from '../constants/promotion';
-import * as movieTypeAction from '../constants/movieType'
-import * as theaterAction from '../constants/theaters'
-import * as bookingTimeAction from '../constants/bookingTime'
-import * as branchAction from '../constants/branchs'
+import * as promotionAction from "../constants/promotion";
+import * as comboFoodAction from "../constants/comboFood";
+import * as seatAction from "../constants/seats";
+import * as movieTypeAction from "../constants/movieType";
+import * as theaterAction from "../constants/theaters";
+import * as bookingTimeAction from "../constants/bookingTime";
+import * as branchAction from "../constants/branchs";
 import * as editAccountActions from "../constants/account";
 import * as adminActions from "../constants/admin";
+import * as userActions from "../constants/users";
+import * as pointActions from "../constants/point";
 import Cookie from "js-cookie";
 import md5 from "md5";
 import { movieTypeFailed, movieTypeSuccess } from "../actions/movieType";
+import {
+  addPointFailed,
+  addPointSuccess,
+  editPostFailed,
+  editPostSuccess,
+  pointFailed,
+  pointSuccess,
+} from "../actions/point";
 
 /**
  * B1: Thuc thi action
@@ -99,7 +128,7 @@ function* registerUserSaga({ payload }) {
   userObj.avatar = `http://gravatar.com/avatar/${md5(
     userObj.email
   )}?d=identicon`;
-  userObj.ngayTao = Date.now();
+  userObj.registerDate = Date.now();
   yield put(showLoading());
   try {
     const resp = yield call(postRegister, userObj);
@@ -157,15 +186,39 @@ function* promotionSaga() {
   }
 }
 
-function* movieTypeSaga() {
+function* comboFoodSaga() {
   try {
-    const resp = yield call(getMovieType)
-    const { data, status } = resp
+    const resp = yield call(getComboFood);
+    const { data, status } = resp;
     if (status === STATUS_CODE.SUCCESS) {
-      yield put(movieTypeSuccess(data))
+      yield put(comboFoodSuccess(data));
     }
   } catch (error) {
-    yield put(movieTypeFailed(error))
+    yield put(comboFoodFailed(error));
+  }
+}
+
+function* seatSaga() {
+  try {
+    const resp = yield call(getSeats);
+    const { data, status } = resp;
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(seatSuccess(data));
+    }
+  } catch (error) {
+    yield put(seatFailed(error));
+  }
+}
+
+function* movieTypeSaga() {
+  try {
+    const resp = yield call(getMovieType);
+    const { data, status } = resp;
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(movieTypeSuccess(data));
+    }
+  } catch (error) {
+    yield put(movieTypeFailed(error));
   }
 }
 
@@ -236,6 +289,22 @@ function* editAccountSaga({ payload }) {
   yield put(hideLoading());
 }
 
+function* editSeatSage({ payload }) {
+  const seat = payload
+  console.log(seat)
+  try {
+    const resp = yield call(putEditSeat, seat)
+    const { status } = resp
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(editSeatSuccess(seat));
+    }
+  } catch (error) {
+    if (error === "data is not iterable") {
+      yield put(editSeatFailed(error));
+    }
+  }
+}
+
 function* deleteUserSaga({ payload }) {
   const { account } = payload;
   yield put(showLoading());
@@ -274,7 +343,7 @@ function* deleteMovieSaga({ payload }) {
 
 function* editMovieSaga({ payload }) {
   const { movie } = payload;
-  yield put(showLoading());
+  if (movie.pointIMDB === "N/A") yield put(showLoading());
   try {
     const resp = yield call(putEditMovie, movie);
     const { status } = resp;
@@ -286,8 +355,8 @@ function* editMovieSaga({ payload }) {
       yield put(editMovieFailed(error));
     }
   }
-  yield delay(1000);
-  yield put(hideLoading());
+  if (movie.pointIMDB === "N/A") yield delay(1000);
+  if (movie.pointIMDB === "N/A") yield put(hideLoading());
 }
 
 function* editUserSaga({ payload }) {
@@ -328,8 +397,7 @@ function* deleteTicketSaga({ payload }) {
 
 function* addMovieSaga({ payload }) {
   const { movie } = payload;
-  movie.diemIMDB = 0;
-  console.log(movie);
+  movie.pointIMDB = "N/A";
   yield put(showLoading());
   try {
     const resp = yield call(postAddMovie, movie);
@@ -344,6 +412,21 @@ function* addMovieSaga({ payload }) {
   }
   yield delay(1000);
   yield put(hideLoading());
+}
+
+function* addTicketSaga({ payload }) {
+  const ticket = payload;
+  try {
+    const resp = yield call(postAddTicket, ticket);
+    const { status } = resp;
+    if (status === STATUS_CODE.CREATED) {
+      yield put(addTicketSuccess(ticket));
+    }
+  } catch (error) {
+    if (error === "something wrong about add ticket") {
+      yield put(addTicketFailed(error));
+    }
+  }
 }
 
 function* ticketSaga() {
@@ -361,25 +444,90 @@ function* ticketSaga() {
   yield put(hideLoading());
 }
 
+function* pointSaga() {
+  try {
+    const resp = yield call(getPoint);
+    const { data, status } = resp;
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(pointSuccess(data));
+    }
+  } catch (error) {
+    yield put(pointFailed(error));
+  }
+}
+
+function* addPointSaga({ payload }) {
+  const { point } = payload;
+  try {
+    const resp = yield call(postPoint, point);
+    const { status } = resp;
+    if (status === STATUS_CODE.CREATED) {
+      yield put(addPointSuccess(point));
+    }
+  } catch (error) {
+    if (error === "something wrong about add ticket") {
+      yield put(addPointFailed(error));
+    }
+  }
+}
+
+function* editPointSaga({ payload }) {
+  const { point } = payload;
+  try {
+    const resp = yield call(putEditPoint, point);
+    const { status } = resp;
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(editPostSuccess(point));
+    }
+  } catch (error) {
+    if (error === "data is not iterable") {
+      yield put(editPostFailed(error));
+    }
+  }
+}
+
+function* showMovieSaga({ payload }) {
+  const { id } = payload;
+  try {
+    const resp = yield call(getShowMovie, id);
+    const { data, status } = resp;
+    if (status === STATUS_CODE.SUCCESS) {
+      yield put(showMovieSuccess(data));
+    }
+  } catch (error) {
+    if (error === "data is not iterable") {
+      yield put(showMovieFailed(error));
+    }
+  }
+}
+
 function* rootSaga() {
   yield takeLatest(authTypes.LOGIN_USER, loginUserSaga);
   yield takeLatest(authTypes.REGISTER_USER, registerUserSaga);
   yield takeLatest(sliderBarActions.BANNER, sliderBarSaga);
   yield takeLatest(movieActions.MOVIE, movieSaga);
-  yield takeLatest(promotionAction.PROMOTION_REQUEST, promotionSaga)
-  yield takeLatest(movieTypeAction.MOVIE_TYPE_REQUEST, movieTypeSaga)
-  yield takeLatest(bookingTimeAction.BOOKING_TIME_REQUEST, bookingTimeSaga)
-  yield takeLatest(branchAction.BRANCHS_REQUEST, branchSaga)
-  yield takeLatest(theaterAction.THEATER_REQUEST, theaterSaga)
+  yield takeLatest(promotionAction.PROMOTION_REQUEST, promotionSaga);
+  yield takeLatest(comboFoodAction.COMBO_FOOD_REQUEST, comboFoodSaga);
+  yield takeLatest(seatAction.SEAT_REQUEST, seatSaga);
+  yield takeLatest(movieTypeAction.MOVIE_TYPE_REQUEST, movieTypeSaga);
+  yield takeLatest(bookingTimeAction.BOOKING_TIME_REQUEST, bookingTimeSaga);
+  yield takeLatest(branchAction.BRANCHS_REQUEST, branchSaga);
+  yield takeLatest(theaterAction.THEATER_REQUEST, theaterSaga);
   yield takeLatest(authTypes.ACCOUNT, accountSaga);
   yield takeLatest(editAccountActions.EDIT_ACCOUNT, editAccountSaga);
+  yield takeLatest(userActions.EDIT_SEAT_REQUEST, editSeatSage)
   yield takeLatest(adminActions.DELETE_USER, deleteUserSaga);
   yield takeLatest(adminActions.EDIT_USER, editUserSaga);
   yield takeLatest(adminActions.DELETE_MOVIE, deleteMovieSaga);
   yield takeLatest(adminActions.EDIT_MOVIE, editMovieSaga);
   yield takeLatest(adminActions.ADD_MOVIE, addMovieSaga);
+  yield takeLatest(userActions.ADD_TICKET_REQUEST, addTicketSaga);
   yield takeLatest(adminActions.TICKET, ticketSaga);
   yield takeLatest(adminActions.DELETE_TICKET, deleteTicketSaga);
+  yield takeLatest(pointActions.POINT, pointSaga);
+  yield takeLatest(pointActions.ADD_POINT, addPointSaga);
+  yield takeLatest(pointActions.EDIT_POINT, editPointSaga);
+  yield takeLatest(adminActions.SHOW_MOVIE, showMovieSaga);
 }
 
 export default rootSaga;

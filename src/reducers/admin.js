@@ -8,6 +8,7 @@ const initialState = {
   editUser: null,
   addMovie: null,
   deleteTicket: null,
+  movie: null,
 };
 
 const bookingTimeReducer = (state = initialState, action) => {
@@ -40,7 +41,9 @@ const bookingTimeReducer = (state = initialState, action) => {
       return { ...state };
     case adminActions.EDIT_MOVIE_SUCCESS: {
       const { data } = action.payload;
-      toastSuccess("Edit movie success.");
+      if(data.pointIMDB === "N/A") {
+        toastSuccess("Edit movie success.");
+      }
       return { ...state, editMovie: data };
     }
     case adminActions.EDIT_MOVIE_FAILED: {
@@ -80,6 +83,17 @@ const bookingTimeReducer = (state = initialState, action) => {
       return { ...state, deleteTicket: data };
     }
     case adminActions.DELETE_TICKET_FAILED: {
+      const { error } = action.payload;
+      toastError(error);
+      return { ...state };
+    }
+    case adminActions.SHOW_MOVIE:
+      return { ...state };
+    case adminActions.SHOW_MOVIE_SUCCESS: {
+      const { data } = action.payload;
+      return { ...state, movie: data };
+    }
+    case adminActions.SHOW_MOVIE_FAILED: {
       const { error } = action.payload;
       toastError(error);
       return { ...state };

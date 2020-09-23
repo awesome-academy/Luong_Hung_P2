@@ -6,6 +6,8 @@ const initialState = {
   currentUser: null,
   accounts: null,
   account: null,
+  error: null,
+  error1: null,
 };
 
 export default function reducer(state = initialState, action) {
@@ -29,12 +31,12 @@ export default function reducer(state = initialState, action) {
     case authActions.REGISTER_USER_SUCCESS: {
       const { data } = action.payload;
       toastSuccess("Register success.");
-      return { ...state, currentUser: data };
+      return { ...state, currentUser: data, error: null };
     }
     case authActions.REGISTER_USER_FAILED: {
       const { error } = action.payload;
       toastError(error);
-      return { ...state };
+      return { ...state, error: error };
     }
     case authActions.LOGOUT_USER_SUCCESS: {
       toastSuccess("Logout success.");
@@ -60,12 +62,12 @@ export default function reducer(state = initialState, action) {
     case editAccountActions.EDIT_ACCOUNT_SUCCESS: {
       const { data } = action.payload;
       toastSuccess("Edit account success.");
-      return { ...state, account: [...data] };
+      return { ...state, account: [...data], error: null };
     }
     case editAccountActions.EDIT_ACCOUNT_FAILED: {
       const { error } = action.payload;
       toastError(error);
-      return { ...state };
+      return { ...state, error1: error };
     }
     default:
       return state;

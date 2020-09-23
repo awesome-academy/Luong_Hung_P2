@@ -11,6 +11,19 @@ header {
         #toggle-menu {
             display: none;
         }
+
+        svg.btn {
+            height: 2.5rem;
+            width: 2.5rem;
+            color: $colorWhite;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                transition: 0.3s;
+                color: $colorGreen;
+            }
+        }
     
         .menu {
             position: relative;
@@ -122,7 +135,7 @@ header {
             right: 420px;
             #search {
                 padding: 8px 15px;
-                width: 300px;
+                width: 390px;
                 border: none;
                 border-radius: 5px;
                 outline: none;
@@ -141,6 +154,26 @@ header {
     
             label:hover {
                 opacity: 0.8;
+            }
+            .movieSearch {
+                @include customPosition(absolute, 46px, 0, 9999, auto, 400px, true);
+                background: $colorGray;
+                overflow: scroll;
+                &__wrapper {
+                    display: flex;
+                    width: 100%;
+                    padding: 5px 20px;
+                    border-bottom: 1px solid $colorGreen;
+                    &__image {
+                        .image__movie {
+                            width: 60px;
+                        }
+                    }
+                    &__name {
+                        padding: 20px;
+                        color: $colorWhite;
+                    }
+                }
             }
         }
     

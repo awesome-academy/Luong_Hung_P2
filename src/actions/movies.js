@@ -23,3 +23,12 @@ export const moviesFailed = (error) => {
     },
   };
 };
+
+export const detailMovie = (movie) => {
+  return {
+    type: movieActions.DETAIL_MOVIE,
+    payload: {
+      movie,
+    },
+  };
+};

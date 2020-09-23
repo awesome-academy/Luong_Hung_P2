@@ -1,0 +1,39 @@
+@import "./mixins";
+
+.detailMovie {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  display: flex;
+  &__image {
+    width: 220px;
+  }
+  &__detail {
+    margin: 0 20px;
+    &__name {
+      @include customFont(20px, "roboto");
+      color: $colorRed;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $colorBorder;
+    }
+    &__item {
+      @include customFont(16px, "roboto");
+      margin: 10px 0;
+    }
+    select {
+      margin: 0 10px;
+    }
+  }
+  &__booking {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid $colorGreen;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background: $colorGreen;
+      transition: 0.3s;
+      color: $colorWhite;
+    }
+  }
+}

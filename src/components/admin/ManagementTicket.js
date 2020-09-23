@@ -12,7 +12,8 @@ const ManagementTicket = (props) => {
   const [listTickets, setListTickets] = useState(tickets);
   const [deleteMovie, setDeleteMovie] = useState(-1);
   const [isOpenModal, setIsOpenModal] = useState(0);
-  const accounts = useSelector(state => state.currentUser.accounts);
+  const accounts = useSelector((state) => state.currentUser.accounts);
+  const toggleSidebar = useSelector((state) => state.ui.showSidebar);
   const dispatch = useDispatch();
   const [productPerPage] = useState(6);
   const [currentPage, setCurrentPage] = useState(1);
@@ -87,11 +88,11 @@ const ManagementTicket = (props) => {
 
   const searchUserID = (id) => {
     let nameUser = "";
-    accounts.forEach(account => {
-      if(account.id === id) nameUser = account.name;
+    accounts.forEach((account) => {
+      if (account.id === id) nameUser = account.name;
     });
     return nameUser;
-  }
+  };
 
   const showTicket = () => {
     let result = [];
@@ -106,13 +107,18 @@ const ManagementTicket = (props) => {
             <td>{ticket.nameUser}</td>
             <td>{ticket.nameMovie}</td>
             <td>{ticket.showtimes.nameTheater}</td>
-            <td>{day.getDate() + "/" + day.getMonth() + "/" + day.getFullYear()}</td>
+            <td>
+              {day.getDate() + "/" + day.getMonth() + "/" + day.getFullYear()}
+            </td>
             <td>
               <span className="edit" onClick={() => handleModal(ticket.id)}>
                 {t("auth.show")}
               </span>
               &nbsp;
-              <span className="delete" onClick={() => handleDeleteMovie(ticket)}>
+              <span
+                className="delete"
+                onClick={() => handleDeleteMovie(ticket)}
+              >
                 {t("auth.delete")}
               </span>
             </td>
@@ -130,10 +136,13 @@ const ManagementTicket = (props) => {
   };
 
   const handleDeleteMovie = (ticket) => {
-    dispatch(adminActions.deleteTicket(ticket));
-    const index = searchIndex(ticket.id);
-    if (index !== -1) {
-      setDeleteMovie(index);
+    const string = t("auth.deleteConfirm");
+    if (window.confirm(string)) {
+      dispatch(adminActions.deleteTicket(ticket));
+      const index = searchIndex(ticket.id);
+      if (index !== -1) {
+        setDeleteMovie(index);
+      }
     }
   };
 
@@ -146,7 +155,11 @@ const ManagementTicket = (props) => {
   };
 
   return (
-    <div className="wrapperAdminUsers">
+    <div
+      className={
+        toggleSidebar ? "wrapperAdminUsers" : "wrapperAdminUsers admin"
+      }
+    >
       {currentUser && currentUser.email === "admin@admin"
         ? showAdminTicket()
         : checkAdmin()}
